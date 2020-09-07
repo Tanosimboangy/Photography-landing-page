@@ -44,19 +44,17 @@ body > header {
     line-height: 32px; }
   body > header svg {
     padding-right: 14.5px; }
-  body > header .bending_svg_input {
-    order: 2; }
-    body > header .bending_svg_input .checkbox {
-      margin-left: -34px;
-      width: 20px;
-      height: 20px; }
+  body > header .bending_svg_input .checkbox {
+    margin-left: -34px;
+    width: 20px;
+    height: 20px;
+    opacity: 0; }
   body > header .menu {
     background-color: black;
     padding: 16px;
     color: #FFFFFF;
     border-radius: 6px;
-    transform: translateY(-150px);
-    order: 1; }
+    display: none; }
 
 @media (min-width: 1120px) {
   body > header h3 {
