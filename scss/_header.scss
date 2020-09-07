@@ -1,1 +1,37 @@
 @import "variable";
+
+body > header {
+  background: #434CCC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  h3 {
+    // font-family: DM Serif Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+
+    margin: 0;
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-left: 14px;
+    padding-bottom: 16px;
+  }
+  svg {
+    padding-right: 14.5px;
+  }
+  .menu {
+    display: none;
+  }
+}
+
+@media(min-width: 1120px) {
+  .container {
+    max-width: 1114px;
+    margin: auto;
+  }
+}
