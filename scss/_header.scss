@@ -2,11 +2,12 @@
 
 body > header {
   background: #434CCC;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
   h3 {
     // font-family: DM Serif Display;
     font-style: normal;
@@ -30,8 +31,18 @@ body > header {
 }
 
 @media(min-width: 1120px) {
-  .container {
-    max-width: 1114px;
-    margin: auto;
+  body > header {
+    .container {
+      max-width: 1114px;
+      margin: auto;
+    }
+    svg {
+      display: none;
+    }
+    .menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }

@@ -14,11 +14,12 @@ li {
   list-style: none; }
 
 body > header {
-  background: #434CCC;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between; }
+  background: #434CCC; }
+  body > header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
   body > header h3 {
     font-style: normal;
     font-weight: normal;
@@ -36,9 +37,15 @@ body > header {
     display: none; }
 
 @media (min-width: 1120px) {
-  .container {
+  body > header .container {
     max-width: 1114px;
-    margin: auto; } }
+    margin: auto; }
+  body > header svg {
+    display: none; }
+  body > header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; } }
 
 @font-face {
   font-family: lato;
