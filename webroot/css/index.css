@@ -1,5 +1,45 @@
+body {
+  margin: 0; }
+  body main {
+    padding: 0 14.5px; }
+
+ul {
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
 li {
   list-style: none; }
 
-a {
-  text-decoration: none; }
+body > header {
+  background: #434CCC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+  body > header h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 0;
+    text-transform: uppercase;
+    padding-top: 16px;
+    padding-left: 14px;
+    padding-bottom: 16px; }
+  body > header svg {
+    padding-right: 14.5px; }
+  body > header .menu {
+    display: none; }
+
+@media (min-width: 1120px) {
+  .container {
+    max-width: 1114px;
+    margin: auto; } }
+
+@font-face {
+  font-family: lato;
+  src: local(lato), url(../fonts/AnyConv.com__Lato-Bold.woff), url(../fonts/AnyConv.com__Lato-Regular.woff), url(../fonts/AnyConv.com__Lato-Bold.woff2), url(../fonts/AnyConv.com__Lato-Regular.woff2); }

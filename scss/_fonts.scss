@@ -1,0 +1,10 @@
+@import "variable";
+
+@font-face {
+  font-family: lato;
+  src: local(lato),
+       url(../fonts/AnyConv.com__Lato-Bold.woff),
+       url(../fonts/AnyConv.com__Lato-Regular.woff),
+       url(../fonts/AnyConv.com__Lato-Bold.woff2),
+       url(../fonts/AnyConv.com__Lato-Regular.woff2);
+}
