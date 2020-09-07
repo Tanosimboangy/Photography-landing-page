@@ -1,10 +1,15 @@
 @import "variable";
 
 @font-face {
-  font-family: lato;
-  src: local(lato),
-       url(../fonts/AnyConv.com__Lato-Bold.woff),
-       url(../fonts/AnyConv.com__Lato-Regular.woff),
-       url(../fonts/AnyConv.com__Lato-Bold.woff2),
-       url(../fonts/AnyConv.com__Lato-Regular.woff2);
+  font-family: "dm_serif_display";
+  src: local(dm_serif_display),
+  url(../webroot/fonts/dm_serif_display_400.woff2),
+  url(../webroot/fonts/dm_serif_display_400.woff),
+}
+
+@font-face {
+  font-family: "dm_sans";
+  src: local(dm_sans),
+    url(../webroot/fonts/dm_sans_700.woff2),
+    url(../webroot/fonts/dm_sans_700.woff),
 }
