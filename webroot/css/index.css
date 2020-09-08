@@ -3,6 +3,8 @@ body {
   background: rgba(67, 76, 204, 0.05); }
   body main {
     padding: 0 14.5px; }
+  body footer {
+    padding: 0 14.5px; }
 
 ul {
   padding: 0; }
@@ -28,6 +30,14 @@ h3 {
     max-width: 1114px;
     margin: auto; } }
 
+@font-face {
+  font-family: "dm_serif_display";
+  src: local(dm_serif_display), url(../webroot/fonts/dm_serif_display_400.woff2), url(../webroot/fonts/dm_serif_display_400.woff); }
+
+@font-face {
+  font-family: "dm_sans";
+  src: local(dm_sans), url(../webroot/fonts/dm_sans_700.woff2), url(../webroot/fonts/dm_sans_700.woff); }
+
 body > header {
   background: #434CCC;
   position: relative; }
@@ -44,11 +54,19 @@ body > header {
     padding-bottom: 16px;
     font-size: 24px;
     line-height: 32px; }
+  body > header svg {
+    padding-right: 14px;
+    position: absolute;
+    top: 23px;
+    right: -3px; }
   body > header .checkbox {
-    margin-left: -261px;
-    width: 21px;
-    height: 21px; }
+    margin-left: -14px;
+    width: 36px;
+    height: 23px;
+    opacity: 0;
+    z-index: 1; }
   body > header .checkbox:checked ~ .menu {
+    display: block;
     color: #FFFFFF;
     position: absolute;
     top: 64px;
@@ -56,22 +74,11 @@ body > header {
     left: -10px;
     width: 250px;
     z-index: 1;
-    background-color: white;
     padding: 16px;
-    height: 900px;
+    height: 800px;
     background-color: black; }
   body > header .menu {
-    color: #FFFFFF;
-    position: absolute;
-    top: 64px;
-    bottom: 0;
-    left: -290px;
-    width: 250px;
-    z-index: 1;
-    background-color: white;
-    padding: 16px;
-    height: 900px;
-    background-color: black; }
+    display: none; }
     body > header .menu h3 {
       color: red; }
     body > header .menu ul {
@@ -79,6 +86,65 @@ body > header {
       body > header .menu ul li {
         padding: 1rem;
         text-transform: uppercase; }
+        body > header .menu ul li a {
+          font-family: "dm_sans";
+          font-style: normal;
+          font-weight: normal;
+          text-transform: uppercase; }
+
+@media (min-width: 800px) {
+  body > header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  body > header h3 {
+    color: #FFFFFF;
+    padding-top: 16px;
+    padding-left: 0;
+    padding-bottom: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px; }
+  body > header svg {
+    display: none; }
+  body > header .menu {
+    display: flex; }
+    body > header .menu h3 {
+      display: none; }
+    body > header .menu ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      body > header .menu ul li {
+        font-family: "dm_sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right; } }
+
+@media (min-width: 1120px) {
+  body > header .menu {
+    display: flex; }
+    body > header .menu ul li a {
+      color: #FFFFFF;
+      font-family: "dm_sans";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px; } }
+
+main > header a {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 10px; }
+  main > header a img {
+    width: 15px; }
 
 @font-face {
   font-family: "dm_serif_display";

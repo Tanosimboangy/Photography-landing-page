@@ -1,4 +1,5 @@
 @import "variable";
+@import "fonts";
 
 body > header {
   background: #434CCC;
@@ -18,19 +19,22 @@ body > header {
     font-size: 24px;
     line-height: 32px;
   }
+  svg {
+    padding-right: 14px;
+    position: absolute;
+    top: 23px;
+    right: -3px;
+  }
   .checkbox {
-    margin-left: -261px;
-    width: 21px;
-    height: 21px;
-}
-
-
-
-
-
-
-
+    margin-left: -14px;
+    width: 36px;
+    height: 23px;
+    opacity: 0;
+    z-index: 1;
+  }
+  
   .checkbox:checked ~ .menu {
+    display: block;
     color: #FFFFFF;
     position: absolute;
     top: 64px;
@@ -38,23 +42,12 @@ body > header {
     left: -10px;
     width: 250px;
     z-index: 1;
-    background-color: white;
     padding: 16px;
-    height: 900px;
+    height: 800px;
     background-color: black;
   }
   .menu {
-    color: #FFFFFF;
-    position: absolute;
-    top: 64px;
-    bottom: 0;
-    left: -290px;
-    width: 250px;
-    z-index: 1;
-    background-color: white;
-    padding: 16px;
-    height: 900px;
-    background-color: black;
+    display: none;
     h3 {
       color: red;
     }
@@ -63,64 +56,78 @@ body > header {
       li {
         padding: 1rem;
         text-transform: uppercase;
+        // the font is still a problem here
+        a {
+          font-family: "dm_sans";
+          font-style: normal;
+          font-weight: normal;
+          text-transform: uppercase;
+        }
       }
     }
   }
 }
 
 
+@media(min-width: 800px) {
+  body > header {
+    .container {
+      display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    h3 {
+      color: #FFFFFF;
+      padding-top: 16px;
+      padding-left: 0;
+      padding-bottom: 16px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 48px;
+    }
+    svg {
+      display: none;
+    }
+    .menu {
+      display: flex;
+      h3 {
+        display: none;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        li {
+          font-family: "dm_sans";
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: right;
+        }
+      }
+    }
+  }
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-// @media(min-width: 1120px) {
-//   body > header {
-//     h3 {
-//       color: #FFFFFF;
-//       padding-top: 16px;
-//       padding-left: 0;
-//       padding-bottom: 16px;
-//       font-style: normal;
-//       font-weight: normal;
-//       font-size: 40px;
-//       line-height: 48px;
-//     }
-//     svg {
-//       display: none;
-//     }
-//     .menu {
-//       display: flex;
-//       ul {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-between;
-//         li {
-//           font-family: "dm_sans";
-//           font-style: normal;
-//           font-weight: bold;
-//           font-size: 16px;
-//           line-height: 24px;
-//           text-align: right;
-//           a {
-//             color: #FFFFFF;
-//             font-family: dm_sans;
-//             font-style: normal;
-//             font-weight: bold;
-//             font-size: 16px;
-//             line-height: 24px;
-//             text-align: right;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+@media(min-width: 1120px) {
+  body > header {
+    .menu {
+      display: flex;
+      ul {
+        li {
+          a {
+            color: #FFFFFF;
+            font-family: "dm_sans";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}
