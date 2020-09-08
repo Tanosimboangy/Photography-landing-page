@@ -1,0 +1,68 @@
+@import "variable";
+
+section:nth-of-type(2) {
+  .container {
+    .more_info {
+      h2 {
+        font-family: "DM Serif Display";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 48px;
+        color: #000000;
+        margin: 0;
+        padding-bottom: 31px;
+      }
+      p {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: normal;
+        margin: 0;
+      }
+      p:nth-of-type(1) {
+        font-size: 18px;
+        line-height: 32px;
+        color: #000000;
+        padding-bottom: 16px;
+      }
+      p:nth-of-type(2) {
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.5);
+        padding-bottom: 51px;
+      }
+      .more_info_icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 130px;
+        padding-bottom: 105px;
+        li:nth-of-type(1) {
+          a {
+            img {
+              width: 12px;
+              height: 24px;
+            }
+          }
+        }
+        li:nth-of-type(2) {
+          a {
+            img {
+              width: 23px;
+              height: 20px;
+            }
+          }
+        }
+        li:nth-of-type(3) {
+          a {
+            img {
+              width: 23px;
+              height: 23px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
