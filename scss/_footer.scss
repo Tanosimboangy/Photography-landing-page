@@ -1,5 +1,57 @@
 @import "variable";
 
 footer {
-  
+  background: #FFFFFF;
+  .container {
+    .footer_texts {
+      h3 {
+        font-size: 24px;
+        line-height: 32px;
+        color: #000000;
+        padding-top: 75px;
+        padding-bottom: 22.97px;
+      }
+      p {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.5);
+        padding-bottom: 35px;
+      }
+      .icons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 90px;
+        padding-bottom: 78.91px;
+        li:nth-of-type(1) {
+          a {
+            img {
+              width: 12px;
+              height: 24px;
+            }
+          }
+        }
+        li:nth-of-type(2) {
+          a {
+            img {
+              width: 23px;
+              height: 20px;
+            }
+          }
+        }
+        li:nth-of-type(3) {
+          a {
+            img {
+              width: 23px;
+              height: 23px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

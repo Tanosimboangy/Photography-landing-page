@@ -9,7 +9,7 @@ section:nth-of-type(2) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
-        max-width: 443px;
+        max-width: 333px;
         .label {
           font-family: "DM Sans";
           font-style: normal;
@@ -25,6 +25,39 @@ section:nth-of-type(2) {
           font-size: 16px;
           line-height: 24px;
           color: #000000;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 1120px) {
+  section:nth-of-type(2) {
+    .container {
+      .specific_details {
+        padding-top: 89px;
+        .details_container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          column-gap: 50px;
+          row-gap: 40px;
+          width: 443px;
+          .label {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(0, 0, 0, 0.5);
+          }
+          .details {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            color: #000000;
+          }
         }
       }
     }

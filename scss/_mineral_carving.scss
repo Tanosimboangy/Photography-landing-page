@@ -66,3 +66,35 @@ section:nth-of-type(2) {
     }
   }
 }
+
+@media(min-width: 720px) {
+  section:nth-of-type(2) {
+    .container {
+      .more_info {
+        p {
+          width: 700px;
+        }
+      }
+    }
+  }
+}
+@media(min-width: 1120px) {
+  section:nth-of-type(2) {
+    .container {
+      .more_info {
+        p {
+          width: 570px;
+        }
+        p:nth-of-type(1) {
+          padding-bottom: 38px;
+        }
+        p:nth-of-type(2) {
+          padding-bottom: 55px;
+        }
+        .more_info_icons {
+          padding-bottom: 76px;
+        }
+      }
+    }
+  }
+}

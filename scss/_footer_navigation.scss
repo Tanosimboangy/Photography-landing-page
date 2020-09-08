@@ -1,0 +1,33 @@
+@import "variable";
+
+footer {
+  .container {
+    .footer_navigation {
+      padding-bottom: 77px;
+      h4 {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+        padding-bottom: 23.97px;
+      }
+      ul {
+        li {
+          a {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgba(0, 0, 0, 0.5);
+          }
+        }
+        li:not(:last-of-type) {
+          padding-bottom: 7.99px;
+        }
+      }
+    }
+  }
+}

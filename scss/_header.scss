@@ -1,5 +1,4 @@
 @import "variable";
-@import "fonts";
 
 body > header {
   background: #434CCC;
@@ -56,9 +55,16 @@ body > header {
       li {
         padding: 1rem;
         text-transform: uppercase;
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        color: #FFFFFF;
         // the font is still a problem here
         a {
-          font-family: "dm_sans";
+          font-family: "DM sans";
           font-style: normal;
           font-weight: normal;
           text-transform: uppercase;
@@ -69,7 +75,7 @@ body > header {
 }
 
 
-@media(min-width: 800px) {
+@media(min-width: 1120px) {
   body > header {
     .container {
       display: flex;
@@ -99,7 +105,7 @@ body > header {
         flex-direction: row;
         justify-content: space-between;
         li {
-          font-family: "dm_sans";
+          font-family: "DM sans";
           font-style: normal;
           font-weight: bold;
           font-size: 16px;

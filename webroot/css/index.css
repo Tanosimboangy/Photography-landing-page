@@ -7,24 +7,20 @@ body {
 ul {
   padding: 0;
   margin: 0; }
+  ul li {
+    list-style: none; }
 
 a {
-  font-family: "dm_sans";
-  font-style: normal;
   text-decoration: none;
   color: #FFFFFF; }
-
-li {
-  list-style: none; }
 
 h3 {
   font-family: "dm_serif_display";
   font-style: normal;
   font-weight: normal;
-  text-transform: uppercase;
-  margin: 0; }
+  text-transform: uppercase; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0; }
 
 @media (min-width: 1120px) {
@@ -39,7 +35,7 @@ section:nth-of-type(2) .container .specific_details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
-    max-width: 443px; }
+    max-width: 333px; }
     section:nth-of-type(2) .container .specific_details .details_container .label {
       font-family: "DM Sans";
       font-style: normal;
@@ -55,6 +51,30 @@ section:nth-of-type(2) .container .specific_details {
       line-height: 24px;
       color: #000000; }
 
+@media (min-width: 1120px) {
+  section:nth-of-type(2) .container .specific_details {
+    padding-top: 89px; }
+    section:nth-of-type(2) .container .specific_details .details_container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 50px;
+      row-gap: 40px;
+      width: 443px; }
+      section:nth-of-type(2) .container .specific_details .details_container .label {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(0, 0, 0, 0.5); }
+      section:nth-of-type(2) .container .specific_details .details_container .details {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000; } }
+
 section:nth-of-type(1) {
   padding: 0 14.5px; }
 
@@ -66,12 +86,117 @@ section:nth-of-type(1) {
   font-family: "dm_sans";
   src: local(dm_sans), url(../webroot/fonts/dm_sans_700.woff2), url(../webroot/fonts/dm_sans_700.woff); }
 
-.up_to_date {
+footer {
+  background: #FFFFFF; }
+  footer .container .footer_texts h3 {
+    font-size: 24px;
+    line-height: 32px;
+    color: #000000;
+    padding-top: 75px;
+    padding-bottom: 22.97px; }
+  footer .container .footer_texts p {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 35px; }
+  footer .container .footer_texts .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90px;
+    padding-bottom: 78.91px; }
+    footer .container .footer_texts .icons li:nth-of-type(1) a img {
+      width: 12px;
+      height: 24px; }
+    footer .container .footer_texts .icons li:nth-of-type(2) a img {
+      width: 23px;
+      height: 20px; }
+    footer .container .footer_texts .icons li:nth-of-type(3) a img {
+      width: 23px;
+      height: 23px; }
+
+footer .container .footer_navigation {
+  padding-bottom: 77px; }
+  footer .container .footer_navigation h4 {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    padding-bottom: 23.97px; }
+  footer .container .footer_navigation ul li a {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5); }
+  footer .container .footer_navigation ul li:not(:last-of-type) {
+    padding-bottom: 7.99px; }
+
+footer .container .footer_profile ul li:nth-of-type(1) .woman {
+  text-align: left;
+  display: flex;
+  flex-direction: row; }
+  footer .container .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(1) img {
+    width: 70px;
+    height: 47.94px;
+    border-radius: 6px; }
+  footer .container .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) {
+    padding-left: 30px; }
+    footer .container .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) li:nth-of-type(1) {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.5); }
+    footer .container .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) li:nth-of-type(2) {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 24px;
+      color: #000000;
+      padding: 0; }
+
+footer .container .footer_profile ul li:nth-of-type(2) .experience {
+  text-align: left;
+  display: flex;
+  flex-direction: row; }
+  footer .container .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(1) img {
+    width: 70px;
+    height: 47.94px;
+    border-radius: 6px; }
+  footer .container .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) {
+    padding-left: 30px; }
+    footer .container .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li:nth-of-type(1) {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.5); }
+    footer .container .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li:nth-of-type(2) {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 24px;
+      color: #000000;
+      padding: 0; }
+
+section:nth-of-type(3) {
   background: #FFDD78;
   padding: 0 14.5px; }
-  .up_to_date .container ul li:nth-of-type(2) ul li:nth-of-type(1) {
+  section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-type(1) {
     padding-bottom: 16px; }
-    .up_to_date .container ul li:nth-of-type(2) ul li:nth-of-type(1) label {
+    section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-type(1) label {
       font-family: "DM Sans";
       font-style: normal;
       font-weight: bold;
@@ -79,7 +204,7 @@ section:nth-of-type(1) {
       line-height: 16px;
       text-transform: uppercase;
       color: #000000; }
-    .up_to_date .container ul li:nth-of-type(2) ul li:nth-of-type(1) #email_input {
+    section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-type(1) #email_input {
       background: #FFFFFF;
       border: 1px solid #DADADA;
       box-sizing: border-box;
@@ -89,9 +214,9 @@ section:nth-of-type(1) {
       padding-right: 146px;
       padding-left: 12px;
       margin-top: 12px; }
-  .up_to_date .container ul li:nth-of-type(2) ul li:nth-of-type(2) {
+  section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-type(2) {
     padding-bottom: 54px; }
-    .up_to_date .container ul li:nth-of-type(2) ul li:nth-of-type(2) .subscribe {
+    section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-type(2) .subscribe {
       font-family: "DM Sans";
       font-style: normal;
       font-weight: bold;
@@ -115,14 +240,6 @@ section:nth-of-type(1) {
       padding-right: 54px; }
     .up_to_date .container ul li:nth-of-type(2) ul li:nth-of-type(2) {
       padding-bottom: 0; } }
-
-@font-face {
-  font-family: "dm_serif_display";
-  src: local(dm_serif_display), url(../webroot/fonts/dm_serif_display_400.woff2), url(../webroot/fonts/dm_serif_display_400.woff); }
-
-@font-face {
-  font-family: "dm_sans";
-  src: local(dm_sans), url(../webroot/fonts/dm_sans_700.woff2), url(../webroot/fonts/dm_sans_700.woff); }
 
 body > header {
   background: #434CCC;
@@ -171,14 +288,21 @@ body > header {
       padding-left: 30px; }
       body > header .menu ul li {
         padding: 1rem;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        color: #FFFFFF; }
         body > header .menu ul li a {
-          font-family: "dm_sans";
+          font-family: "DM sans";
           font-style: normal;
           font-weight: normal;
           text-transform: uppercase; }
 
-@media (min-width: 800px) {
+@media (min-width: 1120px) {
   body > header .container {
     display: flex;
     flex-direction: row;
@@ -203,7 +327,7 @@ body > header {
       flex-direction: row;
       justify-content: space-between; }
       body > header .menu ul li {
-        font-family: "dm_sans";
+        font-family: "DM sans";
         font-style: normal;
         font-weight: bold;
         font-size: 16px;
@@ -223,6 +347,15 @@ body > header {
 
 main section:nth-of-type(2) {
   padding: 0 14.5px; }
+
+@media (min-width: 1120px) {
+  main section:nth-of-type(2) .container {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: baseline; } }
 
 main > header {
   padding: 0 14.5px; }
@@ -282,10 +415,24 @@ section:nth-of-type(2) .container .more_info .more_info_icons {
     width: 23px;
     height: 23px; }
 
-.up_to_date {
+@media (min-width: 720px) {
+  section:nth-of-type(2) .container .more_info p {
+    width: 700px; } }
+
+@media (min-width: 1120px) {
+  section:nth-of-type(2) .container .more_info p {
+    width: 570px; }
+  section:nth-of-type(2) .container .more_info p:nth-of-type(1) {
+    padding-bottom: 38px; }
+  section:nth-of-type(2) .container .more_info p:nth-of-type(2) {
+    padding-bottom: 55px; }
+  section:nth-of-type(2) .container .more_info .more_info_icons {
+    padding-bottom: 76px; } }
+
+section:nth-of-type(3) {
   background: #FFDD78;
   padding: 0 14.5px; }
-  .up_to_date .container ul li:nth-of-type(1) ul li:nth-of-type(1) h4 {
+  section:nth-of-type(3) .container .up_to_date li:nth-of-type(1) ul li:nth-of-type(1) h4 {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: normal;
@@ -296,7 +443,7 @@ section:nth-of-type(2) .container .more_info .more_info_icons {
     color: #000000;
     padding-top: 63px;
     padding-bottom: 19px; }
-  .up_to_date .container ul li:nth-of-type(1) ul li:nth-of-type(2) h2 {
+  section:nth-of-type(3) .container .up_to_date li:nth-of-type(1) ul li:nth-of-type(2) h2 {
     font-family: "DM Serif Display";
     font-style: normal;
     font-weight: normal;
