@@ -1,13 +1,12 @@
 body {
   margin: 0;
   background: rgba(67, 76, 204, 0.05); }
-  body main {
-    padding: 0 14.5px; }
   body footer {
     padding: 0 14.5px; }
 
 ul {
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 a {
   font-family: "dm_sans";
@@ -23,6 +22,9 @@ h3 {
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 @media (min-width: 1120px) {
@@ -53,6 +55,9 @@ section:nth-of-type(2) .container .specific_details {
       line-height: 24px;
       color: #000000; }
 
+section:nth-of-type(1) {
+  padding: 0 14.5px; }
+
 @font-face {
   font-family: "dm_serif_display";
   src: local(dm_serif_display), url(../webroot/fonts/dm_serif_display_400.woff2), url(../webroot/fonts/dm_serif_display_400.woff); }
@@ -60,6 +65,45 @@ section:nth-of-type(2) .container .specific_details {
 @font-face {
   font-family: "dm_sans";
   src: local(dm_sans), url(../webroot/fonts/dm_sans_700.woff2), url(../webroot/fonts/dm_sans_700.woff); }
+
+.up_to_date {
+  background: #FFDD78;
+  padding: 0 14.5px; }
+  .up_to_date .container ul li:nth-of-type(2) ul li:nth-of-type(1) {
+    padding-bottom: 16px; }
+    .up_to_date .container ul li:nth-of-type(2) ul li:nth-of-type(1) label {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #000000; }
+    .up_to_date .container ul li:nth-of-type(2) ul li:nth-of-type(1) #email_input {
+      background: #FFFFFF;
+      border: 1px solid #DADADA;
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding-top: 15px;
+      padding-bottom: 14px;
+      padding-right: 146px;
+      padding-left: 12px; }
+  .up_to_date .container ul li:nth-of-type(2) ul li:nth-of-type(2) {
+    padding-bottom: 54px; }
+    .up_to_date .container ul li:nth-of-type(2) ul li:nth-of-type(2) .subscribe {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #FFFFFF;
+      background: #434CCC;
+      border-radius: 5px;
+      border: none;
+      display: inline-block;
+      text-align: center;
+      padding: 12px 45.5px; }
 
 @font-face {
   font-family: "dm_serif_display";
@@ -166,16 +210,21 @@ body > header {
       font-size: 16px;
       line-height: 24px; } }
 
-main > header a {
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.5);
-  padding-top: 10px; }
-  main > header a img {
-    width: 15px; }
+main section:nth-of-type(2) {
+  padding: 0 14.5px; }
+
+main > header {
+  padding: 0 14.5px; }
+  main > header a {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-top: 10px; }
+    main > header a img {
+      width: 15px; }
 
 section:nth-of-type(2) .container .more_info h2 {
   font-family: "DM Serif Display";
@@ -221,3 +270,26 @@ section:nth-of-type(2) .container .more_info .more_info_icons {
   section:nth-of-type(2) .container .more_info .more_info_icons li:nth-of-type(3) a img {
     width: 23px;
     height: 23px; }
+
+.up_to_date {
+  background: #FFDD78;
+  padding: 0 14.5px; }
+  .up_to_date .container ul li:nth-of-type(1) ul li:nth-of-type(1) h4 {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 63px;
+    padding-bottom: 19px; }
+  .up_to_date .container ul li:nth-of-type(1) ul li:nth-of-type(2) h2 {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    padding-bottom: 44px; }
