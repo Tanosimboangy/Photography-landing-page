@@ -3,11 +3,13 @@
 section:nth-of-type(1) {
   padding: 0 14.5px;
   .container {
+    overflow: hidden;
     ul {
       li:first-of-type {
         padding-bottom: 8px;
         img {
-          max-width: 1170px;
+          max-width: 100%;
+          height: auto;
           border-radius: 5px;
         }
       }
@@ -22,8 +24,7 @@ section:nth-of-type(1) {
             }
           }
           li:not(:first-of-type) {
-            background: #D8D8D8;
-            border-radius: 5px;
+            background: #d8d8d834;
             opacity: .5;
             padding-left: 10px;
           }
