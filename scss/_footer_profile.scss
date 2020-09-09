@@ -3,9 +3,13 @@
 footer {
   .container {
     .footer_profile {
+      border-bottom: 1px solid #0000003b;
+      padding-bottom: 69.92px;
+      overflow: visible;
       ul {
         li:nth-of-type(1) {
           .woman {
+            padding-bottom: 26.97px;
             text-align: left;
             display: flex;
             flex-direction: row;
@@ -17,7 +21,7 @@ footer {
               }
             }
             li:nth-of-type(2) {
-              padding-left: 30px;
+              padding-left: 24px;
               li:nth-of-type(1) {
                 font-family: "DM Sans";
                 font-style: normal;
@@ -25,6 +29,7 @@ footer {
                 font-size: 16px;
                 line-height: 24px;
                 color: rgba(0, 0, 0, 0.5);
+                padding-bottom: 0;
               }
               li:nth-of-type(2) {
                 font-family: "DM Sans";
@@ -39,6 +44,7 @@ footer {
           }
         }
         li:nth-of-type(2) {
+          padding-bottom: 0;
           .experience {
             text-align: left;
             display: flex;
@@ -51,21 +57,21 @@ footer {
               }
             }
             li:nth-of-type(2) {
-              padding-left: 30px;
-              li:nth-of-type(1) {
+              padding-left: 24px;
+              li {
                 font-family: "DM Sans";
                 font-style: normal;
+                line-height: 24px;
+              }
+              li:nth-of-type(1) {
                 font-weight: normal;
                 font-size: 16px;
-                line-height: 24px;
                 color: rgba(0, 0, 0, 0.5);
+                padding-bottom: 0;
               }
               li:nth-of-type(2) {
-                font-family: "DM Sans";
-                font-style: normal;
                 font-weight: bold;
                 font-size: 12px;
-                line-height: 24px;
                 color: #000000;
                 padding: 0;
               }
