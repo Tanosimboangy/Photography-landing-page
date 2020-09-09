@@ -1,34 +1,35 @@
 @import "variable";
 
 footer {
-  background: #FFFFFF;
-  padding: 0 14.5px;
+  $padding: 2px;
+  background: $secondary-color-heading;
+  padding: $padding-zero 14.5px;
   .container {
     div {
       .footer_texts {
         h3 {
-          font-size: 24px;
-          line-height: 32px;
-          color: #000000;
-          padding-top: 75px;
-          padding-bottom: 22.97px;
+          font-size: calc(#{$padding * 12});
+          line-height: calc(#{$padding * 16});
+          color: $primary-color-heading;
+          padding-top: calc(#{$padding * 37.5});
+          padding-bottom: calc(#{$padding * 11.5});
         }
         p {
           font-family: "DM Sans";
           font-style: normal;
           font-weight: normal;
-          font-size: 16px;
-          line-height: 24px;
-          color: rgba(0, 0, 0, 0.5);
-          padding-bottom: 30px;
+          font-size: calc(#{$padding * 8});
+          line-height: calc(#{$padding * 12});
+          color: $sub-heading-text-color;
+          padding-bottom: calc(#{$padding * 15});
         }
         .icons {
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
-          max-width: 65px;
-          padding-bottom: 78.91px;
+          max-width: calc(#{$padding * 32.5});
+          padding-bottom: calc(#{$padding * 39.5});
         }
       }
     }
@@ -37,7 +38,7 @@ footer {
 
 @media(min-width: 1120px) {
   footer {
-    padding: 0 0;
+    padding: $padding-zero;
     .container {
       div {
         display: flex;
@@ -47,14 +48,14 @@ footer {
         padding-bottom: 72px;
         .footer_texts {
           display: block;
-          padding-top: 78px;
+          padding-top: calc(#{$padding * 39});
           padding-bottom: 0;
           h3 {
             padding-top: 0;
-            padding-bottom: 23;
+            padding-bottom: calc(#{$padding * 11.5});
           }
           p {
-            max-width: 270px;
+            max-width: calc(#{$max-width * 16.875});
           }
           .icons {
             padding-bottom: 0;

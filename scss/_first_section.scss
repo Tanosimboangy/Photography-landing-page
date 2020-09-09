@@ -1,16 +1,16 @@
 @import "variable";
 
 section:nth-of-type(1) {
+  $padding: 2px;
   padding: 0 14.5px;
   .container {
-    overflow: hidden;
     ul {
       li:first-of-type {
-        padding-bottom: 8px;
+        padding-bottom: calc(#{$padding * 4});
         img {
-          max-width: 100%;
-          height: auto;
-          border-radius: 5px;
+          max-width: $percentage;
+          height: $margin-auto;
+          border-radius: calc(#{$padding * 2.5});
         }
       }
       li:nth-of-type(2) {
@@ -19,14 +19,14 @@ section:nth-of-type(1) {
           flex-direction: row;
           li {
             img {
-              max-width: 137px;
-              border-radius: 5px;
+              max-width: calc(#{$padding * 68.5});
+              border-radius: calc(#{$padding * 2.5});
             }
           }
           li:not(:first-of-type) {
             background: #d8d8d834;
             opacity: .5;
-            padding-left: 10px;
+            padding-left: calc(#{$padding * 5});
           }
         }
       }

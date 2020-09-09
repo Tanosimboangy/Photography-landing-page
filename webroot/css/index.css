@@ -75,24 +75,22 @@ section:nth-of-type(2) .container .specific_details {
 
 section:nth-of-type(1) {
   padding: 0 14.5px; }
-  section:nth-of-type(1) .container {
-    overflow: hidden; }
-    section:nth-of-type(1) .container ul li:first-of-type {
-      padding-bottom: 8px; }
-      section:nth-of-type(1) .container ul li:first-of-type img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 5px; }
-    section:nth-of-type(1) .container ul li:nth-of-type(2) ul {
-      display: flex;
-      flex-direction: row; }
-      section:nth-of-type(1) .container ul li:nth-of-type(2) ul li img {
-        max-width: 137px;
-        border-radius: 5px; }
-      section:nth-of-type(1) .container ul li:nth-of-type(2) ul li:not(:first-of-type) {
-        background: #d8d8d834;
-        opacity: .5;
-        padding-left: 10px; }
+  section:nth-of-type(1) .container ul li:first-of-type {
+    padding-bottom: calc(8px); }
+    section:nth-of-type(1) .container ul li:first-of-type img {
+      max-width: 100%;
+      height: auto;
+      border-radius: calc(5px); }
+  section:nth-of-type(1) .container ul li:nth-of-type(2) ul {
+    display: flex;
+    flex-direction: row; }
+    section:nth-of-type(1) .container ul li:nth-of-type(2) ul li img {
+      max-width: calc(137px);
+      border-radius: calc(5px); }
+    section:nth-of-type(1) .container ul li:nth-of-type(2) ul li:not(:first-of-type) {
+      background: #d8d8d834;
+      opacity: .5;
+      padding-left: calc(10px); }
 
 @font-face {
   font-family: "dm_serif_display";
@@ -106,30 +104,30 @@ footer {
   background: #FFFFFF;
   padding: 0 14.5px; }
   footer .container div .footer_texts h3 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: calc(24px);
+    line-height: calc(32px);
     color: #000000;
-    padding-top: 75px;
-    padding-bottom: 22.97px; }
+    padding-top: calc(75px);
+    padding-bottom: calc(23px); }
   footer .container div .footer_texts p {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: calc(16px);
+    line-height: calc(24px);
     color: rgba(0, 0, 0, 0.5);
-    padding-bottom: 30px; }
+    padding-bottom: calc(30px); }
   footer .container div .footer_texts .icons {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 65px;
-    padding-bottom: 78.91px; }
+    max-width: calc(65px);
+    padding-bottom: calc(79px); }
 
 @media (min-width: 1120px) {
   footer {
-    padding: 0 0; }
+    padding: 0; }
     footer .container div {
       display: flex;
       flex-direction: row;
@@ -138,69 +136,68 @@ footer {
       padding-bottom: 72px; }
       footer .container div .footer_texts {
         display: block;
-        padding-top: 78px;
+        padding-top: calc(78px);
         padding-bottom: 0; }
         footer .container div .footer_texts h3 {
           padding-top: 0;
-          padding-bottom: 23; }
+          padding-bottom: calc(23px); }
         footer .container div .footer_texts p {
-          max-width: 270px; }
+          max-width: calc(270px); }
         footer .container div .footer_texts .icons {
           padding-bottom: 0; } }
 
 footer .container div .footer_navigation {
-  padding-bottom: 77px; }
+  padding-bottom: calc(77px); }
   footer .container div .footer_navigation h4 {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: calc(16px);
+    line-height: calc(24px);
     color: #000000;
-    padding-bottom: 24px; }
+    padding-bottom: calc(24px); }
   footer .container div .footer_navigation ul li a {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: calc(16px);
+    line-height: calc(24px);
     color: rgba(0, 0, 0, 0.5); }
   footer .container div .footer_navigation ul li:not(:last-of-type) {
-    padding-bottom: 7.99px; }
+    padding-bottom: calc(7.99px); }
 
 @media (min-width: 1120px) {
   footer .container div .footer_navigation {
     display: block;
-    padding-top: 78px;
+    padding-top: calc(78px);
     padding-bottom: 0; } }
 
 footer .container div .footer_profile {
-  padding-bottom: 69.92px; }
+  padding-bottom: calc(70px); }
   footer .container div .footer_profile ul li:nth-of-type(1) .woman {
-    padding-bottom: 26.97px;
-    text-align: left;
+    padding-bottom: calc(27px);
     display: flex;
     flex-direction: row; }
     footer .container div .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(1) img {
-      width: 70px;
-      height: 47.94px;
-      border-radius: 6px; }
+      width: calc(70px);
+      height: calc(48px);
+      border-radius: calc(6px); }
     footer .container div .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) {
-      padding-left: 24px; }
+      padding-left: calc(24px); }
       footer .container div .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) li:nth-of-type(1) {
         font-family: "DM Sans";
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: calc(16px);
+        line-height: calc(24px);
         color: rgba(0, 0, 0, 0.5);
         padding-bottom: 0; }
       footer .container div .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) li:nth-of-type(2) {
         font-family: "DM Sans";
         font-style: normal;
         font-weight: bold;
-        font-size: 12px;
-        line-height: 24px;
+        font-size: calc(12px);
+        line-height: calc(24px);
         color: #000000;
         padding: 0; }
   footer .container div .footer_profile ul li:nth-of-type(2) {
@@ -210,23 +207,23 @@ footer .container div .footer_profile {
       display: flex;
       flex-direction: row; }
       footer .container div .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(1) img {
-        width: 70px;
-        height: 47.94px;
-        border-radius: 6px; }
+        width: calc(70px);
+        height: calc(48px);
+        border-radius: calc(6px); }
       footer .container div .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) {
-        padding-left: 24px; }
+        padding-left: calc(24px); }
         footer .container div .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li {
           font-family: "DM Sans";
           font-style: normal;
-          line-height: 24px; }
+          line-height: calc(24px); }
         footer .container div .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li:nth-of-type(1) {
           font-weight: normal;
-          font-size: 16px;
+          font-size: calc(16px);
           color: rgba(0, 0, 0, 0.5);
           padding-bottom: 0; }
         footer .container div .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li:nth-of-type(2) {
           font-weight: bold;
-          font-size: 12px;
+          font-size: calc(12px);
           color: #000000;
           padding: 0; }
 

@@ -4,15 +4,15 @@ footer {
   .container {
     div {
       .footer_navigation {
-        padding-bottom: 77px;
+        padding-bottom: calc(#{$padding * 38.5});
         h4 {
           font-family: "DM Sans";
           font-style: normal;
           font-weight: bold;
-          font-size: 16px;
-          line-height: 24px;
-          color: #000000;
-          padding-bottom: 24px;
+          font-size: calc(#{$padding * 8});
+          line-height: calc(#{$padding * 12});
+          color: $primary-color-heading;
+          padding-bottom: calc(#{$padding * 12});
         }
         ul {
           li {
@@ -20,13 +20,13 @@ footer {
               font-family: "DM Sans";
               font-style: normal;
               font-weight: normal;
-              font-size: 16px;
-              line-height: 24px;
-              color: rgba(0, 0, 0, 0.5);
+              font-size: calc(#{$padding * 8});
+              line-height: calc(#{$padding * 12});
+              color: $sub-heading-text-color;
             }
           }
           li:not(:last-of-type) {
-            padding-bottom: 7.99px;
+            padding-bottom: calc(#{$padding * 3.995});
           }
         }
       }
@@ -40,7 +40,7 @@ footer {
       div {
         .footer_navigation {
           display: block;
-          padding-top: 78px;
+          padding-top: calc(#{$padding * 39});
           padding-bottom: 0;
         }
       }
