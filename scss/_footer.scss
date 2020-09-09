@@ -32,3 +32,30 @@ footer {
     }
   }
 }
+
+@media(min-width: 1120px) {
+  footer {
+    .container {
+      div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .footer_texts {
+          display: block;
+          padding-top: 72px;
+          h3 {
+            padding-top: 0;
+            padding-bottom: 23;
+          }
+          p {
+            max-width: 270px;
+          }
+          .icons {
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
