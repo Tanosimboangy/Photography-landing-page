@@ -27,26 +27,26 @@ h1, h2, h3, h4, h5, h6, p {
     margin: auto; } }
 
 section:nth-of-type(2) .container .specific_details {
-  padding-top: 92px;
-  padding-bottom: 75px; }
+  padding-top: calc(92px);
+  padding-bottom: calc(75px); }
   section:nth-of-type(2) .container .specific_details .details_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-    max-width: 333px; }
+    grid-gap: calc(10px);
+    max-width: calc(333px); }
     section:nth-of-type(2) .container .specific_details .details_container .label {
       font-family: "DM Sans";
       font-style: normal;
       font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: calc(16px);
+      line-height: calc(24px);
       color: rgba(0, 0, 0, 0.5); }
     section:nth-of-type(2) .container .specific_details .details_container .details {
       font-family: "DM Sans";
       font-style: normal;
       font-weight: bold;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: calc(16px);
+      line-height: calc(24px);
       color: #000000; }
 
 @media (min-width: 1120px) {
@@ -55,22 +55,22 @@ section:nth-of-type(2) .container .specific_details {
     section:nth-of-type(2) .container .specific_details .details_container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      column-gap: 50px;
-      row-gap: 40px;
-      width: 443px; }
+      column-gap: calc(50px);
+      row-gap: calc(40px);
+      width: calc(443px); }
       section:nth-of-type(2) .container .specific_details .details_container .label {
         font-family: "DM Sans";
         font-style: normal;
         font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: calc(16px);
+        line-height: calc(24px);
         color: rgba(0, 0, 0, 0.5); }
       section:nth-of-type(2) .container .specific_details .details_container .details {
         font-family: "DM Sans";
         font-style: normal;
         font-weight: bold;
-        font-size: 16px;
-        line-height: 24px;
+        font-size: calc(16px);
+        line-height: calc(24px);
         color: #000000; } }
 
 section:nth-of-type(1) {

@@ -1,38 +1,33 @@
 @import "variable";
 
 body {
-  margin: 0;
+  margin: $padding-zero;
   background: rgba(67, 76, 204, 0.05);
 }
-
 ul {
-  padding: 0;
-  margin: 0;
+  padding: $padding-zero;
+  margin: $margin-zero;
   li {
     list-style: none;
   }
 }
-
 a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: $secondary-color-heading;
 }
-
 h3 {
   font-family: "dm_serif_display";
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
 }
-
 h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
+  margin: $margin-zero;
 }
-
 @media(min-width: 1120px) {
   .container {
-    max-width: 1114px;
-    margin: auto;
+    max-width: $max-width-cotainer;
+    margin: $margin-auto;
   }
 }
   
