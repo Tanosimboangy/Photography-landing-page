@@ -4,34 +4,28 @@ section:nth-of-type(3) {
   background: #FFDD78;
   padding: 0 14.5px;
   .container {
+    h4 {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #000000;
+      padding-top: 63px;
+      padding-bottom: 19px;
+    }
     .up_to_date {
-      li:nth-of-type(1) {
-        ul {
-          li:nth-of-type(1) {
-            h4 {
-              font-family: "DM Sans";
-              font-style: normal;
-              font-weight: normal;
-              font-size: 16px;
-              line-height: 24px;
-              letter-spacing: 0.3em;
-              text-transform: uppercase;
-              color: #000000;
-              padding-top: 63px;
-              padding-bottom: 19px;
-            }
-          }
-          li:nth-of-type(2) {
-            h2 {
-              font-family: "DM Serif Display";
-              font-style: normal;
-              font-weight: normal;
-              font-size: 40px;
-              line-height: 48px;
-              color: #000000;
-              padding-bottom: 44px;
-            }
-          }
+      li {
+        h2 {
+          font-family: "DM Serif Display";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 40px;
+          line-height: 48px;
+          color: #000000;
+          padding-bottom: 44px;
         }
       }
     }
@@ -39,38 +33,27 @@ section:nth-of-type(3) {
 }
 
 @media(min-width: 1120px) {
-  .up_to_date {
+  section:nth-of-type(3) {
+    background: #FFDD78;
+    padding: 0 14.5px;
     .container {
-      ul {
+      h4 {
+        padding-top: 79px;
+        padding-bottom: 17px;
+      }
+      .up_to_date {
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: space-between;
         li {
-          ul {
-            display: block;
-          }
-        }
-        li:nth-of-type(1) {
-          ul {
-            li:nth-of-type(1) {
-              h4 {
-                padding-top: 78px;
-                padding-bottom: 17px;
-              }
-            }
-            li:nth-of-type(2) {
-              h2 {
-                padding-bottom: 104px;
-                max-width: 382px;
-              }
-            }
+          h2 {
+            font-size: 52px;
+            line-height: 64px;
+            padding-bottom: 104px;
+            max-width: 382px;
           }
         }
       }
     }
   }
-  
 }
-
-
