@@ -107,17 +107,8 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    max-width: 90px;
+    max-width: 65px;
     padding-bottom: 78.91px; }
-    footer .container .footer_texts .icons li:nth-of-type(1) a img {
-      width: 12px;
-      height: 24px; }
-    footer .container .footer_texts .icons li:nth-of-type(2) a img {
-      width: 23px;
-      height: 20px; }
-    footer .container .footer_texts .icons li:nth-of-type(3) a img {
-      width: 23px;
-      height: 23px; }
 
 footer .container .footer_navigation {
   padding-bottom: 77px; }
@@ -462,7 +453,7 @@ section:nth-of-type(3) {
 @media (min-width: 1120px) {
   section:nth-of-type(3) {
     background: #FFDD78;
-    padding: 0 14.5px; }
+    padding: 0; }
     section:nth-of-type(3) .container h4 {
       padding-top: 79px;
       padding-bottom: 17px; }
