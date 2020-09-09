@@ -54,19 +54,14 @@ body > header {
       padding-left: 30px;
       li {
         padding: 1rem;
-        text-transform: uppercase;
-        font-family: "DM Sans";
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 24px;
-        color: #FFFFFF;
-        // the font is still a problem here
         a {
-          font-family: "DM sans";
+          font-family: "DM Sans";
           font-style: normal;
-          font-weight: normal;
-          text-transform: uppercase;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 24px;
+          text-align: right;
+          color: #FFFFFF;
         }
       }
     }
@@ -95,21 +90,23 @@ body > header {
       display: none;
     }
     .menu {
-      display: flex;
       h3 {
         display: none;
       }
-      ul {
+      .navigation_container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         li {
-          font-family: "DM sans";
-          font-style: normal;
-          font-weight: bold;
-          font-size: 16px;
-          line-height: 24px;
-          text-align: right;
+          a {
+            font-family: "DM Sans";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: right;
+            color: #FFFFFF;
+          }
         }
       }
     }
