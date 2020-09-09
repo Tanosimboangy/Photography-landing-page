@@ -50,7 +50,7 @@ body > header {
     h3 {
       color: red;
     }
-    ul {
+    .navigation_container {
       padding-left: 30px;
       li {
         padding: 1rem;
@@ -97,17 +97,6 @@ body > header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        li {
-          a {
-            font-family: "DM Sans";
-            font-style: normal;
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 24px;
-            text-align: right;
-            color: #FFFFFF;
-          }
-        }
       }
     }
   }
