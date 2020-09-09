@@ -87,13 +87,13 @@ section:nth-of-type(1) {
 footer {
   background: #FFFFFF;
   padding: 0 14.5px; }
-  footer .container .footer_texts h3 {
+  footer .container div .footer_texts h3 {
     font-size: 24px;
     line-height: 32px;
     color: #000000;
     padding-top: 75px;
     padding-bottom: 22.97px; }
-  footer .container .footer_texts p {
+  footer .container div .footer_texts p {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: normal;
@@ -101,7 +101,7 @@ footer {
     line-height: 24px;
     color: rgba(0, 0, 0, 0.5);
     padding-bottom: 30px; }
-  footer .container .footer_texts .icons {
+  footer .container div .footer_texts .icons {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -110,58 +110,66 @@ footer {
     padding-bottom: 78.91px; }
 
 @media (min-width: 1120px) {
-  footer .container div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; }
-    footer .container div .footer_texts {
-      display: block;
-      padding-top: 72px; }
-      footer .container div .footer_texts h3 {
-        padding-top: 0;
-        padding-bottom: 23; }
-      footer .container div .footer_texts p {
-        max-width: 270px; }
-      footer .container div .footer_texts .icons {
-        padding-bottom: 0; } }
+  footer {
+    padding: 0 0; }
+    footer .container div {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-bottom: 72px; }
+      footer .container div .footer_texts {
+        display: block;
+        padding-top: 78px;
+        padding-bottom: 0; }
+        footer .container div .footer_texts h3 {
+          padding-top: 0;
+          padding-bottom: 23; }
+        footer .container div .footer_texts p {
+          max-width: 270px; }
+        footer .container div .footer_texts .icons {
+          padding-bottom: 0; } }
 
-footer .container .footer_navigation {
+footer .container div .footer_navigation {
   padding-bottom: 77px; }
-  footer .container .footer_navigation h4 {
+  footer .container div .footer_navigation h4 {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    padding-bottom: 23.97px; }
-  footer .container .footer_navigation ul li a {
+    padding-bottom: 24px; }
+  footer .container div .footer_navigation ul li a {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: rgba(0, 0, 0, 0.5); }
-  footer .container .footer_navigation ul li:not(:last-of-type) {
+  footer .container div .footer_navigation ul li:not(:last-of-type) {
     padding-bottom: 7.99px; }
 
-footer .container .footer_profile {
-  border-bottom: 1px solid #0000003b;
-  padding-bottom: 69.92px;
-  overflow: visible; }
-  footer .container .footer_profile ul li:nth-of-type(1) .woman {
+@media (min-width: 1120px) {
+  footer .container div .footer_navigation {
+    display: block;
+    padding-top: 78px;
+    padding-bottom: 0; } }
+
+footer .container div .footer_profile {
+  padding-bottom: 69.92px; }
+  footer .container div .footer_profile ul li:nth-of-type(1) .woman {
     padding-bottom: 26.97px;
     text-align: left;
     display: flex;
     flex-direction: row; }
-    footer .container .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(1) img {
+    footer .container div .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(1) img {
       width: 70px;
       height: 47.94px;
       border-radius: 6px; }
-    footer .container .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) {
+    footer .container div .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) {
       padding-left: 24px; }
-      footer .container .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) li:nth-of-type(1) {
+      footer .container div .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) li:nth-of-type(1) {
         font-family: "DM Sans";
         font-style: normal;
         font-weight: normal;
@@ -169,7 +177,7 @@ footer .container .footer_profile {
         line-height: 24px;
         color: rgba(0, 0, 0, 0.5);
         padding-bottom: 0; }
-      footer .container .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) li:nth-of-type(2) {
+      footer .container div .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) li:nth-of-type(2) {
         font-family: "DM Sans";
         font-style: normal;
         font-weight: bold;
@@ -177,32 +185,38 @@ footer .container .footer_profile {
         line-height: 24px;
         color: #000000;
         padding: 0; }
-  footer .container .footer_profile ul li:nth-of-type(2) {
+  footer .container div .footer_profile ul li:nth-of-type(2) {
     padding-bottom: 0; }
-    footer .container .footer_profile ul li:nth-of-type(2) .experience {
+    footer .container div .footer_profile ul li:nth-of-type(2) .experience {
       text-align: left;
       display: flex;
       flex-direction: row; }
-      footer .container .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(1) img {
+      footer .container div .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(1) img {
         width: 70px;
         height: 47.94px;
         border-radius: 6px; }
-      footer .container .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) {
+      footer .container div .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) {
         padding-left: 24px; }
-        footer .container .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li {
+        footer .container div .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li {
           font-family: "DM Sans";
           font-style: normal;
           line-height: 24px; }
-        footer .container .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li:nth-of-type(1) {
+        footer .container div .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li:nth-of-type(1) {
           font-weight: normal;
           font-size: 16px;
           color: rgba(0, 0, 0, 0.5);
           padding-bottom: 0; }
-        footer .container .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li:nth-of-type(2) {
+        footer .container div .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li:nth-of-type(2) {
           font-weight: bold;
           font-size: 12px;
           color: #000000;
           padding: 0; }
+
+@media (min-width: 1120px) {
+  footer .container div .footer_profile {
+    display: block;
+    padding-top: 78px;
+    padding-bottom: 0; } }
 
 section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-type(1) {
   padding-bottom: 16px; }
@@ -377,18 +391,29 @@ main section:nth-of-type(2) {
     justify-content: space-between;
     align-items: baseline; } }
 
-footer .container .last_footer_items {
+footer .last_footer_items {
   padding-bottom: 29px; }
-  footer .container .last_footer_items li {
+  footer .last_footer_items li {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: rgba(0, 0, 0, 0.5); }
-  footer .container .last_footer_items li:nth-of-type(1) {
+  footer .last_footer_items li:nth-of-type(1) {
     padding-top: 26.97px;
     padding-bottom: 7.99px; }
+
+@media (min-width: 1120px) {
+  footer .last_footer_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 75px;
+    padding-top: 27px; }
+    footer .last_footer_items li:nth-of-type(1) {
+      padding-top: 0;
+      padding-bottom: 0; } }
 
 main > header {
   padding: 0 14.5px; }

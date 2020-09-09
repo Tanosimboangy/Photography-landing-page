@@ -1,23 +1,35 @@
 @import "variable";
 
-
 footer {
-  .container {
-    .last_footer_items {
-      padding-bottom: 29px;
-      li {
-        font-family: "DM Sans";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
-        color: rgba(0, 0, 0, 0.5);
-      }
-      li:nth-of-type(1) {
-        padding-top: 26.97px;
-        padding-bottom: 7.99px;
-      }
+  .last_footer_items {
+    padding-bottom: 29px;
+    li {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(0, 0, 0, 0.5);
+    }
+    li:nth-of-type(1) {
+      padding-top: 26.97px;
+      padding-bottom: 7.99px;
     }
   }
 }
 
+@media(min-width: 1120px) {  
+  footer {
+    .last_footer_items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 75px;
+      padding-top: 27px;
+      li:nth-of-type(1) {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}

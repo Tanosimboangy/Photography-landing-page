@@ -4,30 +4,32 @@ footer {
   background: #FFFFFF;
   padding: 0 14.5px;
   .container {
-    .footer_texts {
-      h3 {
-        font-size: 24px;
-        line-height: 32px;
-        color: #000000;
-        padding-top: 75px;
-        padding-bottom: 22.97px;
-      }
-      p {
-        font-family: "DM Sans";
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
-        color: rgba(0, 0, 0, 0.5);
-        padding-bottom: 30px;
-      }
-      .icons {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        max-width: 65px;
-        padding-bottom: 78.91px;
+    div {
+      .footer_texts {
+        h3 {
+          font-size: 24px;
+          line-height: 32px;
+          color: #000000;
+          padding-top: 75px;
+          padding-bottom: 22.97px;
+        }
+        p {
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 24px;
+          color: rgba(0, 0, 0, 0.5);
+          padding-bottom: 30px;
+        }
+        .icons {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          max-width: 65px;
+          padding-bottom: 78.91px;
+        }
       }
     }
   }
@@ -35,15 +37,18 @@ footer {
 
 @media(min-width: 1120px) {
   footer {
+    padding: 0 0;
     .container {
       div {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
+        padding-bottom: 72px;
         .footer_texts {
           display: block;
-          padding-top: 72px;
+          padding-top: 78px;
+          padding-bottom: 0;
           h3 {
             padding-top: 0;
             padding-bottom: 23;
