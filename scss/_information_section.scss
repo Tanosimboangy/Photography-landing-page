@@ -1,15 +1,9 @@
 @import "variable";
 @import "mixins";
 
-main section:nth-of-type(2) {
-  $padding: 2px;
-  padding: 0 calc(#{$padding * 7.25});
-}
-
 @media(min-width: 1120px) {
   main section:nth-of-type(2) {
     .container {
-      padding: 0;
       @include flex_row;
       align-items: baseline;
     }

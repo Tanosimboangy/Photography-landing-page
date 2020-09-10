@@ -2,9 +2,7 @@
 @import "mixins";
 
 section:nth-of-type(3) {
-  $padding: 2px;
   background: #FFDD78;
-  padding: 0 calc(#{$padding * 7.25});
   .container {
     h4 {
       @include font_DM_sans_normal_plus_font_size;
@@ -31,7 +29,6 @@ section:nth-of-type(3) {
 @media(min-width: 1120px) {
   section:nth-of-type(3) {
     background: #FFDD78;
-    padding: 0;
     .container {
       h4 {
         padding-top: calc(#{$padding * 39.5});
@@ -44,7 +41,7 @@ section:nth-of-type(3) {
             font-size: calc(#{$padding * 26});
             line-height: calc(#{$padding * 32});
             padding-bottom: calc(#{$padding * 52});
-            max-width: calc(#{$padding * 191});
+            max-width: calc(#{$max-width * 23.875});
           }
         }
       }

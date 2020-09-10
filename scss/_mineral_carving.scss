@@ -2,7 +2,6 @@
 @import "mixins";
 
 section:nth-of-type(2) {
-  $padding: 2px;
   .container {
     .more_info {
       h2 {
@@ -10,12 +9,12 @@ section:nth-of-type(2) {
         font-size: calc(#{$padding * 20});
         line-height: calc(#{$padding * 24});
         color: $primary-color-heading;
-        margin: 0;
+        margin: $margin-zero;
         padding-bottom: calc(#{$padding * 15.5});
       }
       p {
         @include font_DM_sans_normal;
-        margin: 0;
+        margin: $margin-zero;
       }
       p:nth-of-type(1) {
         font-size: calc(#{$padding * 9});
@@ -30,7 +29,7 @@ section:nth-of-type(2) {
       }
       .more_info_icons {
         @include flex_row_just_center;
-        max-width: calc(#{$padding * 32.5});
+        max-width: calc(#{$max-width * 4.0625});
         padding-bottom: calc(#{$padding * 52.5});
       }
     }
@@ -42,7 +41,7 @@ section:nth-of-type(2) {
     .container {
       .more_info {
         p {
-          width: calc(#{$padding * 350});
+          width: calc(#{$max-width * 43.75});
         }
       }
     }
@@ -54,7 +53,7 @@ section:nth-of-type(2) {
     .container {
       .more_info {
         p {
-          width: calc(#{$padding * 285});
+          width: calc(#{$max-width * 35.625});
         }
         p:nth-of-type(1) {
           padding-bottom: calc(#{$padding * 19});

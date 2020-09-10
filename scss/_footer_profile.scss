@@ -8,44 +8,41 @@ footer {
         // There should be a border from the left to the right override the max-width
         padding-bottom: calc(#{$padding * 35});
         ul {
+          li {
+            ul {
+              li {
+                img {
+                  width: calc(#{$max-width * 4.375});
+                  height: calc(#{$max-width * 3});
+                  border-radius: calc(#{$padding * 3});
+                }
+              }
+            }
+          }
           li:nth-of-type(1) {
             .woman {
               @include flex;
               padding-bottom: calc(#{$padding * 13.5});
-              li:nth-of-type(1) {
-                img {
-                  width: calc(#{$padding * 35});
-                  height: calc(#{$padding * 24});
-                  border-radius: calc(#{$padding * 3});
-                }
-              }
               li:nth-of-type(2) {
                 padding-left: calc(#{$padding * 12});
                 li:nth-of-type(1) {
                   @include font_DM_sans_normal_plus_font_size;
                   color: $sub-heading-text-color;
-                  padding-bottom: 0;
+                  padding-bottom: $padding-zero;
                 }
                 li:nth-of-type(2) {
                   @include font_DM_sans_normal;
                   @include fontS12_lineH;
                   color: $primary-color-heading;
-                  padding: 0;
+                  padding: $padding-zero;
                 }
               }
             }
           }
           li:nth-of-type(2) {
-            padding-bottom: 0;
+            padding-bottom: $padding-zero;
             .experience {
               @include flex;
-              li:nth-of-type(1) {
-                img {
-                  width: calc(#{$padding * 35});
-                  height: calc(#{$padding * 24});
-                  border-radius: calc(#{$padding * 3});
-                }
-              }
               li:nth-of-type(2) {
                 padding-left: calc(#{$padding * 12});
                 li {
@@ -56,13 +53,13 @@ footer {
                   font-weight: normal;
                   font-size: calc(#{$padding * 8});
                   color: $sub-heading-text-color;
-                  padding-bottom: 0;
+                  padding-bottom: $padding-zero;
                 }
                 li:nth-of-type(2) {
                   font-weight: bold;
                   font-size: calc(#{$padding * 6});
                   color: $primary-color-heading;
-                  padding: 0;
+                  padding: $padding-zero;
                 }
               }
             }
@@ -80,7 +77,7 @@ footer {
         .footer_profile {
           display: block;
           padding-top: calc(#{$padding * 39});
-          padding-bottom: 0;
+          padding-bottom: $padding-zero;
         }
       }
     }

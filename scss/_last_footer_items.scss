@@ -22,8 +22,8 @@ footer {
       padding-bottom: calc(#{$padding * 37.5});
       padding-top: calc(#{$padding * 13.5});
       li:nth-of-type(1) {
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: $padding-zero;
+        padding-bottom: $padding-zero;
       }
     }
   }

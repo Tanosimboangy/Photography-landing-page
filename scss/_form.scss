@@ -18,14 +18,14 @@ section:nth-of-type(3) {
               @include font_DM_sans; 
               @include fontS_lineH;
               background: $secondary-color-heading;
-              border: 1px solid #DADADA;
+              border: calc(#{$padding * .5}) solid #DADADA;
               box-sizing: border-box;
               border-radius: calc(#{$padding * 2.5});
               padding-top: calc(#{$padding * 6.5});
               padding-bottom: calc(#{$padding * 5.5});
               padding-right: calc(#{$padding * 73});
               padding-left: calc(#{$padding * 6});
-              margin-top: calc(#{$padding * 6});
+              margin-top: calc(#{$margin * 6});
               color: $sub-heading-text-color;
             }
           }
@@ -51,7 +51,6 @@ section:nth-of-type(3) {
 @media(min-width: 1120px) {
   section:nth-of-type(3) {
     background: #FFDD78;
-    padding: 0;
     .container {
       .up_to_date {
         li:nth-of-type(2) {
@@ -60,12 +59,12 @@ section:nth-of-type(3) {
             align-items: flex-end;
             padding-bottom: calc(#{$padding * 72});
             li:nth-of-type(1) {
-              padding-bottom: 0;
-              padding-top: 0;
+              padding-bottom: $padding-zero;
+              padding-top: $padding-zero;
               padding-right: calc(#{$padding * 27});
             }
             li:nth-of-type(2) {
-              padding-bottom: 0;
+              padding-bottom: $padding-zero;
             }
           }
         }

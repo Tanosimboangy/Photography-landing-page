@@ -2,8 +2,6 @@
 @import "mixins";
 
 main > header {
-  $padding: 2px;
-  padding: 0 calc(#{$padding * 7.25});
   padding-top: calc(#{$padding * 15.5});
   a  {
     @include font_DM_sans_normal_plus_font_size;
@@ -33,14 +31,13 @@ main > header {
 
 @media(min-width: 1120px) {
   main > header {
-    padding: 0 0;
     padding-top: calc(#{$padding * 24.5});
     h1 {
       font-size: calc(#{$padding * 36});
       line-height: calc(#{$padding * 40});
       padding-top: calc(#{$padding * 19});
       padding-bottom: calc(#{$padding * 30.5});
-      max-width: calc(#{$padding * 228.5});
+      max-width: calc(#{$max-width * 28.5625});
     }
     ul {
       padding-bottom: calc(#{$padding * 34.5});
@@ -48,10 +45,3 @@ main > header {
   }
   
 }
-
-
-
-
-
-
-

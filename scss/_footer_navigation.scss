@@ -34,7 +34,7 @@ footer {
         .footer_navigation {
           display: block;
           padding-top: calc(#{$padding * 39});
-          padding-bottom: 0;
+          padding-bottom: $padding-zero;
         }
       }
     }

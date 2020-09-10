@@ -6,6 +6,7 @@ body {
   background: rgba(67, 76, 204, 0.05);
   header, section, footer {
     $padding: 2px;
+    padding: $padding-zero calc(#{$padding * 7.25});
   }
 }
 
@@ -35,6 +36,11 @@ h1, h2, h3, h4, h5, h6, p {
   .container {
     max-width: $max-width-cotainer;
     margin: $margin-auto;
+  }
+  body {
+    header, section, footer {
+      padding: $padding-zero;
+    }
   }
 }
   

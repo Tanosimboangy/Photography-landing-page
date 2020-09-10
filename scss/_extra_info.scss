@@ -2,7 +2,6 @@
 @import "mixins";
 
 section:nth-of-type(2) {
-  $padding: 2px;
   .container {
     .specific_details {
       padding-top: calc(#{$padding * 46});
