@@ -6,48 +6,48 @@ section:nth-of-type(3) {
       li:nth-of-type(2) {
         ul {
           li:nth-of-type(1) {
-            padding-bottom: 16px;
+            padding-bottom: calc(#{$padding * 6});
             label {
               font-family: "DM Sans";
               font-style: normal;
               font-weight: bold;
-              font-size: 12px;
-              line-height: 16px;
+              font-size: calc(#{$padding * 6});
+              line-height: calc(#{$padding * 8});
               text-transform: uppercase;
-              color: #000000;
+              color: $primary-color-heading;
             }
             #email_input {
-              background: #FFFFFF;
-              border: 1px solid #DADADA;
-              box-sizing: border-box;
-              border-radius: 5px;
-              padding-top: 13px;
-              padding-bottom: 11px;
-              padding-right: 146px;
-              padding-left: 12px;
-              margin-top: 12px;
               font-family: "DM Sans";
               font-style: normal;
               font-weight: normal;
-              font-size: 16px;
-              line-height: 24px;
-              color: rgba(0, 0, 0, 0.5);
+              font-size: calc(#{$padding * 8});
+              line-height: calc(#{$padding * 12});
+              background: $secondary-color-heading;
+              border: 1px solid #DADADA;
+              box-sizing: border-box;
+              border-radius: calc(#{$padding * 2.5});
+              padding-top: calc(#{$padding * 6.5});
+              padding-bottom: calc(#{$padding * 5.5});
+              padding-right: calc(#{$padding * 73});
+              padding-left: calc(#{$padding * 6});
+              margin-top: calc(#{$padding * 6});
+              color: $sub-heading-text-color;
             }
           }
           li:nth-of-type(2) {
-            padding-bottom: 54px;
+            padding-bottom: calc(#{$padding * 27});
             .subscribe {
               font-family: "DM Sans";
               font-style: normal;
               font-weight: bold;
-              font-size: 16px;
-              line-height: 24px;
+              font-size: calc(#{$padding * 8});
+              line-height: calc(#{$padding * 12});
               text-align: center;
-              color: #FFFFFF;
+              color: $secondary-color-heading;
               border: none;
               background: #434CCC;
-              border-radius: 5px;
-              padding: 12px 45.5px;
+              border-radius: calc(#{$padding * 2.5});
+              padding: calc(#{$padding * 6}) calc(#{$padding * 22.75});
             }
           }
         }
@@ -68,11 +68,11 @@ section:nth-of-type(3) {
             display: flex;
             flex-direction: row;
             align-items: flex-end;
-            padding-bottom: 144px;
+            padding-bottom: calc(#{$padding * 72});
             li:nth-of-type(1) {
               padding-bottom: 0;
               padding-top: 0;
-              padding-right: 54px;
+              padding-right: calc(#{$padding * 27});
             }
             li:nth-of-type(2) {
               padding-bottom: 0;

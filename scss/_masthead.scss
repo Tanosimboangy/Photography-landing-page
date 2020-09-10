@@ -1,38 +1,39 @@
 @import "variable";
 
 main > header {
-  padding: 0 14.5px;
-  padding-top: 31px;
+  $padding: 2px;
+  padding: 0 calc(#{$padding * 7.25});
+  padding-top: calc(#{$padding * 15.5});
   a  {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    color: rgba(0, 0, 0, 0.5);
+    font-size: calc(#{$padding * 8});
+    line-height: calc(#{$padding * 12});
+    color: $sub-heading-text-color;
     img {
-      width: 15px;
+      width: calc(#{$padding * 7.5});
     }
   }
   h1 {
     font-family: "DM Serif Display";
     font-style: normal;
     font-weight: normal;
-    font-size: 52px;
-    line-height: 64px;
-    color: #000000;
-    padding-top: 61px;
-    padding-bottom: 65px;
+    font-size: calc(#{$padding * 26});
+    line-height: calc(#{$padding * 32});
+    color: $primary-color-heading;
+    padding-top: calc(#{$padding * 30.5});
+    padding-bottom: calc(#{$padding * 32.5});
   }
   ul {
-    padding-bottom: 82px;
+    padding-bottom: calc(#{$padding * 41});
     li {
       font-family: "DM Sans";
       font-style: normal;
       font-weight: normal;
-      font-size: 18px;
-      line-height: 32px;
-      color: #000000;
+      font-size: calc(#{$padding * 9});
+      line-height: calc(#{$padding * 16});
+      color: $primary-color-heading;
     }
   } 
 }
@@ -40,16 +41,16 @@ main > header {
 @media(min-width: 1120px) {
   main > header {
     padding: 0 0;
-    padding-top: 49px;
+    padding-top: calc(#{$padding * 24.5});
     h1 {
-      font-size: 72px;
-      line-height: 80px;
-      padding-top: 38px;
-      padding-bottom: 61px;
-      max-width: 457px;
+      font-size: calc(#{$padding * 36});
+      line-height: calc(#{$padding * 40});
+      padding-top: calc(#{$padding * 19});
+      padding-bottom: calc(#{$padding * 30.5});
+      max-width: calc(#{$padding * 228.5});
     }
     ul {
-      padding-bottom: 69px;
+      padding-bottom: calc(#{$padding * 34.5});
     }
   }
   

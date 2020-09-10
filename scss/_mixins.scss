@@ -1,0 +1,33 @@
+@import "variable";
+
+@mixin font-DM-sans-normal {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: normal;
+}
+@mixin font-DM-sans-bold {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: bold;
+}
+@mixin font-dm_serif_display {
+  font-family: "dm_serif_display";
+  font-style: normal;
+  font-weight: normal;
+}
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@mixin flex-row-just-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin flex-center-horiz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

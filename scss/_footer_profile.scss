@@ -1,21 +1,5 @@
 @import "variable";
 
-$primary-color-heading: #000000;
-$sub-heading-text-color: rgba(0, 0, 0, 0.5);
-$secondary-color-heading: #FFFFFF;
-$text-aling-left: left;
-$text-aling-center: center;
-$padding-zero: 0;
-$padding: 2px;
-$margin-zero: 0;
-$margin: 2px;
-$percentage: 100%;
-$margin-auto: auto;
-$max-width:16px;
-$max-height: $max-width;
-$max-width-cotainer: 1114px;
-// calc(#{$padding * 46})
-
 footer {
   .container {
     div {
@@ -43,7 +27,7 @@ footer {
                   font-weight: normal;
                   font-size: calc(#{$padding * 8});
                   line-height: calc(#{$padding * 12});
-                  color: rgba(0, 0, 0, 0.5);
+                  color: $sub-heading-text-color;
                   padding-bottom: 0;
                 }
                 li:nth-of-type(2) {
@@ -52,7 +36,7 @@ footer {
                   font-weight: bold;
                   font-size: calc(#{$padding * 6});
                   line-height: calc(#{$padding * 12});
-                  color: #000000;
+                  color: $primary-color-heading;
                   padding: 0;
                 }
               }
@@ -61,7 +45,6 @@ footer {
           li:nth-of-type(2) {
             padding-bottom: 0;
             .experience {
-              text-align: left;
               display: flex;
               flex-direction: row;
               li:nth-of-type(1) {
@@ -81,7 +64,7 @@ footer {
                 li:nth-of-type(1) {
                   font-weight: normal;
                   font-size: calc(#{$padding * 8});
-                  color: rgba(0, 0, 0, 0.5);
+                  color: $sub-heading-text-color;
                   padding-bottom: 0;
                 }
                 li:nth-of-type(2) {
@@ -105,7 +88,7 @@ footer {
       div {
         .footer_profile {
           display: block;
-          padding-top: 78px;
+          padding-top: calc(#{$padding * 39});
           padding-bottom: 0;
         }
       }

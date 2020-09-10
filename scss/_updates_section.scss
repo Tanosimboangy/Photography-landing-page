@@ -1,20 +1,21 @@
 @import "variable";
 
 section:nth-of-type(3) {
+  $padding: 2px;
   background: #FFDD78;
-  padding: 0 14.5px;
+  padding: 0 calc(#{$padding * 7.25});
   .container {
     h4 {
       font-family: "DM Sans";
       font-style: normal;
       font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: calc(#{$padding * 8});
+      line-height: calc(#{$padding * 12});
       letter-spacing: 0.3em;
       text-transform: uppercase;
-      color: #000000;
-      padding-top: 63px;
-      padding-bottom: 19px;
+      color: $primary-color-heading;
+      padding-top: calc(#{$padding * 31.5});
+      padding-bottom: calc(#{$padding * 9.5});
     }
     .up_to_date {
       li {
@@ -22,10 +23,10 @@ section:nth-of-type(3) {
           font-family: "DM Serif Display";
           font-style: normal;
           font-weight: normal;
-          font-size: 40px;
-          line-height: 48px;
-          color: #000000;
-          padding-bottom: 44px;
+          font-size: calc(#{$padding * 20});
+          line-height: calc(#{$padding * 24});
+          color: $primary-color-heading;
+          padding-bottom: calc(#{$padding * 22});
         }
       }
     }
@@ -38,8 +39,8 @@ section:nth-of-type(3) {
     padding: 0;
     .container {
       h4 {
-        padding-top: 79px;
-        padding-bottom: 17px;
+        padding-top: calc(#{$padding * 39.5});
+        padding-bottom: calc(#{$padding * 8.5});
       }
       .up_to_date {
         display: flex;
@@ -47,10 +48,10 @@ section:nth-of-type(3) {
         justify-content: space-between;
         li {
           h2 {
-            font-size: 52px;
-            line-height: 64px;
-            padding-bottom: 104px;
-            max-width: 382px;
+            font-size: calc(#{$padding * 26});
+            line-height: calc(#{$padding * 32});
+            padding-bottom: calc(#{$padding * 52});
+            max-width: calc(#{$padding * 191});
           }
         }
       }

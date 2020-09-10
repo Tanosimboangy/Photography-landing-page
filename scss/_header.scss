@@ -1,6 +1,7 @@
 @import "variable";
 
 body > header {
+  $padding: 2px;
   background: #434CCC;
   position: relative;
   .container {
@@ -11,39 +12,39 @@ body > header {
     position: relative;
   }
   h3 {
-    color: #FFFFFF;
-    padding-top: 16px;
-    padding-left: 14px;
-    padding-bottom: 16px;
-    font-size: 24px;
-    line-height: 32px;
+    color: $secondary-color-heading;
+    padding-top: calc(#{$padding * 8});
+    padding-left: calc(#{$padding * 7});
+    padding-bottom: calc(#{$padding * 8});
+    font-size: calc(#{$padding * 12});
+    line-height: calc(#{$padding * 16});
   }
   svg {
-    padding-right: 14px;
+    padding-right: calc(#{$padding * 7});
     position: absolute;
-    top: 23px;
-    right: -3px;
+    top: calc(#{$padding * 11.5});
+    right: calc(#{$padding * -1.5});
   }
   .checkbox {
-    margin-left: -14px;
-    width: 36px;
-    height: 23px;
+    margin-left: calc(#{$padding * -7});
+    width: calc(#{$padding * 18});
+    height: calc(#{$padding * 11.5});
     opacity: 0;
     z-index: 1;
   }
   
   .checkbox:checked ~ .menu {
     display: block;
-    color: #FFFFFF;
+    color: $secondary-color-heading;
     position: absolute;
-    top: 64px;
+    top: calc(#{$padding * 32});
     bottom: 0;
-    left: -10px;
-    width: 250px;
+    left: calc(#{$padding * -5});
+    width: calc(#{$padding * 125});
     z-index: 1;
-    padding: 16px;
-    height: 800px;
-    background-color: black;
+    padding: calc(#{$padding * 8});
+    height: calc(#{$padding * 400});
+    background-color: $primary-color-heading;
   }
   .menu {
     display: none;
@@ -51,17 +52,16 @@ body > header {
       color: red;
     }
     .navigation_container {
-      padding-left: 30px;
+      padding-left: calc(#{$padding * 15});
       li {
-        padding: 1rem;
+        padding: calc(#{$padding * 8});
         a {
           font-family: "DM Sans";
           font-style: normal;
           font-weight: bold;
-          font-size: 16px;
-          line-height: 24px;
-          text-align: right;
-          color: #FFFFFF;
+          font-size: calc(#{$padding * 8});
+          line-height: calc(#{$padding * 12});
+          color: $secondary-color-heading;
         }
       }
     }
@@ -77,14 +77,9 @@ body > header {
         justify-content: space-between;
     }
     h3 {
-      color: #FFFFFF;
-      padding-top: 16px;
       padding-left: 0;
-      padding-bottom: 16px;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 40px;
-      line-height: 48px;
+      font-size: calc(#{$padding * 200});
+      line-height: calc(#{$padding * 24});
     }
     svg {
       display: none;
@@ -110,12 +105,12 @@ body > header {
       ul {
         li {
           a {
-            color: #FFFFFF;
-            font-family: "dm_sans";
+            color: $secondary-color-heading;
+            font-family: "DM sans";
             font-style: normal;
             font-weight: bold;
-            font-size: 16px;
-            line-height: 24px;
+            font-size: calc(#{$padding * 8});
+            line-height: calc(#{$padding * 12});
           }
         }
       }

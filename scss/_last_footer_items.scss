@@ -2,30 +2,30 @@
 
 footer {
   .last_footer_items {
-    padding-bottom: 29px;
+    padding-bottom: calc(#{$padding * 14.5});
     li {
       font-family: "DM Sans";
       font-style: normal;
       font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
-      color: rgba(0, 0, 0, 0.5);
+      font-size: calc(#{$padding * 8});
+      line-height: calc(#{$padding * 12});
+      color: $sub-heading-text-color;
     }
     li:nth-of-type(1) {
-      padding-top: 26.97px;
-      padding-bottom: 7.99px;
+      padding-top: calc(#{$padding * 13.5});
+      padding-bottom: calc(#{$padding * 4});
     }
   }
 }
 
-@media(min-width: 1120px) {  
+@media(min-width: 1120px) {
   footer {
     .last_footer_items {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      padding-bottom: 75px;
-      padding-top: 27px;
+      padding-bottom: calc(#{$padding * 37.5});
+      padding-top: calc(#{$padding * 13.5});
       li:nth-of-type(1) {
         padding-top: 0;
         padding-bottom: 0;
