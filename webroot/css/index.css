@@ -74,8 +74,6 @@ section:nth-of-type(1) .container ul li:nth-of-type(2) ul {
   display: flex;
   flex-direction: row;
   overflow-x: scroll; }
-  section:nth-of-type(1) .container ul li:nth-of-type(2) ul ::-webkit-scrollbar {
-    display: none; }
   section:nth-of-type(1) .container ul li:nth-of-type(2) ul li img {
     max-width: calc(137px);
     border-radius: calc(5px); }
@@ -83,6 +81,9 @@ section:nth-of-type(1) .container ul li:nth-of-type(2) ul {
     background: #d8d8d834;
     opacity: .5;
     padding-left: calc(10px); }
+
+section:nth-of-type(1) .container ul li:nth-of-type(2) ul::-webkit-scrollbar {
+  display: none; }
 
 @font-face {
   font-family: "DM Serif Display";
