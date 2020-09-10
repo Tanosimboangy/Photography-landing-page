@@ -301,7 +301,7 @@ body > header {
     display: block;
     position: absolute;
     top: calc(64px);
-    left: calc(-10px);
+    left: calc(-15px);
     bottom: 0;
     width: calc(250px);
     height: calc(800px);
@@ -324,6 +324,25 @@ body > header {
           font-size: calc(16px);
           line-height: calc(24px);
           color: #FFFFFF; }
+
+@media (min-width: 720px) {
+  body > header svg {
+    display: none; }
+  body > header .menu {
+    display: flex; }
+    body > header .menu h3 {
+      display: none; }
+    body > header .menu .navigation_container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      body > header .menu .navigation_container li a {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: calc(16px);
+        line-height: calc(24px);
+        color: #FFFFFF; } }
 
 @media (min-width: 1120px) {
   body > header .container {

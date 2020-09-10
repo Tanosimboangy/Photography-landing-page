@@ -34,7 +34,7 @@ body > header {
     display: block;
     position: absolute;
     top: calc(#{$padding * 32});
-    left: calc(#{$padding * -5});
+    left: calc(#{$padding * -7.5});
     bottom: 0;
     width: calc(#{$padding * 125});
     height: calc(#{$padding * 400});
@@ -61,6 +61,29 @@ body > header {
   }
 }
 
+
+@media(min-width: 720px) {
+  body > header {
+    svg {
+      display: none;
+    }
+    .menu {
+      display: flex;
+      h3 {
+        display: none;
+      }
+      .navigation_container {
+        @include flex_row;
+        li {
+          a {
+            @include font_DM_sans_bold_plus_font_size;
+            color: $secondary-color-heading;
+          }
+        }
+      }
+    }
+  }
+}
 
 @media(min-width: 1120px) {
   body > header {
