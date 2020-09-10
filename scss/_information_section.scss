@@ -1,4 +1,5 @@
 @import "variable";
+@import "mixins";
 
 main section:nth-of-type(2) {
   $padding: 2px;
@@ -9,9 +10,7 @@ main section:nth-of-type(2) {
   main section:nth-of-type(2) {
     .container {
       padding: 0;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      @include flex_row;
       align-items: baseline;
     }
   }

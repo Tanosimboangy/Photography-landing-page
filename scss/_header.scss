@@ -1,14 +1,12 @@
 @import "variable";
+@import "mixins";
 
 body > header {
   $padding: 2px;
   background: #434CCC;
   position: relative;
   .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    @include flex_row_just_center;
     position: relative;
   }
   h3 {
@@ -17,7 +15,7 @@ body > header {
     padding-left: calc(#{$padding * 7});
     padding-bottom: calc(#{$padding * 8});
     font-size: calc(#{$padding * 12});
-    line-height: calc(#{$padding * 16});
+    line-height: calc(#{$padding * 6});
   }
   svg {
     padding-right: calc(#{$padding * 7});
@@ -35,15 +33,15 @@ body > header {
   
   .checkbox:checked ~ .menu {
     display: block;
-    color: $secondary-color-heading;
     position: absolute;
     top: calc(#{$padding * 32});
-    bottom: 0;
     left: calc(#{$padding * -5});
+    bottom: 0;
     width: calc(#{$padding * 125});
+    height: calc(#{$padding * 400});
     z-index: 1;
     padding: calc(#{$padding * 8});
-    height: calc(#{$padding * 400});
+    color: $secondary-color-heading;
     background-color: $primary-color-heading;
   }
   .menu {
@@ -56,11 +54,7 @@ body > header {
       li {
         padding: calc(#{$padding * 8});
         a {
-          font-family: "DM Sans";
-          font-style: normal;
-          font-weight: bold;
-          font-size: calc(#{$padding * 8});
-          line-height: calc(#{$padding * 12});
+          @include font_DM_sans_bold_plus_font_size;
           color: $secondary-color-heading;
         }
       }
@@ -72,48 +66,31 @@ body > header {
 @media(min-width: 1120px) {
   body > header {
     .container {
-      display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+      @include flex_row;
     }
     h3 {
       padding-left: 0;
-      font-size: calc(#{$padding * 200});
-      line-height: calc(#{$padding * 24});
+      font-size: calc(#{$padding * 20});
+      line-height: calc(#{$padding * 12});
     }
     svg {
       display: none;
     }
     .menu {
+      display: flex;
       h3 {
         display: none;
       }
       .navigation_container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      }
-    }
-  }
-}
-
-
-@media(min-width: 1120px) {
-  body > header {
-    .menu {
-      display: flex;
-      ul {
+        @include flex_row;
         li {
           a {
+            @include font_DM_sans_bold_plus_font_size;
             color: $secondary-color-heading;
-            font-family: "DM sans";
-            font-style: normal;
-            font-weight: bold;
-            font-size: calc(#{$padding * 8});
-            line-height: calc(#{$padding * 12});
           }
         }
       }
     }
   }
 }
+

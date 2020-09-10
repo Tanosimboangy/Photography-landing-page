@@ -1,24 +1,19 @@
 @import "variable";
+@import "mixins";
 
 main > header {
   $padding: 2px;
   padding: 0 calc(#{$padding * 7.25});
   padding-top: calc(#{$padding * 15.5});
   a  {
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: normal;
-    font-size: calc(#{$padding * 8});
-    line-height: calc(#{$padding * 12});
+    @include font_DM_sans_normal_plus_font_size;
     color: $sub-heading-text-color;
     img {
       width: calc(#{$padding * 7.5});
     }
   }
   h1 {
-    font-family: "DM Serif Display";
-    font-style: normal;
-    font-weight: normal;
+    @include font_dm_serif_display;
     font-size: calc(#{$padding * 26});
     line-height: calc(#{$padding * 32});
     color: $primary-color-heading;
@@ -28,9 +23,7 @@ main > header {
   ul {
     padding-bottom: calc(#{$padding * 41});
     li {
-      font-family: "DM Sans";
-      font-style: normal;
-      font-weight: normal;
+      @include font_DM_sans_normal;
       font-size: calc(#{$padding * 9});
       line-height: calc(#{$padding * 16});
       color: $primary-color-heading;

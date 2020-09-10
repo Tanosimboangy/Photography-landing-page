@@ -57,21 +57,7 @@ section:nth-of-type(2) .container .specific_details {
       grid-template-columns: repeat(2, 1fr);
       column-gap: calc(50px);
       row-gap: calc(40px);
-      width: calc(443px); }
-      section:nth-of-type(2) .container .specific_details .details_container .label {
-        font-family: "DM Sans";
-        font-style: normal;
-        font-weight: normal;
-        font-size: calc(16px);
-        line-height: calc(24px);
-        color: rgba(0, 0, 0, 0.5); }
-      section:nth-of-type(2) .container .specific_details .details_container .details {
-        font-family: "DM Sans";
-        font-style: normal;
-        font-weight: bold;
-        font-size: calc(16px);
-        line-height: calc(24px);
-        color: #000000; } }
+      width: calc(443px); } }
 
 section:nth-of-type(1) {
   padding: 0 14.5px; }
@@ -104,8 +90,8 @@ footer {
   background: #FFFFFF;
   padding: 0 14.5px; }
   footer .container div .footer_texts h3 {
-    font-size: calc(24px);
-    line-height: calc(32px);
+    font-size: calc(16px);
+    line-height: calc(24px);
     color: #000000;
     padding-top: calc(75px);
     padding-bottom: calc(23px); }
@@ -120,8 +106,8 @@ footer {
   footer .container div .footer_texts .icons {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     max-width: calc(65px);
     padding-bottom: calc(79px); }
 
@@ -131,8 +117,8 @@ footer {
     footer .container div {
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
       justify-content: space-between;
+      align-items: flex-start;
       padding-bottom: 72px; }
       footer .container div .footer_texts {
         display: block;
@@ -175,9 +161,9 @@ footer .container div .footer_navigation {
 footer .container div .footer_profile {
   padding-bottom: calc(70px); }
   footer .container div .footer_profile ul li:nth-of-type(1) .woman {
-    padding-bottom: calc(27px);
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    padding-bottom: calc(27px); }
     footer .container div .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(1) img {
       width: calc(70px);
       height: calc(48px);
@@ -195,7 +181,7 @@ footer .container div .footer_profile {
       footer .container div .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) li:nth-of-type(2) {
         font-family: "DM Sans";
         font-style: normal;
-        font-weight: bold;
+        font-weight: normal;
         font-size: calc(12px);
         line-height: calc(24px);
         color: #000000;
@@ -237,7 +223,6 @@ section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-typ
   section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-type(1) label {
     font-family: "DM Sans";
     font-style: normal;
-    font-weight: bold;
     font-size: calc(12px);
     line-height: calc(16px);
     text-transform: uppercase;
@@ -245,7 +230,6 @@ section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-typ
   section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-type(1) #email_input {
     font-family: "DM Sans";
     font-style: normal;
-    font-weight: normal;
     font-size: calc(16px);
     line-height: calc(24px);
     background: #FFFFFF;
@@ -296,8 +280,8 @@ body > header {
   body > header .container {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     position: relative; }
   body > header h3 {
     color: #FFFFFF;
@@ -305,7 +289,7 @@ body > header {
     padding-left: calc(14px);
     padding-bottom: calc(16px);
     font-size: calc(24px);
-    line-height: calc(32px); }
+    line-height: calc(12px); }
   body > header svg {
     padding-right: calc(14px);
     position: absolute;
@@ -319,15 +303,15 @@ body > header {
     z-index: 1; }
   body > header .checkbox:checked ~ .menu {
     display: block;
-    color: #FFFFFF;
     position: absolute;
     top: calc(64px);
-    bottom: 0;
     left: calc(-10px);
+    bottom: 0;
     width: calc(250px);
+    height: calc(800px);
     z-index: 1;
     padding: calc(16px);
-    height: calc(800px);
+    color: #FFFFFF;
     background-color: #000000; }
   body > header .menu {
     display: none; }
@@ -352,27 +336,25 @@ body > header {
     justify-content: space-between; }
   body > header h3 {
     padding-left: 0;
-    font-size: calc(400px);
-    line-height: calc(48px); }
+    font-size: calc(40px);
+    line-height: calc(24px); }
   body > header svg {
     display: none; }
-  body > header .menu h3 {
-    display: none; }
-  body > header .menu .navigation_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; } }
-
-@media (min-width: 1120px) {
   body > header .menu {
     display: flex; }
-    body > header .menu ul li a {
-      color: #FFFFFF;
-      font-family: "DM sans";
-      font-style: normal;
-      font-weight: bold;
-      font-size: calc(16px);
-      line-height: calc(24px); } }
+    body > header .menu h3 {
+      display: none; }
+    body > header .menu .navigation_container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      body > header .menu .navigation_container li a {
+        font-family: "DM Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: calc(16px);
+        line-height: calc(24px);
+        color: #FFFFFF; } }
 
 main section:nth-of-type(2) {
   padding: 0 calc(14.5px); }
@@ -422,7 +404,7 @@ main > header {
     main > header a img {
       width: calc(15px); }
   main > header h1 {
-    font-family: "DM Serif Display";
+    font-family: "dm_serif_display";
     font-style: normal;
     font-weight: normal;
     font-size: calc(52px);

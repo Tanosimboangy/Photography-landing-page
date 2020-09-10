@@ -8,26 +8,18 @@ footer {
     div {
       .footer_texts {
         h3 {
-          font-size: calc(#{$padding * 12});
-          line-height: calc(#{$padding * 16});
+          @include fontS_lineH;
           color: $primary-color-heading;
           padding-top: calc(#{$padding * 37.5});
           padding-bottom: calc(#{$padding * 11.5});
         }
         p {
-          font-family: "DM Sans";
-          font-style: normal;
-          font-weight: normal;
-          font-size: calc(#{$padding * 8});
-          line-height: calc(#{$padding * 12});
+          @include font_DM_sans_normal_plus_font_size;
           color: $sub-heading-text-color;
           padding-bottom: calc(#{$padding * 15});
         }
         .icons {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between;
+          @include flex_row_just_center;
           max-width: calc(#{$padding * 32.5});
           padding-bottom: calc(#{$padding * 39.5});
         }
@@ -41,10 +33,7 @@ footer {
     padding: $padding-zero;
     .container {
       div {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-between;
+        @include flex_row_with_flex_start;
         padding-bottom: 72px;
         .footer_texts {
           display: block;

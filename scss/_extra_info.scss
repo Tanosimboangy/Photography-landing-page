@@ -1,30 +1,20 @@
 @import "variable";
+@import "mixins";
 
 section:nth-of-type(2) {
+  $padding: 2px;
   .container {
-    $padding: 2px;
     .specific_details {
       padding-top: calc(#{$padding * 46});
       padding-bottom: calc(#{$padding * 37.5});
       .details_container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: calc(#{$padding * 5});
-        max-width: calc(#{$padding * 166.5});
+        @include grid;
         .label {
-          font-family: "DM Sans";
-          font-style: normal;
-          font-weight: normal;
-          font-size: calc(#{$padding * 8});
-          line-height: calc(#{$padding * 12});
+          @include font_DM_sans_normal_plus_font_size;
           color: $sub-heading-text-color;
         }
         .details {
-          font-family: "DM Sans";
-          font-style: normal;
-          font-weight: bold;
-          font-size: calc(#{$padding * 8});
-          line-height: calc(#{$padding * 12});
+          @include font_DM_sans_bold_plus_font_size;
           color: $primary-color-heading;
         }
       }
@@ -38,27 +28,7 @@ section:nth-of-type(2) {
       .specific_details {
         padding-top: 89px;
         .details_container {
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          column-gap: calc(#{$padding * 25});
-          row-gap: calc(#{$padding * 20});
-          width: calc(#{$padding * 221.5});
-          .label {
-            font-family: "DM Sans";
-            font-style: normal;
-            font-weight: normal;
-            font-size: calc(#{$padding * 8});
-            line-height: calc(#{$padding * 12});
-            color: $sub-heading-text-color;
-          }
-          .details {
-            font-family: "DM Sans";
-            font-style: normal;
-            font-weight: bold;
-            font-size: calc(#{$padding * 8});
-            line-height: calc(#{$padding * 12});
-            color: $primary-color-heading;
-          }
+          @include grid_desktop;
         }
       }
     }

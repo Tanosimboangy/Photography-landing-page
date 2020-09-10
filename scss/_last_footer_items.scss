@@ -1,14 +1,11 @@
 @import "variable";
+@import "mixins";
 
 footer {
   .last_footer_items {
     padding-bottom: calc(#{$padding * 14.5});
     li {
-      font-family: "DM Sans";
-      font-style: normal;
-      font-weight: normal;
-      font-size: calc(#{$padding * 8});
-      line-height: calc(#{$padding * 12});
+      @include font_DM_sans_normal_plus_font_size;
       color: $sub-heading-text-color;
     }
     li:nth-of-type(1) {
@@ -21,9 +18,7 @@ footer {
 @media(min-width: 1120px) {
   footer {
     .last_footer_items {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
+      @include flex_row;
       padding-bottom: calc(#{$padding * 37.5});
       padding-top: calc(#{$padding * 13.5});
       li:nth-of-type(1) {

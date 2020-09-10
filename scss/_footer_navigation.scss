@@ -1,4 +1,5 @@
 @import "variable";
+@import "mixins";
 
 footer {
   .container {
@@ -6,22 +7,14 @@ footer {
       .footer_navigation {
         padding-bottom: calc(#{$padding * 38.5});
         h4 {
-          font-family: "DM Sans";
-          font-style: normal;
-          font-weight: bold;
-          font-size: calc(#{$padding * 8});
-          line-height: calc(#{$padding * 12});
+          @include font_DM_sans_bold_plus_font_size;
           color: $primary-color-heading;
           padding-bottom: calc(#{$padding * 12});
         }
         ul {
           li {
             a {
-              font-family: "DM Sans";
-              font-style: normal;
-              font-weight: normal;
-              font-size: calc(#{$padding * 8});
-              line-height: calc(#{$padding * 12});
+              @include font_DM_sans_normal_plus_font_size;
               color: $sub-heading-text-color;
             }
           }

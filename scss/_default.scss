@@ -4,6 +4,9 @@
 body {
   margin: $padding-zero;
   background: rgba(67, 76, 204, 0.05);
+  header, section, footer {
+    $padding: 2px;
+  }
 }
 
 ul {
@@ -20,7 +23,7 @@ a {
 }
 
 h3 {
-  @include font-dm_serif_display;
+  @include font_dm_serif_display;
   text-transform: uppercase;
 }
 

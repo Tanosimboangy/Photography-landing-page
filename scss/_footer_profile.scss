@@ -1,4 +1,5 @@
 @import "variable";
+@import "mixins";
 
 footer {
   .container {
@@ -9,9 +10,8 @@ footer {
         ul {
           li:nth-of-type(1) {
             .woman {
+              @include flex;
               padding-bottom: calc(#{$padding * 13.5});
-              display: flex;
-              flex-direction: row;
               li:nth-of-type(1) {
                 img {
                   width: calc(#{$padding * 35});
@@ -22,20 +22,13 @@ footer {
               li:nth-of-type(2) {
                 padding-left: calc(#{$padding * 12});
                 li:nth-of-type(1) {
-                  font-family: "DM Sans";
-                  font-style: normal;
-                  font-weight: normal;
-                  font-size: calc(#{$padding * 8});
-                  line-height: calc(#{$padding * 12});
+                  @include font_DM_sans_normal_plus_font_size;
                   color: $sub-heading-text-color;
                   padding-bottom: 0;
                 }
                 li:nth-of-type(2) {
-                  font-family: "DM Sans";
-                  font-style: normal;
-                  font-weight: bold;
-                  font-size: calc(#{$padding * 6});
-                  line-height: calc(#{$padding * 12});
+                  @include font_DM_sans_normal;
+                  @include fontS12_lineH;
                   color: $primary-color-heading;
                   padding: 0;
                 }
@@ -45,8 +38,7 @@ footer {
           li:nth-of-type(2) {
             padding-bottom: 0;
             .experience {
-              display: flex;
-              flex-direction: row;
+              @include flex;
               li:nth-of-type(1) {
                 img {
                   width: calc(#{$padding * 35});
@@ -57,8 +49,7 @@ footer {
               li:nth-of-type(2) {
                 padding-left: calc(#{$padding * 12});
                 li {
-                  font-family: "DM Sans";
-                  font-style: normal;
+                  @include font_DM_sans;
                   line-height: calc(#{$padding * 12});
                 }
                 li:nth-of-type(1) {
