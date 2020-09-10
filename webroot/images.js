@@ -9,26 +9,6 @@ console.log("it works");
 // console.log(secondGallery);
 // console.log(gallery);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // function Gallery(gallery) {
 //   if (!gallery) {
 //       throw Error('No Gallery Found!!!')
