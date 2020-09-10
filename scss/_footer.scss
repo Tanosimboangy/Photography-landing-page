@@ -3,7 +3,10 @@
 footer {
   background: $secondary-color-heading;
   .container {
-    div {
+    .inner_container {
+      // This is not quite right
+      border-bottom: 2px solid rgba(0, 0, 0, 0.101);
+      max-width: 100%;
       .footer_texts {
         h3 {
           @include fontS_lineH;
@@ -29,7 +32,7 @@ footer {
 @media(min-width: 1120px) {
   footer {
     .container {
-      div {
+      .inner_container {
         @include flex_row_with_flex_start;
         padding-bottom: calc(#{$padding * 36});
         .footer_texts {

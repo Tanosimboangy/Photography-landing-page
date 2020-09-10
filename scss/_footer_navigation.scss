@@ -3,7 +3,7 @@
 
 footer {
   .container {
-    div {
+    .inner_container {
       .footer_navigation {
         padding-bottom: calc(#{$padding * 38.5});
         h4 {
@@ -30,7 +30,7 @@ footer {
 @media(min-width: 1120px) {
   footer {
     .container {
-      div {
+      .inner_container {
         .footer_navigation {
           display: block;
           padding-top: calc(#{$padding * 39});

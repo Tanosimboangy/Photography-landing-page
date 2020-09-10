@@ -94,50 +94,53 @@ section:nth-of-type(1) .container ul li:nth-of-type(2) ul {
 
 footer {
   background: #FFFFFF; }
-  footer .container div .footer_texts h3 {
-    font-size: calc(16px);
-    line-height: calc(24px);
-    color: #000000;
-    padding-top: calc(75px);
-    padding-bottom: calc(23px); }
-  footer .container div .footer_texts p {
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: normal;
-    font-size: calc(16px);
-    line-height: calc(24px);
-    color: rgba(0, 0, 0, 0.5);
-    padding-bottom: calc(30px); }
-  footer .container div .footer_texts .icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: calc(65px);
-    padding-bottom: calc(79px); }
+  footer .container .inner_container {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.101);
+    max-width: 100%; }
+    footer .container .inner_container .footer_texts h3 {
+      font-size: calc(16px);
+      line-height: calc(24px);
+      color: #000000;
+      padding-top: calc(75px);
+      padding-bottom: calc(23px); }
+    footer .container .inner_container .footer_texts p {
+      font-family: "DM Sans";
+      font-style: normal;
+      font-weight: normal;
+      font-size: calc(16px);
+      line-height: calc(24px);
+      color: rgba(0, 0, 0, 0.5);
+      padding-bottom: calc(30px); }
+    footer .container .inner_container .footer_texts .icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      max-width: calc(65px);
+      padding-bottom: calc(79px); }
 
 @media (min-width: 1120px) {
-  footer .container div {
+  footer .container .inner_container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     padding-bottom: calc(72px); }
-    footer .container div .footer_texts {
+    footer .container .inner_container .footer_texts {
       display: block;
       padding-top: calc(78px);
       padding-bottom: 0; }
-      footer .container div .footer_texts h3 {
+      footer .container .inner_container .footer_texts h3 {
         padding-top: 0;
         padding-bottom: calc(23px); }
-      footer .container div .footer_texts p {
+      footer .container .inner_container .footer_texts p {
         max-width: calc(270px); }
-      footer .container div .footer_texts .icons {
+      footer .container .inner_container .footer_texts .icons {
         padding-bottom: 0; } }
 
-footer .container div .footer_navigation {
+footer .container .inner_container .footer_navigation {
   padding-bottom: calc(77px); }
-  footer .container div .footer_navigation h4 {
+  footer .container .inner_container .footer_navigation h4 {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: bold;
@@ -145,35 +148,35 @@ footer .container div .footer_navigation {
     line-height: calc(24px);
     color: #000000;
     padding-bottom: calc(24px); }
-  footer .container div .footer_navigation ul li a {
+  footer .container .inner_container .footer_navigation ul li a {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: normal;
     font-size: calc(16px);
     line-height: calc(24px);
     color: rgba(0, 0, 0, 0.5); }
-  footer .container div .footer_navigation ul li:not(:last-of-type) {
+  footer .container .inner_container .footer_navigation ul li:not(:last-of-type) {
     padding-bottom: calc(7.99px); }
 
 @media (min-width: 1120px) {
-  footer .container div .footer_navigation {
+  footer .container .inner_container .footer_navigation {
     display: block;
     padding-top: calc(78px);
     padding-bottom: 0; } }
 
-footer .container div .footer_profile {
+footer .container .inner_container .footer_profile {
   padding-bottom: calc(70px); }
-  footer .container div .footer_profile ul li ul li img {
+  footer .container .inner_container .footer_profile ul li ul li img {
     width: calc(70px);
     height: calc(48px);
     border-radius: calc(6px); }
-  footer .container div .footer_profile ul li:nth-of-type(1) .woman {
+  footer .container .inner_container .footer_profile ul li:nth-of-type(1) .woman {
     display: flex;
     flex-direction: row;
     padding-bottom: calc(27px); }
-    footer .container div .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) {
+    footer .container .inner_container .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) {
       padding-left: calc(24px); }
-      footer .container div .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) li:nth-of-type(1) {
+      footer .container .inner_container .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) li:nth-of-type(1) {
         font-family: "DM Sans";
         font-style: normal;
         font-weight: normal;
@@ -181,7 +184,7 @@ footer .container div .footer_profile {
         line-height: calc(24px);
         color: rgba(0, 0, 0, 0.5);
         padding-bottom: 0; }
-      footer .container div .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) li:nth-of-type(2) {
+      footer .container .inner_container .footer_profile ul li:nth-of-type(1) .woman li:nth-of-type(2) li:nth-of-type(2) {
         font-family: "DM Sans";
         font-style: normal;
         font-weight: normal;
@@ -189,30 +192,30 @@ footer .container div .footer_profile {
         line-height: calc(24px);
         color: #000000;
         padding: 0; }
-  footer .container div .footer_profile ul li:nth-of-type(2) {
+  footer .container .inner_container .footer_profile ul li:nth-of-type(2) {
     padding-bottom: 0; }
-    footer .container div .footer_profile ul li:nth-of-type(2) .experience {
+    footer .container .inner_container .footer_profile ul li:nth-of-type(2) .experience {
       display: flex;
       flex-direction: row; }
-      footer .container div .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) {
+      footer .container .inner_container .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) {
         padding-left: calc(24px); }
-        footer .container div .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li {
+        footer .container .inner_container .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li {
           font-family: "DM Sans";
           font-style: normal;
           line-height: calc(24px); }
-        footer .container div .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li:nth-of-type(1) {
+        footer .container .inner_container .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li:nth-of-type(1) {
           font-weight: normal;
           font-size: calc(16px);
           color: rgba(0, 0, 0, 0.5);
           padding-bottom: 0; }
-        footer .container div .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li:nth-of-type(2) {
+        footer .container .inner_container .footer_profile ul li:nth-of-type(2) .experience li:nth-of-type(2) li:nth-of-type(2) {
           font-weight: bold;
           font-size: calc(12px);
           color: #000000;
           padding: 0; }
 
 @media (min-width: 1120px) {
-  footer .container div .footer_profile {
+  footer .container .inner_container .footer_profile {
     display: block;
     padding-top: calc(78px);
     padding-bottom: 0; } }
@@ -309,7 +312,7 @@ body > header {
     z-index: 1;
     padding: calc(10px);
     color: #FFFFFF;
-    background-color: #4e4e4e;
+    background-color: black;
     border-radius: calc(16px); }
   body > header .menu {
     display: none; }

@@ -3,7 +3,7 @@
 
 footer {
   .container {
-    div {
+    .inner_container {
       .footer_profile {
         // There should be a border from the left to the right override the max-width
         padding-bottom: calc(#{$padding * 35});
@@ -73,7 +73,7 @@ footer {
 @media(min-width: 1120px) {
   footer {
     .container {
-      div {
+      .inner_container {
         .footer_profile {
           display: block;
           padding-top: calc(#{$padding * 39});
