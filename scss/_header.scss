@@ -19,7 +19,7 @@ body > header {
   svg {
     padding-right: calc(#{$padding * 7});
     position: absolute;
-    top: calc(#{$padding * 11.5});
+    top: calc(#{$padding * 7.5});
     right: calc(#{$padding * -1.5});
   }
   .checkbox {
@@ -33,25 +33,33 @@ body > header {
   .checkbox:checked ~ .menu {
     display: block;
     position: absolute;
-    top: calc(#{$padding * 32});
+    top: $padding-zero;
     left: calc(#{$padding * -7.5});
-    bottom: 0;
-    width: calc(#{$padding * 125});
-    height: calc(#{$padding * 400});
+    width: calc(#{$padding * 150});
+    height: calc(#{$padding * 150});
     z-index: 1;
-    padding: calc(#{$padding * 8});
+    padding: calc(#{$padding * 5});
     color: $secondary-color-heading;
-    background-color: $primary-color-heading;
+    background-color: rgb(78, 78, 78);
+    border-radius: calc(#{$padding * 8});
   }
   .menu {
     display: none;
     h3 {
-      color: red;
+      color: rgb(255, 255, 255);
+      @include font_DM_sans_normal;
+      font-size: 26px;
+      padding-left: $padding-zero;
+      padding-top: calc(#{$padding * 20});
+      padding-bottom: calc(#{$padding * 20});
     }
     .navigation_container {
-      padding-left: calc(#{$padding * 15});
+      padding-left: calc(#{$padding * 10}) calc(#{$padding * 10});
+      background-color: rgba(128, 128, 128, 0.537);
+      border-radius: calc(#{$padding * 5});
+      box-shadow: 2px 2px 2px beige;
       li {
-        padding: calc(#{$padding * 8});
+        padding: calc(#{$padding * 5});
         a {
           @include font_DM_sans_bold_plus_font_size;
           color: $secondary-color-heading;
@@ -91,7 +99,7 @@ body > header {
       @include flex_row;
     }
     h3 {
-      padding-left: 0;
+      padding-left: calc(#{$padding * 0});
       font-size: calc(#{$padding * 20});
       line-height: calc(#{$padding * 12});
     }
