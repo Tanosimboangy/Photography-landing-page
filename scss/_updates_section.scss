@@ -7,11 +7,7 @@ section:nth-of-type(3) {
   padding: 0 calc(#{$padding * 7.25});
   .container {
     h4 {
-      font-family: "DM Sans";
-      font-style: normal;
-      font-weight: normal;
-      font-size: calc(#{$padding * 8});
-      line-height: calc(#{$padding * 12});
+      @include font_DM_sans_normal_plus_font_size;
       letter-spacing: 0.3em;
       text-transform: uppercase;
       color: $primary-color-heading;
@@ -21,9 +17,7 @@ section:nth-of-type(3) {
     .up_to_date {
       li {
         h2 {
-          font-family: "DM Serif Display";
-          font-style: normal;
-          font-weight: normal;
+          @include font_dm_serif_display;
           font-size: calc(#{$padding * 20});
           line-height: calc(#{$padding * 24});
           color: $primary-color-heading;
@@ -44,9 +38,7 @@ section:nth-of-type(3) {
         padding-bottom: calc(#{$padding * 8.5});
       }
       .up_to_date {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flex_row;
         li {
           h2 {
             font-size: calc(#{$padding * 26});

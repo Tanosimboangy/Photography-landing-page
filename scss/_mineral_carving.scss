@@ -6,9 +6,7 @@ section:nth-of-type(2) {
   .container {
     .more_info {
       h2 {
-        font-family: "DM Serif Display";
-        font-style: normal;
-        font-weight: normal;
+        @include font_dm_serif_display;
         font-size: calc(#{$padding * 20});
         line-height: calc(#{$padding * 24});
         color: $primary-color-heading;
@@ -16,9 +14,7 @@ section:nth-of-type(2) {
         padding-bottom: calc(#{$padding * 15.5});
       }
       p {
-        font-family: "DM Sans";
-        font-style: normal;
-        font-weight: normal;
+        @include font_DM_sans_normal;
         margin: 0;
       }
       p:nth-of-type(1) {
@@ -28,16 +24,12 @@ section:nth-of-type(2) {
         padding-bottom: calc(#{$padding * 8});
       }
       p:nth-of-type(2) {
-        font-size: calc(#{$padding * 8});
-        line-height: calc(#{$padding * 12});
+        @include fontS_lineH;
         color: $sub-heading-text-color;
         padding-bottom: calc(#{$padding * 15.5});
       }
       .more_info_icons {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        @include flex_row_just_center;
         max-width: calc(#{$padding * 32.5});
         padding-bottom: calc(#{$padding * 52.5});
       }
@@ -56,6 +48,7 @@ section:nth-of-type(2) {
     }
   }
 }
+
 @media(min-width: 1120px) {
   section:nth-of-type(2) {
     .container {

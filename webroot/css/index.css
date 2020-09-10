@@ -13,7 +13,7 @@ a {
   color: #FFFFFF; }
 
 h3 {
-  font-family: "dm_serif_display";
+  font-family: "DM Serif Display";
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase; }
@@ -79,12 +79,12 @@ section:nth-of-type(1) {
       padding-left: calc(10px); }
 
 @font-face {
-  font-family: "dm_serif_display";
-  src: local(dm_serif_display), url(../webroot/fonts/dm_serif_display_400.woff2), url(../webroot/fonts/dm_serif_display_400.woff); }
+  font-family: "DM Serif Display";
+  src: local(DM-Serif-Display), url(../webroot/fonts/dm_serif_display_400.woff2), url(../webroot/fonts/dm_serif_display_400.woff); }
 
 @font-face {
-  font-family: "dm_sans";
-  src: local(dm_sans), url(../webroot/fonts/dm_sans_700.woff2), url(../webroot/fonts/dm_sans_700.woff); }
+  font-family: "DM sans";
+  src: local(DM sans), url(../webroot/fonts/dm_sans_700.woff2), url(../webroot/fonts/dm_sans_700.woff); }
 
 footer {
   background: #FFFFFF;
@@ -404,7 +404,7 @@ main > header {
     main > header a img {
       width: calc(15px); }
   main > header h1 {
-    font-family: "dm_serif_display";
+    font-family: "DM Serif Display";
     font-style: normal;
     font-weight: normal;
     font-size: calc(52px);
@@ -466,8 +466,8 @@ section:nth-of-type(2) .container .more_info p:nth-of-type(2) {
 section:nth-of-type(2) .container .more_info .more_info_icons {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   max-width: calc(65px);
   padding-bottom: calc(105px); }
 
