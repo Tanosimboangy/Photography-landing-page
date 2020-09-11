@@ -82,6 +82,9 @@ body > header {
       }
       .navigation_container {
         @include flex_row;
+        background: #434CCC;
+          border-radius: none;
+          box-shadow: none;
         li {
           a {
             @include font_DM_sans_bold_plus_font_size;

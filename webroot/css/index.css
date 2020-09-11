@@ -351,7 +351,10 @@ body > header {
     body > header .menu .navigation_container {
       display: flex;
       flex-direction: row;
-      justify-content: space-between; }
+      justify-content: space-between;
+      background: #434CCC;
+      border-radius: none;
+      box-shadow: none; }
       body > header .menu .navigation_container li a {
         font-family: "DM Sans";
         font-style: normal;
