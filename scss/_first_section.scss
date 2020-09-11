@@ -20,7 +20,7 @@ section:nth-of-type(1) {
           overflow-x: scroll;
           li {
             img {
-              max-width: calc(#{$padding * 68.5});
+              max-width: calc(#{$max-width * 8.15});
               border-radius: calc(#{$padding * 2.5});
             }
           }

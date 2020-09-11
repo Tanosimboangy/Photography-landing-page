@@ -51,6 +51,7 @@ section:nth-of-type(2) {
 @media(min-width: 1120px) {
   section:nth-of-type(2) {
     .container {
+      padding-top: 89px;
       .more_info {
         p {
           width: calc(#{$max-width * 35.625});

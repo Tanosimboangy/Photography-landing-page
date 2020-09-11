@@ -55,7 +55,7 @@ section:nth-of-type(2) .container .specific_details {
 
 @media (min-width: 1120px) {
   section:nth-of-type(2) .container .specific_details {
-    padding-top: 89px; }
+    padding-top: 0; }
     section:nth-of-type(2) .container .specific_details .details_container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -75,7 +75,7 @@ section:nth-of-type(1) .container ul li:nth-of-type(2) ul {
   flex-direction: row;
   overflow-x: scroll; }
   section:nth-of-type(1) .container ul li:nth-of-type(2) ul li img {
-    max-width: calc(137px);
+    max-width: calc(130.4px);
     border-radius: calc(5px); }
   section:nth-of-type(1) .container ul li:nth-of-type(2) ul li:not(:first-of-type) {
     background: #d8d8d834;
@@ -394,8 +394,7 @@ body > header {
   main section:nth-of-type(2) .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline; } }
+    justify-content: space-between; } }
 
 footer .last_footer_items {
   padding-bottom: calc(29px); }
@@ -504,14 +503,16 @@ section:nth-of-type(2) .container .more_info .more_info_icons {
     width: calc(700px); } }
 
 @media (min-width: 1120px) {
-  section:nth-of-type(2) .container .more_info p {
-    width: calc(570px); }
-  section:nth-of-type(2) .container .more_info p:nth-of-type(1) {
-    padding-bottom: calc(38px); }
-  section:nth-of-type(2) .container .more_info p:nth-of-type(2) {
-    padding-bottom: calc(55px); }
-  section:nth-of-type(2) .container .more_info .more_info_icons {
-    padding-bottom: calc(76px); } }
+  section:nth-of-type(2) .container {
+    padding-top: 89px; }
+    section:nth-of-type(2) .container .more_info p {
+      width: calc(570px); }
+    section:nth-of-type(2) .container .more_info p:nth-of-type(1) {
+      padding-bottom: calc(38px); }
+    section:nth-of-type(2) .container .more_info p:nth-of-type(2) {
+      padding-bottom: calc(55px); }
+    section:nth-of-type(2) .container .more_info .more_info_icons {
+      padding-bottom: calc(76px); } }
 
 section:nth-of-type(3) {
   background: #FFDD78; }
