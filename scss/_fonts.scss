@@ -10,6 +10,13 @@
 @font-face {
   font-family: "DM sans";
   src: local(DM sans),
+    url(../webroot/fonts/dm_sans_400.woff2) format("woff2"),
+    url(../webroot/fonts/dm_sans_400.woff) format("woff"),
+}
+
+@font-face {
+  font-family: "DM sans";
+  src: local(DM sans),
     url(../webroot/fonts/dm_sans_700.woff2) format("woff2"),
     url(../webroot/fonts/dm_sans_700.woff) format("woff"),
 }
