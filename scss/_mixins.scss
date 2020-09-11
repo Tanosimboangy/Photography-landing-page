@@ -1,8 +1,5 @@
 @import "variable";
 
-// ****** DM normal*****//
-
-// done
 @mixin fontS_lineH {
   font-size: calc(#{$padding * 8});
   line-height: calc(#{$padding * 12});
@@ -18,89 +15,71 @@
   line-height: calc(#{$padding * 8});
 }
 
+@mixin font12_lineH32 {
+  font-size: calc(#{$padding * 12});
+  line-height: calc(#{$padding * 16});
+}
+
 @mixin font_DM_sans {
   font-family: "DM Sans";
   font-style: normal;
 }
 
 @mixin font_DM_sans_normal {
-  // @include font_DM_sans;
-  font-family: "DM Sans";
-  font-style: normal;
+  @include font_DM_sans;
   font-weight: normal;
 }
 
-// done
 @mixin font_DM_sans_normal_plus_font_size {
-  // @include font_DM_sans_normal;
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: normal;
-  // @include fontS_lineH;
-  font-size: calc(#{$padding * 8});
-  line-height: calc(#{$padding * 12});
+  @include font_DM_sans_normal;
+  @include fontS_lineH;
 }
 
-// ****** bold*****//
-
-// done
 @mixin font_DM_sans_bold_plus_font_size {
-  font-family: "DM Sans";
-  font-style: normal;
+  @include font_DM_sans;
   font-weight: bold;
-  // @include fontS_lineH;
-  font-size: calc(#{$padding * 8});
-  line-height: calc(#{$padding * 12});
+  @include fontS_lineH;
 }
 
-// ****** dm_serif_display normal*****//
-// done
 @mixin font_dm_serif_display {
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: normal;
 }
 
-// done
 @mixin flex {
   display: flex;
   flex-direction: row;
 }
 
-// done
 @mixin flex_row {
   @include flex;
   justify-content: space-between;
 }
 
 @mixin flex_row_with_flex_start {
-  // @include flex_row;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include flex_row;
   align-items: flex-start;
 }
 
-// done
 @mixin flex_row_just_center {
-  // @include flex_row;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include flex_row;
   align-items: center;
 }
 
-// done
-@mixin grid {
+@mixin grid_template {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+@mixin grid {
+  @include grid_template;
   grid-gap: calc(#{$padding * 5});
   max-width: calc(#{$padding * 166.5});
 }
 
 @mixin grid_desktop {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  @include grid_template;
   column-gap: calc(#{$padding * 25});
   row-gap: calc(#{$padding * 20});
   width: calc(#{$padding * 221.5});

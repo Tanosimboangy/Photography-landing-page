@@ -2,24 +2,26 @@
 @import "mixins";
 
 footer {
-  .container {
-    .inner_container {
-      .footer_navigation {
-        padding-bottom: calc(#{$padding * 38.5});
-        h4 {
-          @include font_DM_sans_bold_plus_font_size;
-          color: $primary-color-heading;
-          padding-bottom: calc(#{$padding * 12});
-        }
-        ul {
-          li {
-            a {
-              @include font_DM_sans_normal_plus_font_size;
-              color: $sub-heading-text-color;
-            }
+  .big_container{
+    .component {
+      .container {
+        .footer_navigation {
+          padding-bottom: calc(#{$padding * 38.5});
+          h4 {
+            @include font_DM_sans_bold_plus_font_size;
+            color: $primary-color-heading;
+            padding-bottom: calc(#{$padding * 12});
           }
-          li:not(:last-of-type) {
-            padding-bottom: calc(#{$padding * 3.995});
+          ul {
+            li {
+              a {
+                @include font_DM_sans_normal_plus_font_size;
+                color: $sub-heading-text-color;
+              }
+            }
+            li:not(:last-of-type) {
+              padding-bottom: calc(#{$padding * 3.995});
+            }
           }
         }
       }
@@ -29,12 +31,14 @@ footer {
 
 @media(min-width: 1120px) {
   footer {
-    .container {
-      .inner_container {
-        .footer_navigation {
-          display: block;
-          padding-top: calc(#{$padding * 39});
-          padding-bottom: $padding-zero;
+    .big_container{
+      .component {
+        .container {
+          .footer_navigation {  
+            display: block;
+            padding-top: calc(#{$padding * 39});
+            padding-bottom: $padding-zero;
+          }
         }
       }
     }

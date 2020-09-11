@@ -3,7 +3,9 @@
 
 footer {
   .last_footer_items {
+    padding: $padding-zero calc(#{$padding * 7.25});
     padding-bottom: calc(#{$padding * 14.5});
+
     li {
       @include font_DM_sans_normal_plus_font_size;
       color: $sub-heading-text-color;

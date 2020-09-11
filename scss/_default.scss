@@ -6,6 +6,8 @@ body {
   background: rgba(67, 76, 204, 0.05);
   header, section, footer {
     $padding: 2px;
+  }
+  header, section {
     padding: $padding-zero calc(#{$padding * 7.25});
   }
 }
@@ -23,13 +25,17 @@ a {
   color: $secondary-color-heading;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: $margin-zero;
+}
+
 h3 {
   @include font_dm_serif_display;
   text-transform: uppercase;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: $margin-zero;
+h5 {
+  display: none;
 }
 
 @media(min-width: 1120px) {
