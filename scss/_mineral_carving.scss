@@ -32,6 +32,15 @@ section:nth-of-type(2) {
         max-width: calc(#{$max-width * 4.0625});
         padding-bottom: calc(#{$padding * 52.5});
       }
+      .more_info_icons {
+        li {
+          a:hover {
+            svg {
+              fill: red;
+            }
+          }
+        }
+      }
     }
   }
 }

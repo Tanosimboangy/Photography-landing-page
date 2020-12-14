@@ -28,7 +28,7 @@ h5 {
 
 @media (min-width: 1120px) {
   .container {
-    max-width: 1114px;
+    max-width: 1000px;
     margin: auto; }
   body header, body section, body footer {
     padding: 0; } }
@@ -75,18 +75,6 @@ body > header {
       height: calc(23px);
       opacity: 0;
       z-index: 1; }
-    body > header .container .checkbox:checked ~ .menu {
-      display: block;
-      position: absolute;
-      top: calc(44px);
-      left: calc(-15px);
-      width: calc(300px);
-      height: calc(300px);
-      z-index: 1;
-      padding: calc(10px);
-      color: #FFFFFF;
-      background-color: black;
-      border-radius: calc(16px); }
     body > header .container .menu {
       display: none; }
       body > header .container .menu h3 {
@@ -298,6 +286,9 @@ section:nth-of-type(2) .container .more_info .more_info_icons {
   align-items: center;
   max-width: calc(65px);
   padding-bottom: calc(105px); }
+
+section:nth-of-type(2) .container .more_info .more_info_icons li a:hover svg {
+  fill: red; }
 
 @media (min-width: 720px) {
   section:nth-of-type(2) .container .more_info p {
