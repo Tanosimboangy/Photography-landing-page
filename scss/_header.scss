@@ -44,19 +44,9 @@ body > header {
     }
     .menu {
       display: none;
-      h3 {
-        color: $secondary-color-heading;
-        @include font_DM_sans_normal;
-        font-size: 26px;
-        padding-left: $padding-zero;
-        padding-top: calc(#{$padding * 20});
-        padding-bottom: calc(#{$padding * 20});
-      }
       .navigation_container {
         padding-left: calc(#{$padding * 10}) calc(#{$padding * 10});
-        background-color: rgba(128, 128, 128, 0.537);
         border-radius: calc(#{$padding * 5});
-        box-shadow: 2px 2px 2px $secondary-color-heading;
         li {
           padding: calc(#{$padding * 5});
           a {

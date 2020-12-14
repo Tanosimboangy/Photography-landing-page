@@ -4,7 +4,9 @@
   "description": "Hey everyone!",
   "main": "index.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "sass": "^1.30.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

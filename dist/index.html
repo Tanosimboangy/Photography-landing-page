@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Front-end-finals</title>
-    <link rel="stylesheet" href="/935b8673bcbb8bae752daffcba368c66.css">
-  </head>
+    <link rel="stylesheet" href="/scss.6b84482b.css">
+  <script src="/scss.6b84482b.js"></script></head>
   <body>
     <header>
       <div class="container">
@@ -14,7 +14,6 @@
         </svg>
         <input class="checkbox" type="checkbox">
         <nav class="menu">
-          <h3>Menu</h3>
           <ul class="navigation_container">
             <li><a class="navigation_about" href="/about">About</a></li>
             <li><a class="navigation_portofolio" href="/portfolio">Portfolio</a></li>
@@ -28,7 +27,7 @@
       <header>
         <div class="container">
           <a href="/">
-            <img src="/cc316194958bc064eaf9bfbb967a5f64.png" alt="this_is_icon_arrow_left">
+            <img src="/icon_arrow_left.967a5f64.png" alt="this_is_icon_arrow_left">
             <span>Back to portfolio</span> 
           </a>
           <h1>Beauty is seen through a lens</h1>
@@ -41,71 +40,133 @@
       <section>
         <div class="container">
           <h5>gallery section</h5>
-          <ul class="galleries">
+
+          <div class="container">
+            <div class="mySlides">
+              <div class="numbertext">1 / 6</div>
+              <img src="/rock_carvings_lg.3b00d9c6.jpg" alt="this_is_for_rock_carving">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">2 / 6</div>
+              <img src="/stairs_lg.a88978a3.jpg" alt="this_is_for_rock_carving">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">3 / 6</div>
+              <img src="/ripples_lg.a9ffb3b2.jpg" alt="this_is_for_ripples">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">4 / 6</div>
+              <img src="/img_lights_wide.4aa83f50.jpg" style="width:100%">
+            </div>
+          
+            <div class="mySlides">
+              <div class="numbertext">5 / 6</div>
+              <img src="/img_nature_wide.a648a378.jpg" style="width:100%">
+            </div>
+              
+            <div class="mySlides">
+              <div class="numbertext">6 / 6</div>
+              <img src="/img_snow_wide.767f666c.jpg" style="width:100%">
+            </div>
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="/img_woods.34d3f51f.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/img_5terre.f47a367a.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/img_mountains.2babd641.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/img_lights.15d2ad27.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/img_nature.a2779e19.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+              </div>    
+              <div class="column">
+                <img class="demo cursor" src="/img_snow.5e656783.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+              </div>
+            </div>
+          </div>
+          
+
+          <!-- <ul class="galleries">
             <li class="first_gallery">
-              <img src="/4c95b1c97ecdb5de75b4c2753b00d9c6.jpg" alt="this_is _the_biggest_beautiful_scene">
+              <img src="./webroot/images/rock_carvings_lg.jpg" alt="this_is _the_biggest_beautiful_scene">
             </li>
             <li class="second_gallery">
               <ul class="gallery gallery1">
                 <li>
                   <picture>
-                    <source media="(min-width: 1120px)" srcset="/4c95b1c97ecdb5de75b4c2753b00d9c6.jpg">
-                    <source media="(min-width: 720px)" srcset="/05636f6968efc69c9301ba38fd31eb6f.jpg">
-                    <img src="/138487b15f081df1d0a7c5b628354574.jpg" alt="this_is_for_rock_carving">
+                    <source media="(min-width: 1120px)" srcset="./webroot/images/rock_carvings_lg.jpg">
+                    <source media="(min-width: 720px)" srcset="./webroot/images/rock_carvings_md.jpg">
+                    <img src="./webroot/images/rock_carvings_sm.jpg" alt="this_is_for_rock_carving">
                   </picture>
                 </li>
                 <li>
                   <picture>
-                    <source media="(min-width: 1120px)" srcset="/d4f4a643128692eefe45591aa88978a3.jpg">
-                    <source media="(min-width: 720px)" srcset="/dd2674e25a319a671ab57b1530f7855e.jpg">
-                    <img src="/b98eca6151454804237e295280e18a60.jpg" alt="this_is_for_stairs">
+                    <source media="(min-width: 1120px)" srcset="./webroot/images/stairs_lg.jpg">
+                    <source media="(min-width: 720px)" srcset="./webroot/images/stairs_md.jpg">
+                    <img src="./webroot/images/stairs_sm.jpg" alt="this_is_for_stairs">
                   </picture>
                 </li>
                 <li>
                   <picture>
-                    <source media="(min-width: 1120px)" srcset="/139ea9eb7d45e0d614ca7c81a9ffb3b2.jpg">
-                    <source media="(min-width: 720px)" srcset="/073e053d2b9f54740a87dadf8b7c1bab.jpg">
-                      <img src="/5c4b178a186ecec6d5615e8c9f9999c6.jpg" alt="this_is_for_ripples">
+                    <source media="(min-width: 1120px)" srcset="./webroot/images/ripples_lg.jpg">
+                    <source media="(min-width: 720px)" srcset="./webroot/images/ripples_md.jpg">
+                      <img src="./webroot/images/ripples_sm.jpg" alt="this_is_for_ripples">
                   </picture>
                 </li>
                 <li>
                   <picture>
-                    <source media="(min-width: 1120px)" srcset="/658efa6427cf70eb365229e12aa1ed2f.jpg">
-                    <source media="(min-width: 720px)" srcset="/afa5c19c9188c413d52163807690bd02.jpg">
-                      <img src="/c3c4a2443c520a5b28b7724cb1dee4aa.jpg" alt="this_is_for_ripples">
+                    <source media="(min-width: 1120px)" srcset="./webroot/images/dunes_lg.jpg">
+                    <source media="(min-width: 720px)" srcset="./webroot/images/dunes_md.jpg">
+                      <img src="./webroot/images/dunes_sm.jpg" alt="this_is_for_ripples">
                   </picture>
                 </li>
                 <li>
                   <picture>
-                    <source media="(min-width: 1120px)" srcset="/d33020f14ca31fa8f4e9666efda33bfd.jpg">
-                    <source media="(min-width: 720px)" srcset="/d728b32ba99aa9790e1b1c58fc3e4bf0.jpg">
-                      <img src="/145e51cb67f66458af4f3af4fb6ec9ef.jpg" alt="this_is_for_ripples">
+                    <source media="(min-width: 1120px)" srcset="./webroot/images/arches_lg.jpg">
+                    <source media="(min-width: 720px)" srcset="./webroot/images/arches_md.jpg">
+                      <img src="./webroot/images/arches_sm.jpg" alt="this_is_for_ripples">
                   </picture>
                 </li>
                 <li>
                   <picture>
-                    <source media="(min-width: 1120px)" srcset="/126405656978dca1fd55cca0e9112c3a.jpg">
-                    <source media="(min-width: 720px)" srcset="/b1f86a3292fa704dffcacccb1cc7f097.jpg">
-                      <img src="/af631d6c03931b8f372b67db9afcfb02.jpg" alt="this_is_for_ripples">
+                    <source media="(min-width: 1120px)" srcset="./webroot/images/car_lg.jpg">
+                    <source media="(min-width: 720px)" srcset="./webroot/images/car_md.jpg">
+                      <img src="./webroot/images/car_sm.jpg" alt="this_is_for_ripples">
                   </picture>
                 </li>
                 <li>
                   <picture>
-                    <source media="(min-width: 1120px)" srcset="/48851c94bf828277bb2631b12fe07b6d.jpg">
-                    <source media="(min-width: 720px)" srcset="/6969415f294e7424e4686ef1471f42df.jpg">
-                      <img src="/3221c6c0e7957af51475c485f0e23448.jpg" alt="this_is_for_ripples">
+                    <source media="(min-width: 1120px)" srcset="./webroot/images/sunset_lg.jpg">
+                    <source media="(min-width: 720px)" srcset="./webroot/images/sunset_md.jpg">
+                      <img src="./webroot/images/sunset_sm.jpg" alt="this_is_for_ripples">
                   </picture>
                 </li>
                 <li>
                   <picture>
-                    <source media="(min-width: 1120px)" srcset="/17c85fc1bea7db5822cf6a4b7a048522.jpg">
-                    <source media="(min-width: 720px)" srcset="/4b8ed7cbbad68e598ba885a028a8f3d8.jpg">
-                      <img src="/54e45553dc4fecb34161645a07a9dae3.jpg" alt="this_is_for_ripples">
+                    <source media="(min-width: 1120px)" srcset="./webroot/images/canyon_lg.jpg">
+                    <source media="(min-width: 720px)" srcset="./webroot/images/canyon_md.jpg">
+                      <img src="./webroot/images/canyon_sm.jpg" alt="this_is_for_ripples">
                   </picture>
                 </li>
               </ul>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
       <section>
@@ -248,7 +309,7 @@
                 <li>
                   <a href="https://aspen-company.com/pumpkin-spice-season-tan-vintage-rust-mesh-baseball-hat/">
                     <ul class="woman">
-                      <li><img src="/2bfc308657a9a48ebf2b9cb0c89112b1.jpg" alt="this is a profile for this woman"></li>
+                      <li><img src="/woman_xs.c89112b1.jpg" alt="this is a profile for this woman"></li>
                       <li>
                         <ul>
                           <li>Rust, pumpkin, tans, and spices.</li>
@@ -261,7 +322,7 @@
                 <li>
                   <a href="https://www.experience-japan.jp/">
                     <ul class="experience">
-                      <li><img src="/935c820d9a58c76a7d8f69ee7760feba.jpg" alt="this is for the experience profile"></li>
+                      <li><img src="/passage_sm.7760feba.jpg" alt="this is for the experience profile"></li>
                       <li>
                         <ul>
                           <li>Experiencing Japan</li>
@@ -283,5 +344,6 @@
         </div>
       </div>
     </footer>
+    <script src="/front-end-finals.e31bb0bc.js"></script>
   </body>
 </html>

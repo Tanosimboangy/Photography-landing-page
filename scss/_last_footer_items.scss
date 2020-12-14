@@ -13,6 +13,7 @@ footer {
     li:nth-of-type(1) {
       padding-top: calc(#{$padding * 13.5});
       padding-bottom: calc(#{$padding * 4});
+      text-align: center;
     }
   }
 }

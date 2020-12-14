@@ -3,7 +3,7 @@
 
 section:nth-of-type(1) {
   .container {
-    ul {
+    .galleries {
       li:first-of-type {
         padding-bottom: calc(#{$padding * 4});
         img {
@@ -24,9 +24,15 @@ section:nth-of-type(1) {
             }
           }
           li:not(:first-of-type) {
-            background: #d8d8d834;
-            opacity: .5;
             padding-left: calc(#{$padding * 5});
+            img {
+              opacity: .5;
+            }
+          }
+          li:not(:first-of-type):hover {
+            img {
+              opacity: 1;
+            }
           }
         }
         ul::-webkit-scrollbar {
