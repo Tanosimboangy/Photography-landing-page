@@ -31,14 +31,16 @@ section:nth-of-type(2) {
         @include flex_row_just_center;
         max-width: calc(#{$max-width * 4.0625});
         padding-bottom: calc(#{$padding * 52.5});
-      }
-      .more_info_icons {
         li {
-          a:hover {
-            svg {
+            a svg {
+            fill: red;
+            }
+            a:hover {
               fill: red;
             }
-          }
+            a svg:hover { 
+              fill: red;
+            }
         }
       }
     }
