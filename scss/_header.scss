@@ -39,7 +39,7 @@ body > header {
       padding: calc(20px);
       width: 98%;
       transition: transform 200s;
-      background-color: #f8f8f8;
+      background: white;
     }
     .menu {
       display: none;
@@ -51,6 +51,7 @@ body > header {
           a {
             @include font_DM_sans_bold_plus_font_size;
             color: blue;
+            font-size: 20px;
           }
         }
       }
@@ -81,7 +82,7 @@ body > header {
           li {
             a {
               @include font_DM_sans_bold_plus_font_size;
-              color: blue;
+              color: white;
             }
           }
         }
