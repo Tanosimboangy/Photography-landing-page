@@ -18,6 +18,10 @@ footer {
                 @include font_DM_sans_normal_plus_font_size;
                 color: $sub-heading-text-color;
               }
+              a:hover {
+                color: blue;
+                font-weight: 600;
+              }
             }
             li:not(:last-of-type) {
               padding-bottom: calc(#{$padding * 3.995});
