@@ -5,32 +5,27 @@ body {
 body header, body section {
   padding: 0 calc(14.5px);
 }
-
-ul {
+body ul {
   padding: 0;
   margin: 0;
 }
-ul li {
+body ul li {
   list-style: none;
 }
-
-a {
+body a {
   text-decoration: none;
   color: #FFFFFF;
 }
-
-h1, h2, h3, h4, h5, h6, p {
+body h1, body h2, body h3, body h4, body h5, body h6, body p {
   margin: 0;
 }
-
-h3 {
+body h3 {
   font-family: "DM Serif Display";
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
 }
-
-h5 {
+body h5 {
   display: none;
 }
 
@@ -218,35 +213,71 @@ main > header .container ul li {
     padding-bottom: calc(69px);
   }
 }
-section:nth-of-type(1) .container .galleries li:first-of-type {
-  padding-bottom: calc(8px);
+section:nth-of-type(1) .container img {
+  vertical-align: middle;
 }
-section:nth-of-type(1) .container .galleries li:first-of-type img {
+section:nth-of-type(1) .container .container {
+  position: relative;
+}
+section:nth-of-type(1) .container .container .mySlides {
+  margin-bottom: 10px;
+}
+section:nth-of-type(1) .container .container .mySlides img {
   max-width: 100%;
-  height: auto;
-  border-radius: calc(5px);
+  border-radius: 10px;
 }
-section:nth-of-type(1) .container .galleries li:nth-of-type(2) ul {
+section:nth-of-type(1) .container .container .row {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   overflow-x: scroll;
-  scrollbar-width: none;
 }
-section:nth-of-type(1) .container .galleries li:nth-of-type(2) ul li img {
-  max-width: calc(130.4px);
-  border-radius: calc(5px);
+section:nth-of-type(1) .container .container .row .column:not(:last-of-type) {
+  margin-right: 10px;
 }
-section:nth-of-type(1) .container .galleries li:nth-of-type(2) ul li:not(:first-of-type) {
-  padding-left: calc(10px);
-}
-section:nth-of-type(1) .container .galleries li:nth-of-type(2) ul li:not(:first-of-type) img {
-  opacity: 0.5;
-}
-section:nth-of-type(1) .container .galleries li:nth-of-type(2) ul li:not(:first-of-type):hover img {
+section:nth-of-type(1) .container .container .row .column:first-of-type img {
   opacity: 1;
 }
-section:nth-of-type(1) .container .galleries li:nth-of-type(2) ul::-webkit-scrollbar {
+section:nth-of-type(1) .container .container .row img {
+  max-width: calc(130.4px);
+  border-radius: 5px;
+  opacity: 0.5;
+}
+section:nth-of-type(1) .container .container .row img:hover {
+  opacity: 1;
+}
+section:nth-of-type(1) .container .container .row::-webkit-scrollbar {
   display: none;
+}
+section:nth-of-type(1) .container .mySlides {
+  display: none;
+}
+section:nth-of-type(1) .container .cursor {
+  cursor: pointer;
+}
+section:nth-of-type(1) .container .prev,
+section:nth-of-type(1) .container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+section:nth-of-type(1) .container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+section:nth-of-type(1) .container .prev:hover,
+section:nth-of-type(1) .container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (min-width: 1120px) {

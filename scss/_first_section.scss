@@ -3,42 +3,191 @@
 
 section:nth-of-type(1) {
   .container {
-    .galleries {
-      li:first-of-type {
-        padding-bottom: calc(#{$padding * 4});
+    // .galleries {
+    //   li:first-of-type {
+    //     padding-bottom: calc(#{$padding * 4});
+    //     img {
+    //       max-width: $percentage;
+    //       height: $margin-auto;
+    //       border-radius: calc(#{$padding * 2.5});
+    //     }
+    //   }
+    //   li:nth-of-type(2) {
+    //     ul {
+    //       @include flex;
+          // overflow-x: scroll;
+          // scrollbar-width: none;
+    //       li {
+    //         img {
+              // max-width: calc(#{$max-width * 8.15});
+              // border-radius: calc(#{$padding * 2.5});
+    //         }
+    //       }
+    //       li:not(:first-of-type) {
+    //         padding-left: calc(#{$padding * 5});
+    //         img {
+    //           opacity: .5;
+    //         }
+    //       }
+    //       li:not(:first-of-type):hover {
+    //         img {
+    //           opacity: 1;
+    //         }
+    //       }
+    //     }
+    //     ul::-webkit-scrollbar {
+    //       display: none;
+    //     }
+    //   }
+    // }
+    // * {
+    //   box-sizing: border-box;
+    // }
+    img {
+      vertical-align: middle;
+    }
+    .container {
+      position: relative;
+      .mySlides {
+        margin-bottom: 10px;
         img {
-          max-width: $percentage;
-          height: $margin-auto;
-          border-radius: calc(#{$padding * 2.5});
+          max-width: 100%;
+          border-radius: 10px;
         }
       }
-      li:nth-of-type(2) {
-        ul {
-          @include flex;
-          overflow-x: scroll;
-          scrollbar-width: none;
-          li {
-            img {
-              max-width: calc(#{$max-width * 8.15});
-              border-radius: calc(#{$padding * 2.5});
-            }
-          }
-          li:not(:first-of-type) {
-            padding-left: calc(#{$padding * 5});
-            img {
-              opacity: .5;
-            }
-          }
-          li:not(:first-of-type):hover {
-            img {
-              opacity: 1;
-            }
+      .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        overflow-x: scroll;
+        .column:not(:last-of-type) {
+          margin-right: 10px;
+        }
+        .column:first-of-type {
+          img {
+            opacity: 1;
           }
         }
-        ul::-webkit-scrollbar {
-          display: none;
+        img {
+          max-width: calc(#{$max-width * 8.15});
+          border-radius: 5px;
+          opacity: .5;
+        }
+        img:hover {
+          opacity: 1;
         }
       }
+      .row::-webkit-scrollbar {
+        display: none;
+    }
+    }
+    .mySlides {
+      display: none;
+    }
+    .cursor {
+      cursor: pointer;
+    }
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <!-- <ul class="galleries">
+// <li class="first_gallery">
+//   <img src="./webroot/images/rock_carvings_lg.jpg" alt="this_is _the_biggest_beautiful_scene">
+// </li>
+// <li class="second_gallery">
+//   <ul class="gallery gallery1">
+//     <li>
+//       <picture>
+//         <source media="(min-width: 1120px)" srcset="./webroot/images/rock_carvings_lg.jpg">
+//         <source media="(min-width: 720px)" srcset="./webroot/images/rock_carvings_md.jpg">
+//         <img src="./webroot/images/rock_carvings_sm.jpg" alt="this_is_for_rock_carving">
+//       </picture>
+//     </li>
+//     <li>
+//       <picture>
+//         <source media="(min-width: 1120px)" srcset="./webroot/images/stairs_lg.jpg">
+//         <source media="(min-width: 720px)" srcset="./webroot/images/stairs_md.jpg">
+//         <img src="./webroot/images/stairs_sm.jpg" alt="this_is_for_stairs">
+//       </picture>
+//     </li>
+//     <li>
+//       <picture>
+//         <source media="(min-width: 1120px)" srcset="./webroot/images/ripples_lg.jpg">
+//         <source media="(min-width: 720px)" srcset="./webroot/images/ripples_md.jpg">
+//           <img src="./webroot/images/ripples_sm.jpg" alt="this_is_for_ripples">
+//       </picture>
+//     </li>
+//     <li>
+//       <picture>
+//         <source media="(min-width: 1120px)" srcset="./webroot/images/dunes_lg.jpg">
+//         <source media="(min-width: 720px)" srcset="./webroot/images/dunes_md.jpg">
+//           <img src="./webroot/images/dunes_sm.jpg" alt="this_is_for_ripples">
+//       </picture>
+//     </li>
+//     <li>
+//       <picture>
+//         <source media="(min-width: 1120px)" srcset="./webroot/images/arches_lg.jpg">
+//         <source media="(min-width: 720px)" srcset="./webroot/images/arches_md.jpg">
+//           <img src="./webroot/images/arches_lg.jpg" alt="this_is_for_ripples">
+//       </picture>
+//     </li>
+//     <li>
+//       <picture>
+//         <source media="(min-width: 1120px)" srcset="./webroot/images/car_lg.jpg">
+//         <source media="(min-width: 720px)" srcset="./webroot/images/car_md.jpg">
+//           <img src="./webroot/images/car_lg.jpg" alt="this_is_for_ripples">
+//       </picture>
+//     </li>
+//     <li>
+//       <picture>
+//         <source media="(min-width: 1120px)" srcset="./webroot/images/sunset_lg.jpg">
+//         <source media="(min-width: 720px)" srcset="./webroot/images/sunset_md.jpg">
+//           <img src="./webroot/images/sunset_sm.jpg" alt="this_is_for_ripples">
+//       </picture>
+//     </li>
+//     <li>
+//       <picture>
+//         <source media="(min-width: 1120px)" srcset="./webroot/images/canyon_lg.jpg">
+//         <source media="(min-width: 720px)" srcset="./webroot/images/canyon_md.jpg">
+//           <img src="./webroot/images/canyon_sm.jpg" alt="this_is_for_ripples">
+//       </picture>
+//     </li>
+//   </ul>
+// </li>
+// </ul> -->

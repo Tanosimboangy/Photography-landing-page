@@ -10,34 +10,28 @@ body {
   header, section {
     padding: $padding-zero calc(#{$padding * 7.25});
   }
-}
-
-ul {
-  padding: $padding-zero;
-  margin: $margin-zero;
-  li {
-    list-style: none;
+  ul {
+    padding: $padding-zero;
+    margin: $margin-zero;
+    li {
+      list-style: none;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $secondary-color-heading;
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    margin: $margin-zero;
+  }
+  h3 {
+    @include font_dm_serif_display;
+    text-transform: uppercase;
+  }
+  h5 {
+    display: none;
   }
 }
-
-a {
-  text-decoration: none;
-  color: $secondary-color-heading;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: $margin-zero;
-}
-
-h3 {
-  @include font_dm_serif_display;
-  text-transform: uppercase;
-}
-
-h5 {
-  display: none;
-}
-
 @media(min-width: 1120px) {
   .container {
     max-width: 1113px;
