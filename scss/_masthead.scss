@@ -10,6 +10,13 @@ main > header {
       img {
         width: calc(#{$padding * 7.5});
       }
+      span {
+        margin-left: 10px;
+      }
+    }
+    a:hover  {
+      color: blue;
+      font-weight: 600;
     }
     h1 {
       @include font_dm_serif_display;

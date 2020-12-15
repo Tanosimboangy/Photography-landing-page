@@ -10,10 +10,10 @@ body > header {
     h3 {
       @include font_dm_serif_display;
       color: $secondary-color-heading;
-      padding-top: calc(#{$padding * 8});
+      padding-top: calc(#{$padding * 10});
       padding-left: calc(#{$padding * 7});
-      padding-bottom: calc(#{$padding * 8});
-      font-size: calc(#{$padding * 12});
+      padding-bottom: calc(#{$padding * 10});
+      font-size: calc(#{$padding * 14});
       line-height: calc(#{$padding * 6});
     }
     svg {
@@ -29,18 +29,17 @@ body > header {
       opacity: 0;
       z-index: 1;
     }
-    
     .checkbox:checked ~ .menu {
       display: block;
       position: absolute;
-      top: calc(44px);
+      top: calc(52px);
       left: calc(-15px);
-      height: calc(300px);
+      height: calc(413px);
       z-index: 1;
-      padding: calc(10px);
-      color: #FFFFFF;
-      width: 105%;
-      background: #434CCC;
+      padding: calc(20px);
+      width: 98%;
+      transition: transform 200s;
+      background-color: #f8f8f8;
     }
     .menu {
       display: none;
@@ -51,7 +50,7 @@ body > header {
           padding: calc(#{$padding * 5});
           a {
             @include font_DM_sans_bold_plus_font_size;
-            color: $secondary-color-heading;
+            color: blue;
           }
         }
       }
@@ -63,6 +62,10 @@ body > header {
 @media(min-width: 720px) {
   body > header {
     .container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
       svg {
         display: none;
       }
@@ -73,13 +76,12 @@ body > header {
         }
         .navigation_container {
           @include flex_row;
-          background: #434CCC;
           border-radius: none;
           box-shadow: none;
           li {
             a {
               @include font_DM_sans_bold_plus_font_size;
-              color: $secondary-color-heading;
+              color: blue;
             }
           }
         }

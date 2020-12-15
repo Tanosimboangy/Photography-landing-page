@@ -56,10 +56,10 @@ body > header .container h3 {
   font-style: normal;
   font-weight: normal;
   color: #FFFFFF;
-  padding-top: calc(16px);
+  padding-top: calc(20px);
   padding-left: calc(14px);
-  padding-bottom: calc(16px);
-  font-size: calc(24px);
+  padding-bottom: calc(20px);
+  font-size: calc(28px);
   line-height: calc(12px);
 }
 body > header .container svg {
@@ -78,14 +78,14 @@ body > header .container .checkbox {
 body > header .container .checkbox:checked ~ .menu {
   display: block;
   position: absolute;
-  top: calc(44px);
+  top: calc(52px);
   left: calc(-15px);
-  height: calc(300px);
+  height: calc(413px);
   z-index: 1;
-  padding: calc(10px);
-  color: #FFFFFF;
-  width: 105%;
-  background: #434CCC;
+  padding: calc(20px);
+  width: 98%;
+  transition: transform 200s;
+  background-color: #f8f8f8;
 }
 body > header .container .menu {
   display: none;
@@ -103,10 +103,16 @@ body > header .container .menu .navigation_container li a {
   font-weight: bold;
   font-size: calc(16px);
   line-height: calc(24px);
-  color: #FFFFFF;
+  color: blue;
 }
 
 @media (min-width: 720px) {
+  body > header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
   body > header .container svg {
     display: none;
   }
@@ -120,7 +126,6 @@ body > header .container .menu .navigation_container li a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: #434CCC;
     border-radius: none;
     box-shadow: none;
   }
@@ -130,7 +135,7 @@ body > header .container .menu .navigation_container li a {
     font-weight: bold;
     font-size: calc(16px);
     line-height: calc(24px);
-    color: #FFFFFF;
+    color: blue;
   }
 }
 @media (min-width: 1120px) {
@@ -176,6 +181,13 @@ main > header .container a {
 }
 main > header .container a img {
   width: calc(15px);
+}
+main > header .container a span {
+  margin-left: 10px;
+}
+main > header .container a:hover {
+  color: blue;
+  font-weight: 600;
 }
 main > header .container h1 {
   font-family: "DM Serif Display";
