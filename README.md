@@ -1,106 +1,51 @@
-# Front-end final mockup-to-website project
+# **FRONT-END-FIANLS**
 
-Hey everyone! 
+![image](./webroot/images/big_screen.png)
+![image](./webroot/images/small_screen.png)
 
-This will be our final project in the front-end course, so let's make it a good one :)
 
-Please fork-and-clone this project as your own repo.
+<h1 align="center">Front-end-finals</h1>
 
-First things first, let's get you set up. You will need the following…
+<div align="center">
+  <h3>
+    <a href="https://github.com/Tanosimboangy/front-end-finals">
+      Solution
+    </a>
+    <span> | </span>
+    <a href="https://vigilant-knuth-ba0f5e.netlify.app/">
+      Demo
+    </a>
+  </h3>
+</div>
 
-## Dependencies
+## This project is our final assessement on HTML and CSS. I would like to show it you so that you can help me or if you interested in some stuff, we can work on that together.
 
-- Node.js
-- Figma
-- Figma Font Helper
+# **You can find the demo of this project here:** 
 
-## Install
+  - If you want to find the demo about this project, you can click this demo link: 
+<div><a href="https://vigilant-knuth-ba0f5e.netlify.app/">Demo</a></div>.
 
-We'll be using `node-sass` for our Sass compilation. Let's install that by doing:
+  - This is from Netlify but if you want to look at the solution here is the link: 
+<div><a href="https://github.com/Tanosimboangy/front-end-finals">Demo</a></div>.
 
-1. `npm i`
+#   **My experience:**
 
-## Getting started
+  -  Since this project is based upon HTML and CSS, displaying each item can be complicated.
 
-### Design
+  -  First of all, After having set all of the necessary files, such as index.html, index.scss, I installed sass and run it so that it compiles the scss styles into css and the browser won't have difficulty to render it. 
 
-You can find the design:
+  - Secondly, I tried to style all of the elements and set up the javascript code for the slider images. I had a great deal of difficulty to tackle with this part.
 
-- online at [figma.com/Laaqiq-1-Portfolio-detail-Responsive](https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1-Portfolio-detail-Responsive?node-id=0%3A1) (Recommended)
-- by importing the `.fig` file in [the `source_materials` folder](./source_materials/) into your figma app.
+#   **In a few sentences, explain the structure of my project:**
 
-### Source files
+  - First and foremost, Inside of index.html I write the whole code with a small part of javascript.
 
-Have a look in the `source_materials` folder. There you'll find any fonts you need, images that are required by the design work.
+  - Lately, I tried to use parcel to run the run this code to the browser.
 
-2. Install any OTF/TTF fonts found in the `source_materials/fonts` folder in your system, so that you don't get bugged by Figma's Font replacement dialog box.
+#  **If I had more time, I would you improve:**
+  - First, I would like to improve the way how I display all of the links icons like facebook and twitter by using another fill when it is hovered by the user.
 
-### Webroot
+  - Also, I would cleanse my code very well so that it's easy for others to understand it.
 
-As with most setups, it's a good idea to isolate all the web-files in the `webroot` folder.
-Export all the images, fonts, HTML, JS, and CSS you use to this webroot folder (in the right subfolder of course!).
-
-3. Create a `webroot/index.html` file.
-
-### Sass
-
-We'll be using the `scss` folder for all our Sass files.
-
-4. Create a `scss/index.scss` file, that will act as our manifest Sass file.
-5. Build your CSS file once by running the `npm run scss` script.
-
-All your Sass files will be output to the `webroot/css` folder.
-
-### Linking up our styles
-
-6. Link up the new `webroot/css/index.css` stylesheet in your `index.html`
-
-## Development
-
-You'll want to run the `scss:watch` task when you're developing this project.
-
-## Marking & requirements
-
-You have 5 days to convert the design work to a working single webpage. There's a lot to cover here in a week, and we don't expect you to have the entire website done in that time, but it would be great if you could.
-
-So, what is expected then? We're going to be marking most of the things we've learned this year. Here's a list of things we'll be looking at:
-
-- **All the HTML**
-  - Your HTML should be clean, accurate, and consistent.
-  - Use the right elements for the right job.
-  - Structure your HTML nicely.
-  - Make sure your HTML is accessible.
-  - Make sure your HTML is valid.
-  - *Bonus points*: Progressively enhancing your HTML, e.g. using `<picture>` elements with multiple sources.
-- **As much Sass as you can**
-  - Your Sass should use variables at a minimum, and be extended with mixins, functions, and abstract classes if you can.
-  - Your Sass output should be orderly, and expected.
-  - Keep your SCSS files clean
-  - Add helpful comments to the difficult-to-understand parts.
-  - You don't have to style everything within the time-frame. But we want to see completed components where possible.
-- **CSS**
-  - Add style to elements that the user can focus, hover over, or interact with.
-  - Your work should be Mobile-First by default, and Responsive.
-  - *Bonus points*: Use Custom Properties if you can.
-- **Images**
-  - Are you using a CSS `background-image` or an `<img>` in the HTML? Make sure it's for the right reasons.
-  - Use the correct image format for each case
-  - *Bonus points*: Compress your images
-- **Fonts**
-  - If you'd like, use a `fonts.google.com`-supplied stylesheet for the fonts, but we really want to see you use your own `@font-face` declarations. Link up the WOFF2 and WOFF formats to your CSS using as many `@font-face` at-rules as you need.
-  - Use `local()` functions for locally-installed fonts.
-  - Test that your website works without local font support.
-  - *Bonus points*: Subset your fonts
-- **General**
-  - No spelling or grammar mistakes please
-  - Test, test, test!
-  - Don't feel pressure to complete the entire page, but rather try complete each component you start. **Leave out the bits that look too complex and work on them at the end!**
-  - Ensure your commits are frequent and well-described.
-- **Advanced**
-  - Make the menu on mobile work nicely, use your own imagination here.
-  - *Bonus points*: Make the Image Slider, and other components work as intended, maybe you'll need some JS?
-  - *Bonus points*: Use newer image formats such as WebP and AVIF, while still maintaining support for older formats.
-
-## Ready?
-
-Apply everything you've learend before, do your best, and Good luck! 🤓
+#   **New I learned while working on this project:**
+  - I learned that we could use parcel instead of sass, and this make your life even easier to deal with everthing.

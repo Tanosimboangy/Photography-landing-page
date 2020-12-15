@@ -91,7 +91,7 @@ body > header .container .menu .navigation_container li a {
   font-weight: bold;
   font-size: calc(16px);
   line-height: calc(24px);
-  color: blue;
+  color: white;
   font-size: 20px;
 }
 body > header .container .checkbox:checked ~ .menu {
@@ -102,8 +102,8 @@ body > header .container .checkbox:checked ~ .menu {
   height: calc(411px);
   z-index: 1;
   padding: calc(20px);
-  width: 98%;
-  background: white;
+  width: 100%;
+  background: #434CCC;
 }
 
 @media (min-width: 720px) {

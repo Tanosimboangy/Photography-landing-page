@@ -38,7 +38,7 @@ body > header {
           padding: calc(#{$padding * 5});
           a {
             @include font_DM_sans_bold_plus_font_size;
-            color: blue;
+            color: white;
             font-size: 20px;
           }
         }
@@ -52,8 +52,8 @@ body > header {
       height: calc(411px);
       z-index: 1;
       padding: calc(20px);
-      width: 98%;
-      background: white;
+      width: 100%;
+      background: #434CCC;
     }
   }
 }
