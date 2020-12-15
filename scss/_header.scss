@@ -29,18 +29,6 @@ body > header {
       opacity: 0;
       z-index: 1;
     }
-    .checkbox:checked ~ .menu {
-      display: block;
-      position: absolute;
-      top: calc(52px);
-      left: calc(-15px);
-      height: calc(413px);
-      z-index: 1;
-      padding: calc(20px);
-      width: 98%;
-      transition: transform 200s;
-      background: white;
-    }
     .menu {
       display: none;
       .navigation_container {
@@ -55,6 +43,17 @@ body > header {
           }
         }
       }
+    }
+    .checkbox:checked ~ .menu {
+      display: block;
+      position: absolute;
+      top: calc(52px);
+      left: calc(-19px);
+      height: calc(411px);
+      z-index: 1;
+      padding: calc(20px);
+      width: 98%;
+      background: white;
     }
   }
 }
