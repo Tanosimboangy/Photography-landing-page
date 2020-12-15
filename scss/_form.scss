@@ -17,16 +17,21 @@ section:nth-of-type(3) {
             #email_input {
               @include font_DM_sans; 
               @include fontS_lineH;
-              background: $secondary-color-heading;
-              border: calc(#{$padding * .5}) solid #DADADA;
+              font-size: calc(16px);
+              line-height: calc(24px);
+              background: #FFFFFF;
+              border: calc(1px) solid #DADADA;
               box-sizing: border-box;
-              border-radius: calc(#{$padding * 2.5});
-              padding-top: calc(#{$padding * 6.5});
-              padding-bottom: calc(#{$padding * 6.5});
-              padding-right: calc(#{$padding * 73});
-              padding-left: calc(#{$padding * 6});
-              margin-top: calc(#{$margin * 6});
-              color: $sub-heading-text-color;
+              border-radius: calc(5px);
+              padding-top: calc(13px);
+              padding-bottom: calc(13px);
+              padding-right: calc(90px);
+              padding-left: calc(12px);
+              margin-top: calc(12px);
+              color: rgba(0, 0, 0, 0.5);
+              max-width: 100%;
+              cursor: pointer;
+              outline: none;
             }
           }
           li:nth-of-type(2) {
@@ -39,6 +44,8 @@ section:nth-of-type(3) {
               background: #434CCC;
               border-radius: calc(#{$padding * 2.5});
               padding: calc(#{$padding * 6}) calc(#{$padding * 22.75});
+              cursor: pointer;
+              outline: none;
             }
           }
         }

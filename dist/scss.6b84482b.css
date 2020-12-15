@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background: rgba(67, 76, 204, 0.05);
+  zoom: 100%;
 }
 body header, body section {
   padding: 0 calc(14.5px);
@@ -449,16 +450,21 @@ section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-typ
   font-style: normal;
   font-size: calc(16px);
   line-height: calc(24px);
+  font-size: calc(16px);
+  line-height: calc(24px);
   background: #FFFFFF;
   border: calc(1px) solid #DADADA;
   box-sizing: border-box;
   border-radius: calc(5px);
   padding-top: calc(13px);
   padding-bottom: calc(13px);
-  padding-right: calc(146px);
+  padding-right: calc(90px);
   padding-left: calc(12px);
   margin-top: calc(12px);
   color: rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  cursor: pointer;
+  outline: none;
 }
 section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-type(2) {
   padding-bottom: calc(54px);
@@ -475,6 +481,8 @@ section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-typ
   background: #434CCC;
   border-radius: calc(5px);
   padding: calc(12px) calc(45.5px);
+  cursor: pointer;
+  outline: none;
 }
 
 @media (min-width: 1120px) {
