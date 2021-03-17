@@ -1,123 +1,121 @@
 @import "variable";
 @import "mixins";
-
-body > header {
-  background: #434CCC;
-  position: relative;
-  .container {
-    @include flex_row_just_center;
+body>header {
+    background: #434CCC;
     position: relative;
-    h3 {
-      @include font_dm_serif_display;
-      color: $secondary-color-heading;
-      padding-top: calc(#{$padding * 10});
-      padding-left: calc(#{$padding * 7});
-      padding-bottom: calc(#{$padding * 10});
-      font-size: calc(#{$padding * 14});
-      line-height: calc(#{$padding * 6});
-    }
-    svg {
-      padding-right: calc(#{$padding * 7});
-      position: absolute;
-      top: calc(#{$padding * 7.5});
-      right: calc(#{$padding * -1.5});
-    }
-    .checkbox {
-      margin-left: calc(#{$padding * -7});
-      width: calc(#{$padding * 18});
-      height: calc(#{$padding * 11.5});
-      opacity: 0;
-      z-index: 1;
-    }
-    .menu {
-      display: none;
-      .navigation_container {
-        padding-left: calc(#{$padding * 10}) calc(#{$padding * 10});
-        border-radius: calc(#{$padding * 5});
-        li {
-          padding: calc(#{$padding * 5});
-          a {
-            @include font_DM_sans_bold_plus_font_size;
-            color: white;
-            font-size: 20px;
-          }
+    .container {
+        @include flex_row_just_center;
+        position: relative;
+        h3 {
+            @include font_dm_serif_display;
+            color: $secondary-color-heading;
+            padding-top: calc(#{$padding * 10});
+            padding-left: calc(#{$padding * 7});
+            padding-bottom: calc(#{$padding * 10});
+            font-size: calc(#{$padding * 14});
+            line-height: calc(#{$padding * 6});
         }
-      }
+        svg {
+            padding-right: calc(#{$padding * 7});
+            position: absolute;
+            top: calc(#{$padding * 7.5});
+            right: calc(#{$padding * -1.5});
+        }
+        .checkbox {
+            margin-left: calc(#{$padding * -7});
+            width: calc(#{$padding * 18});
+            height: calc(#{$padding * 11.5});
+            opacity: 0;
+            z-index: 1;
+        }
+        .menu {
+            display: none;
+            .navigation_container {
+                padding-left: calc(#{$padding * 10}) calc(#{$padding * 10});
+                border-radius: calc(#{$padding * 5});
+                li {
+                    padding: calc(#{$padding * 5});
+                    a {
+                        @include font_DM_sans_bold_plus_font_size;
+                        color: white;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .checkbox:checked~.menu {
+            display: block;
+            position: absolute;
+            top: calc(52px);
+            left: calc(-19px);
+            height: calc(411px);
+            z-index: 1;
+            padding: calc(20px);
+            width: 100%;
+            background: #434CCC;
+            transition: 1s;
+        }
     }
-    .checkbox:checked ~ .menu {
-      display: block;
-      position: absolute;
-      top: calc(52px);
-      left: calc(-19px);
-      height: calc(411px);
-      z-index: 1;
-      padding: calc(20px);
-      width: 100%;
-      background: #434CCC;
-    }
-  }
 }
 
-
 @media(min-width: 720px) {
-  body > header {
-    .container {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-between;
-      svg {
-        display: none;
-      }
-      .menu {
-        display: flex;
-        h3 {
-          display: none;
-        }
-        .navigation_container {
-          @include flex_row;
-          border-radius: none;
-          box-shadow: none;
-          li {
-            a {
-              @include font_DM_sans_bold_plus_font_size;
-              color: white;
+    body>header {
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            svg {
+                display: none;
             }
-          }
+            .menu {
+                display: flex;
+                h3 {
+                    display: none;
+                }
+                .navigation_container {
+                    @include flex_row;
+                    border-radius: none;
+                    box-shadow: none;
+                    li {
+                        a {
+                            @include font_DM_sans_bold_plus_font_size;
+                            color: white;
+                        }
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 
 @media(min-width: 1120px) {
-  body > header {
-    .container {
-      @include flex_row;
-      h3 {
-        padding-left: calc(#{$padding * 0});
-        font-size: calc(#{$padding * 20});
-        line-height: calc(#{$padding * 24});
-        color: rgb(255, 255, 255);
-      }
-      svg {
-        display: none;
-      }
-      .menu {
-        display: flex;
-        h3 {
-          display: none;
-        }
-        .navigation_container {
-          li {
-            a {
-              @include font_DM_sans_bold_plus_font_size;
-              color: $secondary-color-heading;
+    body>header {
+        .container {
+            @include flex_row;
+            h3 {
+                padding-left: calc(#{$padding * 0});
+                font-size: calc(#{$padding * 20});
+                line-height: calc(#{$padding * 24});
+                color: rgb(255, 255, 255);
             }
-          }
+            svg {
+                display: none;
+            }
+            .menu {
+                display: flex;
+                h3 {
+                    display: none;
+                }
+                .navigation_container {
+                    li {
+                        a {
+                            @include font_DM_sans_bold_plus_font_size;
+                            color: $secondary-color-heading;
+                        }
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
-

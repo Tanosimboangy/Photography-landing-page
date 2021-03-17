@@ -104,6 +104,7 @@ body > header .container .checkbox:checked ~ .menu {
   padding: calc(20px);
   width: 100%;
   background: #434CCC;
+  transition: 1s;
 }
 
 @media (min-width: 720px) {
