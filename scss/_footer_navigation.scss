@@ -1,50 +1,48 @@
 @import "variable";
 @import "mixins";
-
 footer {
-  .big_container{
-    .component {
-      .container {
-        .footer_navigation {
-          padding-bottom: calc(#{$padding * 38.5});
-          h4 {
-            @include font_DM_sans_bold_plus_font_size;
-            color: $primary-color-heading;
-            padding-bottom: calc(#{$padding * 12});
-          }
-          ul {
-            li {
-              a {
-                @include font_DM_sans_normal_plus_font_size;
-                color: $sub-heading-text-color;
-              }
-              a:hover {
-                color: blue;
-                font-weight: 600;
-              }
+    .big_container {
+        .component {
+            .container {
+                .footer_navigation {
+                    padding-bottom: calc(#{$padding * 38.5});
+                    h4 {
+                        @include font_DM_sans_bold_plus_font_size;
+                        color: $primary-color-heading;
+                        padding-bottom: calc(#{$padding * 12});
+                    }
+                    ul {
+                        li {
+                            a {
+                                @include font_DM_sans_normal_plus_font_size;
+                                color: $sub-heading-text-color;
+                            }
+                            a:hover {
+                                color: blue;
+                            }
+                        }
+                        li:not(:last-of-type) {
+                            padding-bottom: calc(#{$padding * 3.995});
+                        }
+                    }
+                }
             }
-            li:not(:last-of-type) {
-              padding-bottom: calc(#{$padding * 3.995});
-            }
-          }
         }
-      }
     }
-  }
 }
 
 @media(min-width: 1120px) {
-  footer {
-    .big_container{
-      .component {
-        .container {
-          .footer_navigation {  
-            display: block;
-            padding-top: calc(#{$padding * 39});
-            padding-bottom: $padding-zero;
-          }
+    footer {
+        .big_container {
+            .component {
+                .container {
+                    .footer_navigation {
+                        display: block;
+                        padding-top: calc(#{$padding * 39});
+                        padding-bottom: $padding-zero;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }

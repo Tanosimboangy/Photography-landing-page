@@ -595,7 +595,6 @@ footer .big_container .component .container .footer_navigation ul li a {
 }
 footer .big_container .component .container .footer_navigation ul li a:hover {
   color: blue;
-  font-weight: 600;
 }
 footer .big_container .component .container .footer_navigation ul li:not(:last-of-type) {
   padding-bottom: calc(7.99px);
