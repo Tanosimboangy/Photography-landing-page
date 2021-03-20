@@ -18,7 +18,7 @@
   </h3>
 </div>
 
-## This project is our final assessement on HTML and CSS. I would like to show it you so that you can help me or if you interested in some stuff, we can work on that together.
+## This project is our final assessement on HTML and CSS. I would like to show it you so that you can help me or if you interested in some stuff we can work on together.
 
 # **You can find the demo of this project here:** 
 
@@ -35,6 +35,9 @@
   -  First of all, After having set all of the necessary files, such as index.html, index.scss, I installed sass and run it so that it compiles the scss styles into css and the browser won't have difficulty to render it. 
 
   - Secondly, I tried to style all of the elements and set up the javascript code for the slider images. I had a great deal of difficulty to tackle with this part.
+
+  - Interestingly, I had a chance to apply some of javascript funtionalities in this project which about image slider.
+  
 
 #   **In a few sentences, explain the structure of my project:**
 
