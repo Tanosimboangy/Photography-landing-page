@@ -259,11 +259,11 @@ section:nth-of-type(1) .container .container .row {
   justify-content: space-between;
   overflow-x: scroll;
 }
+section:nth-of-type(1) .container .container .row .active {
+  opacity: 1;
+}
 section:nth-of-type(1) .container .container .row .column:not(:last-of-type) {
   margin-right: 8px;
-}
-section:nth-of-type(1) .container .container .row .column:first-of-type img {
-  opacity: 1;
 }
 section:nth-of-type(1) .container .container .row img {
   max-width: calc(130.4px);
@@ -387,6 +387,10 @@ section:nth-of-type(2) .container .more_info .more_info_icons {
   align-items: center;
   max-width: calc(65px);
   padding-bottom: calc(105px);
+}
+section:nth-of-type(2) .container .more_info .more_info_icons li a:hover svg {
+  fill: darkorange;
+  opacity: 1;
 }
 
 @media (min-width: 720px) {

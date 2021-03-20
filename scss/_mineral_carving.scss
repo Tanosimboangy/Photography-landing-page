@@ -1,71 +1,78 @@
 @import "variable";
 @import "mixins";
-
 section:nth-of-type(2) {
-  .container {
-    .more_info {
-      h2 {
-        @include font_dm_serif_display;
-        font-size: calc(#{$padding * 20});
-        line-height: calc(#{$padding * 24});
-        color: $primary-color-heading;
-        margin: $margin-zero;
-        padding-bottom: calc(#{$padding * 15.5});
-      }
-      p {
-        @include font_DM_sans_normal;
-        margin: $margin-zero;
-      }
-      p:nth-of-type(1) {
-        font-size: calc(#{$padding * 9});
-        line-height: calc(#{$padding * 16});
-        color: $primary-color-heading;
-        padding-bottom: calc(#{$padding * 8});
-      }
-      p:nth-of-type(2) {
-        @include fontS_lineH;
-        color: $sub-heading-text-color;
-        padding-bottom: calc(#{$padding * 15.5});
-      }
-      .more_info_icons {
-        @include flex_row_just_center;
-        max-width: calc(#{$max-width * 4.0625});
-        padding-bottom: calc(#{$padding * 52.5});
-      }
+    .container {
+        .more_info {
+            h2 {
+                @include font_dm_serif_display;
+                font-size: calc(#{$padding * 20});
+                line-height: calc(#{$padding * 24});
+                color: $primary-color-heading;
+                margin: $margin-zero;
+                padding-bottom: calc(#{$padding * 15.5});
+            }
+            p {
+                @include font_DM_sans_normal;
+                margin: $margin-zero;
+            }
+            p:nth-of-type(1) {
+                font-size: calc(#{$padding * 9});
+                line-height: calc(#{$padding * 16});
+                color: $primary-color-heading;
+                padding-bottom: calc(#{$padding * 8});
+            }
+            p:nth-of-type(2) {
+                @include fontS_lineH;
+                color: $sub-heading-text-color;
+                padding-bottom: calc(#{$padding * 15.5});
+            }
+            .more_info_icons {
+                @include flex_row_just_center;
+                max-width: calc(#{$max-width * 4.0625});
+                padding-bottom: calc(#{$padding * 52.5});
+                li {
+                    a:hover {
+                        svg {
+                            fill: darkorange;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 }
 
 @media(min-width: 720px) {
-  section:nth-of-type(2) {
-    .container {
-      .more_info {
-        p {
-          width: calc(#{$max-width * 43.75});
+    section:nth-of-type(2) {
+        .container {
+            .more_info {
+                p {
+                    width: calc(#{$max-width * 43.75});
+                }
+            }
         }
-      }
     }
-  }
 }
 
 @media(min-width: 1120px) {
-  section:nth-of-type(2) {
-    .container {
-      padding-top: 89px;
-      .more_info {
-        p {
-          width: calc(#{$max-width * 35.625});
+    section:nth-of-type(2) {
+        .container {
+            padding-top: 89px;
+            .more_info {
+                p {
+                    width: calc(#{$max-width * 35.625});
+                }
+                p:nth-of-type(1) {
+                    padding-bottom: calc(#{$padding * 19});
+                }
+                p:nth-of-type(2) {
+                    padding-bottom: calc(#{$padding * 27.5});
+                }
+                .more_info_icons {
+                    padding-bottom: calc(#{$padding * 38});
+                }
+            }
         }
-        p:nth-of-type(1) {
-          padding-bottom: calc(#{$padding * 19});
-        }
-        p:nth-of-type(2) {
-          padding-bottom: calc(#{$padding * 27.5});
-        }
-        .more_info_icons {
-          padding-bottom: calc(#{$padding * 38});
-        }
-      }
     }
-  }
 }
