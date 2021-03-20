@@ -83,7 +83,7 @@ body > header .container .menu .navigation_container {
   border-radius: calc(10px);
 }
 body > header .container .menu .navigation_container li {
-  padding: calc(10px);
+  padding: calc(2px);
 }
 body > header .container .menu .navigation_container li a {
   font-family: "DM Sans";
@@ -130,6 +130,10 @@ body > header .container .checkbox:checked ~ .menu {
     border-radius: none;
     box-shadow: none;
   }
+  body > header .container .menu .navigation_container li {
+    padding-left: calc(25px);
+    padding-right: calc(25px);
+  }
   body > header .container .menu .navigation_container li a {
     font-family: "DM Sans";
     font-style: normal;
@@ -160,6 +164,11 @@ body > header .container .checkbox:checked ~ .menu {
   body > header .container .menu h3 {
     display: none;
   }
+  body > header .container .menu .navigation_container li {
+    padding: calc(25px);
+    padding-left: calc(25px);
+    padding-right: calc(25px);
+  }
   body > header .container .menu .navigation_container li a {
     font-family: "DM Sans";
     font-style: normal;
@@ -167,6 +176,9 @@ body > header .container .checkbox:checked ~ .menu {
     font-size: calc(16px);
     line-height: calc(24px);
     color: #FFFFFF;
+  }
+  body > header .container .menu .navigation_container li a:hover {
+    text-decoration: underline;
   }
 }
 main > header {

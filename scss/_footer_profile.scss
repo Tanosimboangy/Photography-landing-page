@@ -32,8 +32,6 @@ footer {
                                     li:nth-of-type(2) {
                                         @include font_DM_sans_normal;
                                         @include fontS12_lineH;
-                                        // color: $primary-color-heading;
-                                        // padding: $padding-zero;
                                         font-weight: bold;
                                         font-size: calc(#{$padding * 6});
                                         color: $primary-color-heading;
