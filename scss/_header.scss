@@ -34,9 +34,7 @@ body>header {
                 padding-left: calc(#{$padding * 10}) calc(#{$padding * 10});
                 border-radius: calc(#{$padding * 5});
                 li {
-                    padding: calc(#{$padding * 1});
-                    // padding-left: calc(#{$padding * 12.5});
-                    // padding-right: calc(#{$padding * 12.5});
+                    padding: calc(#{$padding * 10});
                     a {
                         @include font_DM_sans_bold_plus_font_size;
                         color: white;
