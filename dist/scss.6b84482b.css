@@ -65,7 +65,7 @@ body > header .container h3 {
 body > header .container svg {
   padding-right: calc(14px);
   position: absolute;
-  top: calc(15px);
+  top: calc(19px);
   right: calc(-3px);
 }
 body > header .container .checkbox {
@@ -83,7 +83,7 @@ body > header .container .menu .navigation_container {
   border-radius: calc(10px);
 }
 body > header .container .menu .navigation_container li {
-  padding: calc(2px);
+  padding: calc(20px);
 }
 body > header .container .menu .navigation_container li a {
   font-family: "DM Sans";
