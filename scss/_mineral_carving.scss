@@ -33,8 +33,9 @@ section:nth-of-type(2) {
                 li {
                     a:hover {
                         svg {
-                            fill: darkorange;
-                            opacity: 1;
+                            // fill: darkorange;
+                            filter: invert(100%) sepia(100%) saturate(1352%) hue-rotate(120deg) brightness(100%) contrast(100%);
+                            // opacity: 1;
                         }
                     }
                 }

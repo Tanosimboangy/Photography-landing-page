@@ -389,8 +389,7 @@ section:nth-of-type(2) .container .more_info .more_info_icons {
   padding-bottom: calc(105px);
 }
 section:nth-of-type(2) .container .more_info .more_info_icons li a:hover svg {
-  fill: darkorange;
-  opacity: 1;
+  filter: invert(100%) sepia(100%) saturate(1352%) hue-rotate(120deg) brightness(100%) contrast(100%);
 }
 
 @media (min-width: 720px) {
