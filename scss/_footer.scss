@@ -1,60 +1,59 @@
 @import "variable";
-
 footer {
-  background: $secondary-color-heading;
-  .big_container{
-    .component {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-      width: 100%;
-      .container {
-        padding: $padding-zero calc(#{$padding * 7.25});
-        .footer_texts {
-          h3 {
-            @include font12_lineH32;
-            color: $primary-color-heading;
-            padding-top: calc(#{$padding * 37.5});
-            padding-bottom: calc(#{$padding * 11.5});
-          }
-          p {
-            @include font_DM_sans_normal_plus_font_size;
-            color: $sub-heading-text-color;
-            padding-bottom: calc(#{$padding * 15});
-          }
-          .icons {
-            @include flex_row_just_center;
-            max-width: calc(#{$max-width * 4.0625});
-            padding-bottom: calc(#{$padding * 39.5});
-          }
+    background: $secondary-color-heading;
+    .big_container {
+        .component {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            width: 100%;
+            .container {
+                padding: $padding-zero calc(#{$padding * 7.25});
+                .footer_texts {
+                    h3 {
+                        @include font12_lineH32;
+                        color: $primary-color-heading;
+                        padding-top: calc(#{$padding * 37.5});
+                        padding-bottom: calc(#{$padding * 11.5});
+                    }
+                    p {
+                        @include font_DM_sans_normal_plus_font_size;
+                        color: $sub-heading-text-color;
+                        padding-bottom: calc(#{$padding * 15});
+                    }
+                    .icons {
+                        @include flex_row_just_center;
+                        max-width: calc(#{$max-width * 6.25});
+                        padding-bottom: calc(#{$padding * 39.5});
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 
 @media(min-width: 1120px) {
-  footer {
-    .big_container{
-      .component {
-        .container {
-          @include flex_row_with_flex_start;
-          padding-bottom: calc(#{$padding * 36});
-          .footer_texts {
-            display: block;
-            padding-top: calc(#{$padding * 39});
-            padding-bottom: $padding-zero;
-            h3 {
-              padding-top: $padding-zero;
-              padding-bottom: calc(#{$padding * 11.5});
+    footer {
+        .big_container {
+            .component {
+                .container {
+                    @include flex_row_with_flex_start;
+                    padding-bottom: calc(#{$padding * 36});
+                    .footer_texts {
+                        display: block;
+                        padding-top: calc(#{$padding * 39});
+                        padding-bottom: $padding-zero;
+                        h3 {
+                            padding-top: $padding-zero;
+                            padding-bottom: calc(#{$padding * 11.5});
+                        }
+                        p {
+                            max-width: calc(#{$max-width * 16.875});
+                        }
+                        .icons {
+                            padding-bottom: $padding-zero;
+                        }
+                    }
+                }
             }
-            p {
-              max-width: calc(#{$max-width * 16.875});
-            }
-            .icons {
-              padding-bottom: $padding-zero;
-            }
-          }
         }
-      }
     }
-  }
 }

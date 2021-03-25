@@ -57,7 +57,6 @@ body > header .container h3 {
   font-weight: normal;
   color: #FFFFFF;
   padding-top: calc(20px);
-  padding-left: calc(14px);
   padding-bottom: calc(20px);
   font-size: calc(28px);
   line-height: calc(12px);
@@ -385,11 +384,8 @@ section:nth-of-type(2) .container .more_info .more_info_icons {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: calc(65px);
+  max-width: calc(100px);
   padding-bottom: calc(105px);
-}
-section:nth-of-type(2) .container .more_info .more_info_icons li a:hover svg {
-  filter: invert(100%) sepia(100%) saturate(1352%) hue-rotate(120deg) brightness(100%) contrast(100%);
 }
 
 @media (min-width: 720px) {
@@ -560,7 +556,7 @@ footer .big_container .component .container .footer_texts .icons {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: calc(65px);
+  max-width: calc(100px);
   padding-bottom: calc(79px);
 }
 

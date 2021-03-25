@@ -10,7 +10,6 @@ body>header {
             @include font_dm_serif_display;
             color: $secondary-color-heading;
             padding-top: calc(#{$padding * 10});
-            padding-left: calc(#{$padding * 7});
             padding-bottom: calc(#{$padding * 10});
             font-size: calc(#{$padding * 14});
             line-height: calc(#{$padding * 6});
