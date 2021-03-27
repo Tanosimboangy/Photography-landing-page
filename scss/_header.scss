@@ -64,6 +64,7 @@ body>header {
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+            .checkbox,
             svg {
                 display: none;
             }
@@ -77,13 +78,15 @@ body>header {
                     border-radius: none;
                     box-shadow: none;
                     li {
-                        // padding: calc(#{$padding * 12.5});
                         padding-left: calc(#{$padding * 12.5});
                         padding-right: calc(#{$padding * 12.5});
                         a {
                             @include font_DM_sans_bold_plus_font_size;
                             color: white;
                         }
+                    }
+                    .contact_list {
+                        padding-right: 0;
                     }
                 }
             }
@@ -111,9 +114,9 @@ body>header {
                 }
                 .navigation_container {
                     li {
-                        padding: calc(#{$padding * 12.5});
                         padding-left: calc(#{$padding * 12.5});
-                        padding-right: calc(#{$padding * 12.5});
+                        padding-top: calc(#{$padding * 12.5});
+                        padding-bottom: calc(#{$padding * 12.5});
                         a {
                             @include font_DM_sans_bold_plus_font_size;
                             color: $secondary-color-heading;
@@ -121,6 +124,9 @@ body>header {
                         a:hover {
                             text-decoration: underline;
                         }
+                    }
+                    .contact_list {
+                        padding-right: 0;
                     }
                 }
             }

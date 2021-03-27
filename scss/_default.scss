@@ -1,47 +1,57 @@
 @import "variable";
 @import "mixins";
-
 body {
-  margin: $padding-zero;
-  background: rgba(67, 76, 204, 0.05);
-  zoom: 100%;
-  header, section, footer {
-    $padding: 2px;
-  }
-  header, section {
-    padding: $padding-zero calc(#{$padding * 7.25});
-  }
-  ul {
-    padding: $padding-zero;
-    margin: $margin-zero;
-    li {
-      list-style: none;
+    margin: $padding-zero;
+    background: rgba(67, 76, 204, 0.05);
+    zoom: 100%;
+    header,
+    section,
+    footer {
+        $padding: 2px;
     }
-  }
-  a {
-    text-decoration: none;
-    color: $secondary-color-heading;
-  }
-  h1, h2, h3, h4, h5, h6, p {
-    margin: $margin-zero;
-  }
-  h3 {
-    @include font_dm_serif_display;
-    text-transform: uppercase;
-  }
-  h5 {
-    display: none;
-  }
+    header,
+    section {
+        padding: $padding-zero calc(#{$padding * 7.25});
+    }
+    ul {
+        padding: $padding-zero;
+        margin: $margin-zero;
+        li {
+            list-style: none;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $secondary-color-heading;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: $margin-zero;
+    }
+    h3 {
+        @include font_dm_serif_display;
+        text-transform: uppercase;
+    }
+    h5 {
+        display: none;
+    }
 }
+
 @media(min-width: 1120px) {
-  .container {
-    max-width: 1100px;
-    margin: $margin-auto;
-  }
-  body {
-    header, section, footer {
-      padding: $padding-zero;
+    .container {
+        max-width: 1170px;
+        margin: $margin-auto;
     }
-  }
+    body {
+        header,
+        section,
+        footer {
+            padding: $padding-zero;
+        }
+    }
 }
-  

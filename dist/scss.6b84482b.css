@@ -3,7 +3,8 @@ body {
   background: rgba(67, 76, 204, 0.05);
   zoom: 100%;
 }
-body header, body section {
+body header,
+body section {
   padding: 0 calc(14.5px);
 }
 body ul {
@@ -17,7 +18,13 @@ body a {
   text-decoration: none;
   color: #FFFFFF;
 }
-body h1, body h2, body h3, body h4, body h5, body h6, body p {
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body p {
   margin: 0;
 }
 body h3 {
@@ -32,11 +39,13 @@ body h5 {
 
 @media (min-width: 1120px) {
   .container {
-    max-width: 1100px;
+    max-width: 1170px;
     margin: auto;
   }
 
-  body header, body section, body footer {
+  body header,
+body section,
+body footer {
     padding: 0;
   }
 }
@@ -113,7 +122,8 @@ body > header .container .checkbox:checked ~ .menu {
     align-items: center;
     justify-content: space-between;
   }
-  body > header .container svg {
+  body > header .container .checkbox,
+body > header .container svg {
     display: none;
   }
   body > header .container .menu {
@@ -141,6 +151,9 @@ body > header .container .checkbox:checked ~ .menu {
     line-height: calc(24px);
     color: white;
   }
+  body > header .container .menu .navigation_container .contact_list {
+    padding-right: 0;
+  }
 }
 @media (min-width: 1120px) {
   body > header .container {
@@ -164,9 +177,9 @@ body > header .container .checkbox:checked ~ .menu {
     display: none;
   }
   body > header .container .menu .navigation_container li {
-    padding: calc(25px);
     padding-left: calc(25px);
-    padding-right: calc(25px);
+    padding-top: calc(25px);
+    padding-bottom: calc(25px);
   }
   body > header .container .menu .navigation_container li a {
     font-family: "DM Sans";
@@ -178,6 +191,9 @@ body > header .container .checkbox:checked ~ .menu {
   }
   body > header .container .menu .navigation_container li a:hover {
     text-decoration: underline;
+  }
+  body > header .container .menu .navigation_container .contact_list {
+    padding-right: 0;
   }
 }
 main > header {
@@ -227,14 +243,14 @@ main > header .container ul li {
   main > header {
     padding-top: calc(49px);
   }
-  main > header h1 {
+  main > header .container h1 {
     font-size: calc(72px);
     line-height: calc(80px);
     padding-top: calc(38px);
     padding-bottom: calc(61px);
     max-width: calc(457px);
   }
-  main > header ul {
+  main > header .container ul {
     padding-bottom: calc(69px);
   }
 }
@@ -265,7 +281,7 @@ section:nth-of-type(1) .container .container .row .column:not(:last-of-type) {
   margin-right: 8px;
 }
 section:nth-of-type(1) .container .container .row img {
-  max-width: calc(130.4px);
+  max-width: calc(137.6px);
   border-radius: 5px;
   opacity: 0.5;
 }

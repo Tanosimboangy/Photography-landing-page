@@ -25,8 +25,12 @@
   - If you want to find the demo about this project, you can click this demo link: 
 <div><a href="https://vigilant-knuth-ba0f5e.netlify.app/">Demo</a></div>.
 
+
   - This is from Netlify but if you want to look at the solution here is the link: 
 <div><a href="https://github.com/Tanosimboangy/front-end-finals">Demo</a></div>.
+
+  - If you want to find the figma about this project, you can click this figma link: 
+<div><a href="https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1---Portfolio-detail-(Responsive)?node-id=7%3A16">Figma</a></div>.
 
 #   **My experience:**
 
