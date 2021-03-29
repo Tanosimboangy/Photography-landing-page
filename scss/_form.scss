@@ -1,81 +1,85 @@
 @import "variable";
 @import "mixins";
-
 section:nth-of-type(3) {
-  .container {
-    .up_to_date {
-      li:nth-of-type(2) {
-        ul {
-          li:nth-of-type(1) {
-            padding-bottom: calc(#{$padding * 6});
-            label {
-              @include font_DM_sans;
-              @include font_lineH16;
-              text-transform: uppercase;
-              color: $primary-color-heading;
+    .container {
+        .up_to_date {
+            li:nth-of-type(2) {
+                ul {
+                    li:nth-of-type(1) {
+                        padding-bottom: calc(#{$padding * 8});
+                        label {
+                            @include font_DM_sans;
+                            @include font_lineH16;
+                            text-transform: uppercase;
+                            color: $primary-color-heading;
+                        }
+                        #email_input {
+                            @include font_DM_sans;
+                            @include fontS_lineH;
+                            font-size: calc(16px);
+                            line-height: calc(24px);
+                            background: #FFFFFF;
+                            border: calc(1px) solid #DADADA;
+                            box-sizing: border-box;
+                            border-radius: calc(5px);
+                            padding-top: calc(13px);
+                            padding-bottom: calc(11px);
+                            padding-right: calc(90px);
+                            padding-left: calc(16px);
+                            margin-top: calc(12px);
+                            color: rgba(0, 0, 0, 0.5);
+                            max-width: 100%;
+                            cursor: pointer;
+                            outline: none;
+                        }
+                    }
+                    li:nth-of-type(2) {
+                        padding-bottom: calc(#{$padding * 27});
+                        .subscribe {
+                            @include font_DM_sans_bold_plus_font_size;
+                            text-align: center;
+                            color: $secondary-color-heading;
+                            border: none;
+                            background: #434CCC;
+                            border-radius: calc(#{$padding * 2.5});
+                            padding-top: calc(#{$padding * 5.5});
+                            padding-bottom: calc(#{$padding * 6.5});
+                            padding-right: calc(#{$padding * 22.75});
+                            padding-left: calc(#{$padding * 22.75});
+                            cursor: pointer;
+                            outline: none;
+                        }
+                    }
+                }
             }
-            #email_input {
-              @include font_DM_sans; 
-              @include fontS_lineH;
-              font-size: calc(16px);
-              line-height: calc(24px);
-              background: #FFFFFF;
-              border: calc(1px) solid #DADADA;
-              box-sizing: border-box;
-              border-radius: calc(5px);
-              padding-top: calc(13px);
-              padding-bottom: calc(13px);
-              padding-right: calc(90px);
-              padding-left: calc(12px);
-              margin-top: calc(12px);
-              color: rgba(0, 0, 0, 0.5);
-              max-width: 100%;
-              cursor: pointer;
-              outline: none;
-            }
-          }
-          li:nth-of-type(2) {
-            padding-bottom: calc(#{$padding * 27});
-            .subscribe {
-              @include font_DM_sans_bold_plus_font_size;
-              text-align: center;
-              color: $secondary-color-heading;
-              border: none;
-              background: #434CCC;
-              border-radius: calc(#{$padding * 2.5});
-              padding: calc(#{$padding * 6}) calc(#{$padding * 22.75});
-              cursor: pointer;
-              outline: none;
-            }
-          }
         }
-      }
     }
-  }
 }
 
-
 @media(min-width: 1120px) {
-  section:nth-of-type(3) {
-    background: #FFDD78;
-    .container {
-      .up_to_date {
-        li:nth-of-type(2) {
-          ul {
-            @include flex;
-            align-items: flex-end;
-            padding-bottom: calc(#{$padding * 72});
-            li:nth-of-type(1) {
-              padding-bottom: $padding-zero;
-              padding-top: $padding-zero;
-              padding-right: calc(#{$padding * 27});
+    section:nth-of-type(3) {
+        background: #FFDD78;
+        .container {
+            .up_to_date {
+                li:nth-of-type(2) {
+                    ul {
+                        @include flex;
+                        align-items: flex-end;
+                        padding-bottom: calc(#{$padding * 72});
+                        li:nth-of-type(1) {
+                            padding-bottom: $padding-zero;
+                            padding-top: $padding-zero;
+                            padding-right: calc(#{$padding * 27});
+                            #email_input {
+                                padding-right: calc(#{$padding * 66});
+                            }
+                        }
+                        li:nth-of-type(2) {
+                            padding-bottom: $padding-zero;
+                        }
+                    }
+                }
             }
-            li:nth-of-type(2) {
-              padding-bottom: $padding-zero;
-            }
-          }
         }
-      }
     }
-  }
 }

@@ -5,7 +5,7 @@ footer {
         .component {
             .container {
                 .footer_navigation {
-                    padding-bottom: calc(#{$padding * 38.5});
+                    padding-bottom: calc(#{$padding * 39});
                     h4 {
                         @include font_DM_sans_bold_plus_font_size;
                         color: $primary-color-heading;

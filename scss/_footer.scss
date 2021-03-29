@@ -11,7 +11,7 @@ footer {
                     h3 {
                         @include font12_lineH32;
                         color: $primary-color-heading;
-                        padding-top: calc(#{$padding * 37.5});
+                        padding-top: calc(#{$padding * 37.49});
                         padding-bottom: calc(#{$padding * 11.5});
                     }
                     p {
@@ -21,7 +21,7 @@ footer {
                     }
                     .icons {
                         @include flex_row_just_center;
-                        max-width: calc(#{$max-width * 6.25});
+                        max-width: calc(#{$max-width * 4.625});
                         padding-bottom: calc(#{$padding * 39.5});
                     }
                 }
@@ -36,10 +36,10 @@ footer {
             .component {
                 .container {
                     @include flex_row_with_flex_start;
-                    padding-bottom: calc(#{$padding * 36});
+                    padding-bottom: calc(#{$padding * 34.5});
                     .footer_texts {
                         display: block;
-                        padding-top: calc(#{$padding * 39});
+                        padding-top: calc(#{$padding * 36});
                         padding-bottom: $padding-zero;
                         h3 {
                             padding-top: $padding-zero;

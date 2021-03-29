@@ -23,7 +23,7 @@ footer {
                                 @include flex;
                                 padding-bottom: calc(#{$padding * 13.5});
                                 li:nth-of-type(2) {
-                                    padding-left: calc(#{$padding * 12});
+                                    padding-left: calc(#{$padding * 15.5});
                                     li:nth-of-type(1) {
                                         @include font_DM_sans_normal_plus_font_size;
                                         color: $sub-heading-text-color;
@@ -54,7 +54,7 @@ footer {
                             .experience {
                                 @include flex;
                                 li:nth-of-type(2) {
-                                    padding-left: calc(#{$padding * 12});
+                                    padding-left: calc(#{$padding * 15.5});
                                     li {
                                         @include font_DM_sans;
                                         line-height: calc(#{$padding * 12});

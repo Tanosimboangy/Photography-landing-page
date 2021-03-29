@@ -9,8 +9,8 @@ body>header {
         h3 {
             @include font_dm_serif_display;
             color: $secondary-color-heading;
-            padding-top: calc(#{$padding * 10});
-            padding-bottom: calc(#{$padding * 10});
+            padding-top: calc(#{$padding * 8});
+            padding-bottom: calc(#{$padding * 8});
             font-size: calc(#{$padding * 14});
             line-height: calc(#{$padding * 6});
         }
@@ -78,8 +78,8 @@ body>header {
                     border-radius: none;
                     box-shadow: none;
                     li {
-                        padding-left: calc(#{$padding * 12.5});
-                        padding-right: calc(#{$padding * 12.5});
+                        padding-left: calc(#{$padding * 14});
+                        padding-right: calc(#{$padding * 14});
                         a {
                             @include font_DM_sans_bold_plus_font_size;
                             color: white;

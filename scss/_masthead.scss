@@ -39,7 +39,7 @@ main>header {
 
 @media(min-width: 1120px) {
     main>header {
-        padding-top: calc(#{$padding * 24.5});
+        padding-top: calc(#{$padding * 23.5});
         .container {
             h1 {
                 font-size: calc(#{$padding * 36});
