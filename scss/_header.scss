@@ -1,135 +1,135 @@
 @import "variable";
 @import "mixins";
-body>header {
-    background: #434CCC;
+body > header {
+  background: #434ccc;
+  position: relative;
+  .container {
+    @include flex_row_just_center;
     position: relative;
+    h3 {
+      @include font_dm_serif_display;
+      color: $secondary-color-heading;
+      padding-top: calc(#{$padding * 8});
+      padding-bottom: calc(#{$padding * 8});
+      font-size: calc(#{$padding * 14});
+      line-height: calc(#{$padding * 6});
+    }
+    svg {
+      padding-right: calc(#{$padding * 7});
+      position: absolute;
+      top: calc(#{$padding * 7.5});
+      right: calc(#{$padding * -1.5});
+    }
+    .checkbox {
+      margin-left: calc(#{$padding * -7});
+      width: calc(#{$padding * 18});
+      height: calc(#{$padding * 11.5});
+      opacity: 0;
+      z-index: 1;
+    }
+    .menu {
+      display: none;
+      .navigation_container {
+        padding-left: calc(#{$padding * 10}) calc(#{$padding * 10});
+        border-radius: calc(#{$padding * 5});
+        li {
+          padding: calc(#{$padding * 10});
+          a {
+            @include font_DM_sans_bold_plus_font_size;
+            color: white;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .checkbox:checked ~ .menu {
+      display: block;
+      position: absolute;
+      top: calc(52px);
+      left: calc(-26px);
+      height: calc(411px);
+      z-index: 1;
+      padding: calc(20px);
+      width: 100%;
+      background: #434ccc;
+      transition: 1s;
+    }
+  }
+}
+
+@media (min-width: 720px) {
+  body > header {
     .container {
-        @include flex_row_just_center;
-        position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .checkbox,
+      svg {
+        display: none;
+      }
+      .menu {
+        display: flex;
         h3 {
-            @include font_dm_serif_display;
-            color: $secondary-color-heading;
-            padding-top: calc(#{$padding * 8});
-            padding-bottom: calc(#{$padding * 8});
-            font-size: calc(#{$padding * 14});
-            line-height: calc(#{$padding * 6});
+          display: none;
         }
-        svg {
-            padding-right: calc(#{$padding * 7});
-            position: absolute;
-            top: calc(#{$padding * 9.5});
-            right: calc(#{$padding * -1.5});
-        }
-        .checkbox {
-            margin-left: calc(#{$padding * -7});
-            width: calc(#{$padding * 18});
-            height: calc(#{$padding * 11.5});
-            opacity: 0;
-            z-index: 1;
-        }
-        .menu {
-            display: none;
-            .navigation_container {
-                padding-left: calc(#{$padding * 10}) calc(#{$padding * 10});
-                border-radius: calc(#{$padding * 5});
-                li {
-                    padding: calc(#{$padding * 10});
-                    a {
-                        @include font_DM_sans_bold_plus_font_size;
-                        color: white;
-                        font-size: 20px;
-                    }
-                }
+        .navigation_container {
+          @include flex_row;
+          border-radius: none;
+          box-shadow: none;
+          li {
+            padding-left: calc(#{$padding * 14});
+            padding-right: calc(#{$padding * 14});
+            a {
+              @include font_DM_sans_bold_plus_font_size;
+              color: white;
             }
+          }
+          .contact_list {
+            padding-right: 0;
+          }
         }
-        .checkbox:checked~.menu {
-            display: block;
-            position: absolute;
-            top: calc(52px);
-            left: calc(-26px);
-            height: calc(411px);
-            z-index: 1;
-            padding: calc(20px);
-            width: 100%;
-            background: #434CCC;
-            transition: 1s;
-        }
+      }
     }
+  }
 }
 
-@media(min-width: 720px) {
-    body>header {
-        .container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            .checkbox,
-            svg {
-                display: none;
-            }
-            .menu {
-                display: flex;
-                h3 {
-                    display: none;
-                }
-                .navigation_container {
-                    @include flex_row;
-                    border-radius: none;
-                    box-shadow: none;
-                    li {
-                        padding-left: calc(#{$padding * 14});
-                        padding-right: calc(#{$padding * 14});
-                        a {
-                            @include font_DM_sans_bold_plus_font_size;
-                            color: white;
-                        }
-                    }
-                    .contact_list {
-                        padding-right: 0;
-                    }
-                }
-            }
+@media (min-width: 1120px) {
+  body > header {
+    .container {
+      @include flex_row;
+      h3 {
+        padding-left: calc(#{$padding * 0});
+        font-size: calc(#{$padding * 20});
+        line-height: calc(#{$padding * 24});
+        color: rgb(255, 255, 255);
+      }
+      svg {
+        display: none;
+      }
+      .menu {
+        display: flex;
+        h3 {
+          display: none;
         }
-    }
-}
-
-@media(min-width: 1120px) {
-    body>header {
-        .container {
-            @include flex_row;
-            h3 {
-                padding-left: calc(#{$padding * 0});
-                font-size: calc(#{$padding * 20});
-                line-height: calc(#{$padding * 24});
-                color: rgb(255, 255, 255);
+        .navigation_container {
+          li {
+            padding-left: calc(#{$padding * 12.5});
+            padding-top: calc(#{$padding * 12.5});
+            padding-bottom: calc(#{$padding * 12.5});
+            a {
+              @include font_DM_sans_bold_plus_font_size;
+              color: $secondary-color-heading;
             }
-            svg {
-                display: none;
+            a:hover {
+              text-decoration: underline;
             }
-            .menu {
-                display: flex;
-                h3 {
-                    display: none;
-                }
-                .navigation_container {
-                    li {
-                        padding-left: calc(#{$padding * 12.5});
-                        padding-top: calc(#{$padding * 12.5});
-                        padding-bottom: calc(#{$padding * 12.5});
-                        a {
-                            @include font_DM_sans_bold_plus_font_size;
-                            color: $secondary-color-heading;
-                        }
-                        a:hover {
-                            text-decoration: underline;
-                        }
-                    }
-                    .contact_list {
-                        padding-right: 0;
-                    }
-                }
-            }
+          }
+          .contact_list {
+            padding-right: 0;
+          }
         }
+      }
     }
+  }
 }

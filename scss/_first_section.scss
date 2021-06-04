@@ -1,51 +1,11 @@
 @import "variable";
 @import "mixins";
 section:nth-of-type(1) {
+  img {
+    vertical-align: middle;
+  }
   .container {
-    // .galleries {
-    //   li:first-of-type {
-    //     padding-bottom: calc(#{$padding * 4});
-    //     img {
-    //       max-width: $percentage;
-    //       height: $margin-auto;
-    //       border-radius: calc(#{$padding * 2.5});
-    //     }
-    //   }
-    //   li:nth-of-type(2) {
-    //     ul {
-    //       @include flex;
-    // overflow-x: scroll;
-    // scrollbar-width: none;
-    //       li {
-    //         img {
-    // max-width: calc(#{$max-width * 8.15});
-    // border-radius: calc(#{$padding * 2.5});
-    //         }
-    //       }
-    //       li:not(:first-of-type) {
-    //         padding-left: calc(#{$padding * 5});
-    //         img {
-    //           opacity: .5;
-    //         }
-    //       }
-    //       li:not(:first-of-type):hover {
-    //         img {
-    //           opacity: 1;
-    //         }
-    //       }
-    //     }
-    //     ul::-webkit-scrollbar {
-    //       display: none;
-    //     }
-    //   }
-    // }
-    // * {
-    //   box-sizing: border-box;
-    // }
-    img {
-      vertical-align: middle;
-    }
-    .container {
+    .wrapper_slides {
       position: relative;
       .mySlides {
         margin-bottom: 10px;
@@ -111,13 +71,3 @@ section:nth-of-type(1) {
     }
   }
 }
-
-// <ul class="gallery gallery1">
-// <li>
-// <picture>
-// <source media="(min-width: 1120px)" srcset="./webroot/images/rock_carvings_lg.jpg">
-// <source media="(min-width: 720px)" srcset="./webroot/images/rock_carvings_md.jpg">
-// <img src="./webroot/images/rock_carvings_sm.jpg" alt="this_is_for_rock_carving">
-// </picture>
-// </li>
-// </ul>

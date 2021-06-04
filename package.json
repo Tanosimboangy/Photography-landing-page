@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "Hey everyone!",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "node-sass": "^6.0.0"
+  },
   "devDependencies": {
     "sass": "^1.30.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss": "node-sass scss -o webroot/css",
+    "scss:watch": "npm run scss && node-sass scss -w -o webroot/css",
+    "start": "npm run scss:watch"
   },
   "repository": {
     "type": "git",
