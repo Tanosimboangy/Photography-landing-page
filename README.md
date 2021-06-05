@@ -3,7 +3,6 @@
 ![image](./webroot/images/big_screen.png)
 ![image](./webroot/images/small_screen.png)
 
-
 <h1 align="center">Front-end-finals</h1>
 
 <div align="center">
@@ -20,39 +19,39 @@
 
 ## This project is our final assessement on HTML and CSS. I would like to show it you so that you can help me or if you interested in some stuff we can work on together.
 
-# **You can find the demo of this project here:** 
+# **You can find the demo of this project here:**
 
-  - If you want to find the demo about this project, you can click this demo link: 
+- If you want to find the demo about this project, you can click this demo link:
 <div><a href="https://vigilant-knuth-ba0f5e.netlify.app/">Demo</a></div>.
 
-
-  - This is from Netlify but if you want to look at the solution here is the link: 
+- This is from Netlify but if you want to look at the solution here is the link:
 <div><a href="https://github.com/Tanosimboangy/front-end-finals">Demo</a></div>.
 
-  - If you want to find the figma about this project, you can click this figma link: 
+- If you want to find the figma about this project, you can click this figma link:
 <div><a href="https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1---Portfolio-detail-(Responsive)?node-id=7%3A16">Figma</a></div>.
 
-#   **My experience:**
+# **My experience:**
 
-  -  Since this project is based upon HTML and CSS, displaying each item can be complicated.
+- Since this project is based upon HTML and CSS, displaying each item can be complicated.
 
-  -  First of all, After having set all of the necessary files, such as index.html, index.scss, I installed sass and run it so that it compiles the scss styles into css and the browser won't have difficulty to render it. 
+- First of all, After having set all of the necessary files, such as index.html, index.scss, I installed sass and run it so that it compiles the scss styles into css and the browser won't have difficulty to render it.
 
-  - Secondly, I tried to style all of the elements and set up the javascript code for the slider images. I had a great deal of difficulty to tackle with this part.
+- Secondly, I tried to style all of the elements and set up the javascript code for the slider images. I had a great deal of difficulty to tackle with this part.
 
-  - Interestingly, I had a chance to apply some of javascript funtionalities in this project which about image slider.
-  
+- Interestingly, I had a chance to apply some of javascript funtionalities in this project which about image slider.
 
-#   **In a few sentences, explain the structure of my project:**
+# **In a few sentences, explain the structure of my project:**
 
-  - First and foremost, Inside of index.html I write the whole code with a small part of javascript.
+- First and foremost, Inside of index.html I write the whole code with a small part of javascript.
 
-  - Lately, I tried to use parcel to run the run this code to the browser.
+- Lately, I tried to use parcel to run the run this code to the browser.
 
-#  **If I had more time, I would you improve:**
-  - First, I would like to improve the way how I display all of the links icons like facebook and twitter by using another fill when it is hovered by the user.
+# **If I had more time, I would you improve:**
 
-  - Also, I would cleanse my code very well so that it's easy for others to understand it.
+- First, I would like to improve the way how I display all of the links icons like facebook and twitter by using another fill when it is hovered by the user.
 
-#   **New I learned while working on this project:**
-  - I learned that we could use parcel instead of sass, and this make your life even easier to deal with everthing.
+- Also, I would cleanse my code very well so that it's easy for others to understand it.
+
+# **New I learned while working on this project:**
+
+- I learned that we could use parcel instead of sass to compile you code, and this makes your life even easier.

@@ -38,6 +38,18 @@ body {
   body footer {
     padding: 0; } }
 
+@font-face {
+  font-family: "DM Serif Display";
+  src: local(DM-Serif-Display), url(../fonts/dm_serif_display_400.woff2) format("woff2"), url(../fonts/dm_serif_display_400.woff) format("woff"); }
+
+@font-face {
+  font-family: "DM sans";
+  src: local(DM sans), url(../fonts/dm_sans_400.woff2) format("woff2"), url(../fonts/dm_sans_400.woff) format("woff"); }
+
+@font-face {
+  font-family: "DM sans";
+  src: local(DM sans), url(../fonts/dm_sans_700.woff2) format("woff2"), url(../fonts/dm_sans_700.woff) format("woff"); }
+
 body > header {
   background: #434ccc;
   position: relative; }
@@ -85,7 +97,7 @@ body > header {
     body > header .container .checkbox:checked ~ .menu {
       display: block;
       position: absolute;
-      top: calc(52px);
+      top: calc(44px);
       left: calc(-26px);
       height: calc(411px);
       z-index: 1;
@@ -410,13 +422,13 @@ section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-typ
     line-height: calc(24px);
     font-size: calc(16px);
     line-height: calc(24px);
-    background: #FFFFFF;
-    border: calc(1px) solid #DADADA;
+    background: #ffffff;
+    border: calc(1px) solid #dadada;
     box-sizing: border-box;
     border-radius: calc(5px);
     padding-top: calc(13px);
     padding-bottom: calc(11px);
-    padding-right: calc(90px);
+    padding-right: calc(138px);
     padding-left: calc(16px);
     margin-top: calc(12px);
     color: rgba(0, 0, 0, 0.5);
@@ -435,7 +447,7 @@ section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-typ
     text-align: center;
     color: #FFFFFF;
     border: none;
-    background: #434CCC;
+    background: #434ccc;
     border-radius: calc(5px);
     padding-top: calc(11px);
     padding-bottom: calc(13px);
@@ -446,7 +458,7 @@ section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-typ
 
 @media (min-width: 1120px) {
   section:nth-of-type(3) {
-    background: #FFDD78; }
+    background: #ffdd78; }
     section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul {
       display: flex;
       flex-direction: row;
