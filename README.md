@@ -22,7 +22,7 @@
 # **You can find the demo of this project here:**
 
 - If you want to find the demo about this project, you can click this demo link:
-<div><a href="https://vigilant-knuth-ba0f5e.netlify.app/">Demo</a></div>.
+<div><a href="https://jacquit-photograph.netlify.app/">Demo</a></div>.
 
 - This is from Netlify but if you want to look at the solution here is the link:
 <div><a href="https://github.com/Tanosimboangy/front-end-finals">Demo</a></div>.
