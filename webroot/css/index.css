@@ -428,11 +428,11 @@ section:nth-of-type(3) .container .up_to_date li:nth-of-type(2) ul li:nth-of-typ
     border-radius: calc(5px);
     padding-top: calc(13px);
     padding-bottom: calc(11px);
-    padding-right: calc(138px);
     padding-left: calc(16px);
     margin-top: calc(12px);
     color: rgba(0, 0, 0, 0.5);
-    max-width: 100%;
+    width: 100%;
+    max-width: 346px;
     cursor: pointer;
     outline: none; }
 
