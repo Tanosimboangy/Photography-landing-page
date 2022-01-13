@@ -1,5 +1,4 @@
-# Photograph Landing Page
-
+# **Photograph Landing Page**
 
 <div align="center">
   <h3>
@@ -13,27 +12,22 @@
   </h3>
 </div>
 
-## Description
+## **Built With**
+- __<span><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">HTML5</a></span>.__
+- __<span><a href="https://sass-lang.com/" target="_blank">SASS</a></span>.__
+- __<span><a href="https://developer.mozilla.org/en-US/docs/Glossary/Javascript" target="_blank">Vanilla JavaScript</a></span>.__
 
-
-## Techonology
-- <span><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">HTML5</a></span>.
-- <span><a href="https://developer.mozilla.org/en-US/docs/Glossary/Css" target="_blank">CSS</a></span>.
-- <span><a href="https://sass-lang.com/" target="_blank">SASS</a></span>.
-- <span><a href="https://developer.mozilla.org/en-US/docs/Glossary/Javascript" target="_blank">Vanilla JavaScript</a></span>.
-
-## Design
+## **Design**
 ![image](./webroot/images/small_screen.png)
 ![image](./webroot/images/big_screen.png)
 
-## Prerequisites:
+## **Prerequisites:**
 
-To clone and run this application, you'll need <a href="https://git-scm.com/" target="_blank">Git</a> and <a href="https://nodejs.org/en/download/" target="_blank">Node.js</a> (which comes with <a href="https://www.npmjs.com/" target="_blank">npm</a>) installed on your computer.
+**To clone and run this application, you'll need <a href="https://git-scm.com/" target="_blank">Git</a> and <a href="https://nodejs.org/en/download/" target="_blank">Node.js</a> (which comes with <a href="https://www.npmjs.com/" target="_blank">npm</a>) installed on your computer.**
 
-These are the steps you can follow:
+**These are the steps you can follow:**
 
 ```bash
-
 # Clone this repository to your local machine
 $ git clone https://github.com/Tanosimboangy/Photography-landing-page.git.
 
@@ -44,7 +38,7 @@ $ git clone https://github.com/Tanosimboangy/Photography-landing-page.git.
 $ npm start, npm dev Or yarn start and yarn dev parcel index.html
 
 # Figma link:
-You can find the desing online at: <a href="https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1---Portfolio-detail-(Responsive)?node-id=7%3A16" target="_blank">Figma link</a>
+You can find the desing online at: href="https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1---Portfolio-detail-(Responsive)?node-id=7%3A16"
 
 
 ```
