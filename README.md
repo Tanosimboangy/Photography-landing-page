@@ -35,7 +35,7 @@ $ git clone https://github.com/Tanosimboangy/Photography-landing-page.git.
 - npm install
 
 # Run the app
-$ npm start, npm dev Or yarn start and yarn dev parcel index.html
+$ npm start
 
 # Figma link:
 You can find the desing online at: href="https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1---Portfolio-detail-(Responsive)?node-id=7%3A16"
