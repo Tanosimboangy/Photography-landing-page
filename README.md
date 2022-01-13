@@ -1,57 +1,50 @@
-# **FRONT-END-FIANLS**
+# Photograph Landing Page
 
-![image](./webroot/images/big_screen.png)
-![image](./webroot/images/small_screen.png)
-
-<h1 align="center">Front-end-finals</h1>
 
 <div align="center">
   <h3>
-    <a href="https://github.com/Tanosimboangy/front-end-finals">
-      Solution
+    <a href="https://github.com/Tanosimboangy/front-end-finals" target="_blank">
+      Source
     </a>
     <span> | </span>
-    <a href="https://vigilant-knuth-ba0f5e.netlify.app/">
+    <a href="https://jacquit-photograph.netlify.app/" target="_blank">
       Demo
     </a>
   </h3>
 </div>
 
-## This project is our final assessement on HTML and CSS. I would like to show it you so that you can help me or if you interested in some stuff we can work on together.
+## Description
 
-# **You can find the demo of this project here:**
 
-- If you want to find the demo about this project, you can click this demo link:
-<div><a href="https://jacquit-photograph.netlify.app/">Demo</a></div>.
+## Techonology
+- <span><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">HTML5</a></span>.
+- <span><a href="https://developer.mozilla.org/en-US/docs/Glossary/Css" target="_blank">CSS</a></span>.
+- <span><a href="https://sass-lang.com/" target="_blank">SASS</a></span>.
+- <span><a href="https://developer.mozilla.org/en-US/docs/Glossary/Javascript" target="_blank">Vanilla JavaScript</a></span>.
 
-- This is from Netlify but if you want to look at the solution here is the link:
-<div><a href="https://github.com/Tanosimboangy/front-end-finals">Demo</a></div>.
+## Design
+![image](./webroot/images/small_screen.png)
+![image](./webroot/images/big_screen.png)
 
-- If you want to find the figma about this project, you can click this figma link:
-<div><a href="https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1---Portfolio-detail-(Responsive)?node-id=7%3A16">Figma</a></div>.
+## Prerequisites:
 
-# **My experience:**
+To clone and run this application, you'll need <a href="https://git-scm.com/" target="_blank">Git</a> and <a href="https://nodejs.org/en/download/" target="_blank">Node.js</a> (which comes with <a href="https://www.npmjs.com/" target="_blank">npm</a>) installed on your computer.
 
-- Since this project is based upon HTML and CSS, displaying each item can be complicated.
+These are the steps you can follow:
 
-- First of all, After having set all of the necessary files, such as index.html, index.scss, I installed sass and run it so that it compiles the scss styles into css and the browser won't have difficulty to render it.
+```bash
 
-- Secondly, I tried to style all of the elements and set up the javascript code for the slider images. I had a great deal of difficulty to tackle with this part.
+# Clone this repository to your local machine
+$ git clone https://github.com/Tanosimboangy/Photography-landing-page.git.
 
-- Interestingly, I had a chance to apply some of javascript funtionalities in this project which about image slider.
+# Install dependencies:
+- npm install
 
-# **In a few sentences, explain the structure of my project:**
+# Run the app
+$ npm start, npm dev Or yarn start and yarn dev parcel index.html
 
-- First and foremost, Inside of index.html I write the whole code with a small part of javascript.
+# Figma link:
+You can find the desing online at: <a href="https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1---Portfolio-detail-(Responsive)?node-id=7%3A16" target="_blank">Figma link</a>
 
-- Lately, I tried to use parcel to run the run this code to the browser.
 
-# **If I had more time, I would you improve:**
-
-- First, I would like to improve the way how I display all of the links icons like facebook and twitter by using another fill when it is hovered by the user.
-
-- Also, I would cleanse my code very well so that it's easy for others to understand it.
-
-# **New I learned while working on this project:**
-
-- I learned that we could use parcel instead of sass to compile you code, and this makes your life even easier.
+```
