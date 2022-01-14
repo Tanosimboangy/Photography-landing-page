@@ -1,31 +1,38 @@
-# **Photograph Landing Page**
+# Photograph Landing Page
 
 <div align="center">
   <h3>
-    <a href="https://github.com/Tanosimboangy/front-end-finals" target="_blank">
+    <a href="https://github.com/Tanosimboangy/front-end-finals">
       Source
     </a>
     <span> | </span>
-    <a href="https://jacquit-photograph.netlify.app/" target="_blank">
+    <a href="https://jacquit-photograph.netlify.app/">
       Demo
     </a>
   </h3>
 </div>
 
-## **Built With**
-- __<span><a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank">HTML5</a></span>.__
-- __<span><a href="https://sass-lang.com/" target="_blank">SASS</a></span>.__
-- __<span><a href="https://developer.mozilla.org/en-US/docs/Glossary/Javascript" target="_blank">Vanilla JavaScript</a></span>.__
+## Overview
 
-## **Design**
 ![image](./webroot/images/small_screen.png)
 ![image](./webroot/images/big_screen.png)
 
-## **Prerequisites:**
+## Built With
 
-**To clone and run this application, you'll need <a href="https://git-scm.com/" target="_blank">Git</a> and <a href="https://nodejs.org/en/download/" target="_blank">Node.js</a> (which comes with <a href="https://www.npmjs.com/" target="_blank">npm</a>) installed on your computer.**
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [SASS](https://sass-lang.com/documentation)
+- [Vanilla Js](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-**These are the steps you can follow:**
+## Features
+
+- Landing page where a list of galleries are displayed.
+- Swiped photos by horizontaly scroolling.
+
+## Getting started
+
+To clone and run this application, you'll need [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](https://www.npmjs.com/")) installed on your computer.
+
+These are the steps you can follow:
 
 ```bash
 # Clone this repository to your local machine
