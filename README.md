@@ -26,7 +26,7 @@
 ## Features
 
 - Landing page where a list of galleries are displayed.
-- Swiped photos by horizontaly scroolling.
+- Swiped photos by horizontaly scrolling.
 
 ## Getting started
 
