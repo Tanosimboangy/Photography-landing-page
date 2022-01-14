@@ -29,7 +29,7 @@
 - Swiped photos by horizontally scrolling.
 
 ## Figma link:
-You can find the desing online at: [figma design](https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1---Portfolio-detail-(Responsive)?node-id=7%3A16)
+You can find the desing online at: [figma desing](https://www.figma.com/file/VgF87mULloYb7HZ1EMCRzU/Laaqiq-1---Portfolio-detail-(Responsive)?node-id=7%3A16)
 
 
 ## Getting started
