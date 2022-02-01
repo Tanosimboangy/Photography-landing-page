@@ -45,5 +45,4 @@ $ git clone https://github.com/Tanosimboangy/Photography-landing-page.git.
 
 # Run the app
 $ npm start
-
 ```
