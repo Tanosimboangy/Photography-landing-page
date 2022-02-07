@@ -2,13 +2,9 @@
 
 <div align="center">
   <h3>
-    <a href="https://github.com/Tanosimboangy/front-end-finals">
-      Source
-    </a>
+    <a href="https://github.com/Tanosimboangy/front-end-finals">Source</a>
     <span> | </span>
-    <a href="https://jacquit-photograph.netlify.app/">
-      Demo
-    </a>
+    <a href="https://jacquit-photograph.netlify.app/">Demo</a>
   </h3>
 </div>
 
