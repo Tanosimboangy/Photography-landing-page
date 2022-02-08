@@ -37,8 +37,8 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 $ git clone https://github.com/Tanosimboangy/Photography-landing-page.git.
 
 # Install dependencies:
-- npm install
+- npm install or yarn install
 
 # Run the app
-$ npm start
+$ npm start or yarn start
 ```
